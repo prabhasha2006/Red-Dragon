@@ -15,7 +15,7 @@
  
 > [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Queen--Elsa/fork)
 
-> [Edit 'setting.js' With Your Choice]
+> [Edit 'setting.js' With Your Choice](https://github.com/prabhasha2006/Queen--Elsa/edit/main/settings.js)
  
 > [then Deploy The Bot From Here](https://heroku.com/deploy)
 
