@@ -31,14 +31,17 @@
 <img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
 </p>
 
+</details>
 
 <!-- Contact Owner -->
-<b><details><summary>Contact</summary></b>
+<b><details><summary>Contact Owner 😜</summary></b>
 
 ## ```Connect With Me```
 <p align="center">
 <a href="https://wa.me/380944814219"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
+
+</details>
 
 <p align="center">
 <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="700"/>
@@ -60,23 +63,6 @@
 ## 😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯
 
 
-<!-- Installation via Termux -->
-<b><details><summary>Installation on Termux</summary></b>
-```bash
-> apt update
-> apt upgrade
-> pkg update && pkg upgrade
-> pkg install bash
-> pkg install libwebp
-> pkg install git -y
-> pkg install nodejs -y 
-> pkg install ffmpeg -y 
-> pkg install wget
-> pkg install imagemagick -y
-> git clone https://github.com/nexusNw/Gojo-Satoru
-> cd Gojo-Satoru
-> npm install
-```
 
 
 <b><details><summary>Available Features</summary><br>
@@ -100,7 +86,7 @@
 |   More Nsfw     |       ✅      |
 |   Creator     |       ✅      |
 
-
+</details>
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
