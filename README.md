@@ -32,31 +32,6 @@
 </p>
 
 
-<!-- Requirements -->
-<b><details><summary>Requirements</summary></b>
-* Some Text Editor
-* [Node JS](https://nodejs.org/en/)
-* [Git](https://git-scm.com/downloads)
-* [FFMPEG](https://ffmpeg.org/download.html)
-  
-```bash
-Add FFmpeg to PATH environment variable
-```
-</details>
-
-
-<!-- Start via Heroku -->
-<b><details><summary>Start via Heroku</summary></b>
-
-* Scan QR In Your Whatsapp From [Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
-* Fork This Repo By Clicking [Here](https://github.com/prabhasha2006/Queen--Elsa/fork)
-* then Deploy The Bot From [Here](https://heroku.com/deploy)
-* Wait 5-10 Min To Deploy 
-* After Deploying On The Worker And Check The Logs
-
-</details>
-
-
 <!-- Contact Owner -->
 <b><details><summary>Contact</summary></b>
 
@@ -65,14 +40,25 @@ Add FFmpeg to PATH environment variable
 <a href="https://wa.me/380944814219"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 </p>
 
-
-</details>
-	
 <p align="center">
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="600"/>
+<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="700"/>
 </p>
 
-> 
+> මුලින්ම qr code එක scan කරගන්න🥲 (multi devices beta වැඩ කරනෝ)
+
+> ඊට පස්සෙ මේ git එක fork කරගන්න. හරි. දැන් ඔයා fork කරගත්ත git එකට යන්න😌. 
+
+> දැන් වට්සැප් එකේ ඔයාගෙ ලොක් අංගයට session.json කියලා file එකක් ඇවිල්ලා ඇති. ඒක තියෙන්නෙ Whatsapp > media > whatsapp documents > session.json  මෙතන.
+
+> දැන් ඔයා අර fork කරපු git එකට ආයි ගිහින් ඒ session.json එක upload කරලා commit changes දෙන්න😁.
+
+> දැන් ආයි බැක් වෙලා Edit 'setting.js' With Your Choice ගිහින් ඒව මේව වෙනස් කරගන්න පුලුවං😒😒😒
+
+> යටට ගිහින් "Then Deploy The Bot From Here "👈මෙතනින් deploy කරන්න විතරයි තියෙන්නෙ😁
+
+
+## 😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯
+
 
 <!-- Installation via Termux -->
 <b><details><summary>Installation on Termux</summary></b>
@@ -114,15 +100,7 @@ Add FFmpeg to PATH environment variable
 |   More Nsfw     |       ✅      |
 |   Creator     |       ✅      |
 
-</details>
 
-
-----
-
-
-
-
-</details><hr>
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
