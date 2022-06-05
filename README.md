@@ -15,7 +15,7 @@
  
 > [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
 
-> [Edit 'setting.js' With Your Choice](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
+> [Edit 'setting.js' With Your Choice Here](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
  
 > [Then Deploy The Bot From Here](https://heroku.com/deploy)
 
