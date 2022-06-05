@@ -17,7 +17,7 @@
 
 > [Edit 'setting.js' With Your Choice](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
  
-> [then Deploy The Bot From Here](https://heroku.com/deploy)
+> [Then Deploy The Bot From Here](https://heroku.com/deploy)
 
 > [Red Dragon Bot Official Website](https://sites.google.com/view/red-dragon-bot/home)
 
