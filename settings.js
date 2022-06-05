@@ -19,22 +19,24 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['380944814219'] //DO NOT CHANGE!
+global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖'                                   //YOU CAN CHANGE<<<
+global.botname = ' ☬RED༒DRAGON'                                      //YOU CAN CHANGE<<<
+global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ' //YOU CAN CHANGE<<<
+global.packname = '☬RED༒DRAGON'                                      //YOU CAN CHANGE<<<
+global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯'                                    //YOU CAN CHANGE<<<
+global.prefa = ['','!','.','😂','❤','💠']                           //YOU CAN CHANGE<<<
+global.ig = 'https://github.com/prabhasha2006'                        //YOU CAN CHANGE<<<
+global.region = 'India, South India, Kerala'                          //YOU CAN CHANGE<<<
+global.sessionName = 'session'                                        //YOU CAN CHANGE<<<
+global.sp = '⭔'                                                       //YOU CAN CHANGE<<<
+/*global.footer = '©_Kumuthu.'*/                                      //YOU CAN CHANGE<<<
+
+
+global.sc = 'https://sites.google.com/view/red-dragon-bot/home' //DO NOT CHANGE!
+global.owner = ['380944814219'] //DO NOT CHANGE! 
 global.premium = ['380944814219'] //DO NOT CHANGE!
 global.ownernomer = '380944814219' //DO NOT CHANGE!
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //YOU CAN CHANGE<<<
-global.botname = ' ☬RED༒DRAGON' //YOU CAN CHANGE<<<
-/*global.footer = '©_Kumuthu.'*/
-global.ig = 'https://github.com/nexusNw'
-global.region = 'India, South India, Kerala'
-global.sc = 'https://sites.google.com/view/red-dragon-bot/home' //Do not change.!
-global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ' //===
-global.packname = '☬RED༒DRAGON' //YOU CAN CHANGE<<<
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯'
-global.sessionName = 'session'
-global.prefa = ['','!','.','😂','❤','💠']
-global.sp = '⭔'
-global.footer = '©_Kumuthu.'
+global.footer = '©_Kumuthu.' //DO NOT CHANGE!
 global.mess = {
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
