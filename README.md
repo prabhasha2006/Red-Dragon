@@ -4,12 +4,21 @@
 
 ## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐   Version 3.0
 
+
+
+
 > Image Designed By  ==(Dineth Indusara)== RED DRAGON TEAM
 
 > Created By ==(Kumuthu Prabhasha)== RED DRAGON TEAM
 
 <img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
 
+<p align="center">
+❯❯😎Kick bellow topics😒❮❮
+</p>
+<p align="center">
+👇To proccess👇
+</p>
 
 > [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
  
