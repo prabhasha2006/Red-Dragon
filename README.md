@@ -57,6 +57,22 @@ Add FFmpeg to PATH environment variable
 </details>
 
 
+<!-- Contact Owner -->
+<b><details><summary>Contact</summary></b>
+
+## ```Connect With Me```
+<p align="center">
+<a href="https://wa.me/380944814219"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+</p>
+
+
+</details>
+	
+<p align="center">
+<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="600"/>
+</p>
+
+> 
 
 <!-- Installation via Termux -->
 <b><details><summary>Installation on Termux</summary></b>
@@ -75,31 +91,6 @@ Add FFmpeg to PATH environment variable
 > cd Gojo-Satoru
 > npm install
 ```
-</details>
-
-<!-- Edit -->
-<b><details><summary>Edit settings.js</summary></b>
-```bash
-global.APIKeys = {
-	'https://zenzapis.xyz': 'YOURAPIKEY',
-}
-  
-global.owner = ["9181XXXXXX"]
-global.ownername = ["YourName"]
-```
-</details>
-
-
-<!-- 24hrs-->
-<b><details><summary>For 24 Hours Activation</summary></b>
-
-```bash
-npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
-```
-
-</details>
-
-----
 
 
 <b><details><summary>Available Features</summary><br>
@@ -128,19 +119,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ----
 
-<!-- Contact Owner -->
-<b><details><summary>Contact</summary></b>
 
-## ```Connect With Me```
-<p align="center">
-<a href="https://wa.me/380944814219"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-</p>
-
-</details>
-	
-<p align="center">
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="600"/>
-</p>
 
 
 </details><hr>
