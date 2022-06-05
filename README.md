@@ -4,7 +4,7 @@
 
 ## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
 
-##Image Designed By (Dineth Indusara)
+##Image Designed By ## (Dineth Indusara)
 ##Created By (Kumuthu Prabhasha)
 > <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
