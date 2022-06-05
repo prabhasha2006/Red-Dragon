@@ -16,9 +16,9 @@
  
 > [then Deploy The Bot From Here](https://heroku.com/deploy)
 
-<p align="center">
+<f align="center">
 <img src="https://i.ibb.co/ckTLCjj/image-downloader-1654443712641.gif" alt="nz" width="350"/>
-</p>
+</f>
 
 > <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
