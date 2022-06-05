@@ -20,17 +20,17 @@
 👇To proccess👇
 </p>
 
-> [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
+> 🙂➾ [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
  
-> [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
+> 🙂➾ [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
 
-> [Upload Your 'session.json' To The Git](https://github.com/prabhasha2006/Red-Dragon/upload/main)
+> 🙂➾ [Upload Your 'session.json' To The Git Here](https://github.com/prabhasha2006/Red-Dragon/upload/main)
 
-> [Edit 'setting.js' With Your Choice Here](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
+> 🙂➾ [Edit 'setting.js' With Your Choice Here](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
  
-> [Then Deploy The Bot From Here](https://heroku.com/deploy)
+> 🙂➾ [Then Deploy The Bot From Here](https://heroku.com/deploy)
 
-> [Red Dragon Bot Official Website](https://sites.google.com/view/red-dragon-bot/home)
+> 🙂➾ [Red Dragon Bot Official Website Here](https://sites.google.com/view/red-dragon-bot/home)
 
 
 <img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
