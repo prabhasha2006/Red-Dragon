@@ -13,9 +13,9 @@
 
 > [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
  
-> [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Queen--Elsa/fork)
+> [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
 
-> [Edit 'setting.js' With Your Choice](https://github.com/prabhasha2006/Queen--Elsa/edit/main/settings.js)
+> [Edit 'setting.js' With Your Choice](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
  
 > [then Deploy The Bot From Here](https://heroku.com/deploy)
 
