@@ -27,7 +27,7 @@ global.botname = ' ☬RED༒DRAGON࿐' //YOU CAN CHANGE<<<
 /*global.footer = '©_Kumuthu.'*/
 global.ig = 'https://github.com/nexusNw'
 global.region = 'India, South India, Kerala'
-global.sc = 'https://sites.google.com/view/queenelsabot/home' //Do not change.!
+global.sc = 'https://sites.google.com/view/red-dragon-bot/home' //Do not change.!
 global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ' //===
 global.packname = '☬RED༒DRAGON࿐' //YOU CAN CHANGE<<<
 global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯'
