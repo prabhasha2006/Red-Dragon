@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.ibb.co/Xp5WQXK/image.jpg" alt="nz" width="350"/>
+<img src="https://i.ibb.co/CwffZ61/20220605-104552.jpg" alt="nz" width="350"/>
 </p>
 
 ## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
