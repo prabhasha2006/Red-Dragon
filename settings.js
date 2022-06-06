@@ -1,7 +1,8 @@
-//════════════(00)═══════════════════════════════════════//
+//════════════(00)═════════════════//
 //
-//                              K.PRABHASHA
-//𝙰𝙳𝙾𝙿𝚃𝙴𝙳 𝙵𝚁𝙾𝙼  𝚂𝙲𝚁𝙸𝙿𝚃 𝙾𝙵 𝙲𝙷𝙴𝙴𝙼𝚂𝙱𝙾𝚃 𝚅2 𝙱𝚈 𝙳𝙶𝚇𝚎𝚘𝚗 
+//   Created By: K.PRABHASHA 
+//
+//   github.com/prabhasha2006/Red-Dragon/main/settings.js 
 //
 //════════════(00)════════════════//
 
@@ -18,7 +19,7 @@ global.APIKeys = {
 	'https://zenzapis.xyz': 'sanzychan01', //credit goes to sanzy yt, if api key expire, buy it and put it here?\\
 }
 
-// CUSTOMIZE SETTINGS \\ CHANGE THIS
+// CUSTOMIZE SETTINGS \\ CHANGE THIS =============================
 
 global.alivemsg = `Hi Friends. I am alive
 My name is RED DRAGON
@@ -43,10 +44,10 @@ global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
 
 
-global.ig = 'https://github.com/prabhasha2006' //Github Account!
-global.footer = '©_Kumuthu.' // DO NOT CHANGE!
+global.ig = 'https://github.com/prabhasha2006' //Github Account!!
+global.footer = '©_Kumuthu.' // DO NOT CHANGE!!!
 
-global.mess = { // Error Mesages
+global.mess = { // Error Mesages 
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
     botAdmin: 'Bot wants to be an Admin😥',
@@ -58,7 +59,7 @@ global.mess = { // Error Mesages
     error: 'Error!!! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
-// DO NOT CHANGE \\
+// DO NOT CHANGE \\ =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
     global.limitawal = {
     premium: "Infinity",
     free: 12,
