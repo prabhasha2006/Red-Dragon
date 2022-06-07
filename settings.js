@@ -21,32 +21,21 @@ global.APIKeys = {
 
 // CUSTOMIZE SETTINGS \\ CHANGE THIS =============================
 
-global.alivemsg = `🙂My name is RED DRAGON🔥
-My Creator is Kumuthu Prabhasha😎
-🤭🌹How are you?🔥🔥🔥🔥🔥🔥🔥🔥🔥` //Customize Alive Message Footer (type your message in `` )
-
-global.owner = ['380944814219'] //Owner number 1      (type your message in '' )
-global.premium = ['380944814219'] //Owner Number 2
-global.ownernomer = '380944814219' //Owner Number 3
-
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
-global.botname = ' ☬RED༒DRAGON࿐' //Bot Name
-
-global.button = '📱YouTube📍' //Customize A Button Name In Alive Message
-global.btnurl = '' //Change Your Button's URL
-
-global.region = 'India, South India, Kerala' //Country Region
-
-global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
-global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
-global.sessionName = 'session' //Session Name!
-global.sp = '⭔' //A Charactor In Menu!
-
-
-global.ig = 'https://github.com/prabhasha2006' //Github Account!!
-global.footer = '©_Kumuthu.' // DO NOT CHANGE!!!
-
+global.owner = ['380944814219'] //DO NOT CHANGE!
+global.premium = ['380944814219'] //DO NOT CHANGE!
+global.ownernomer = '380944814219' //DO NOT CHANGE!
+global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //DO NOT CHANGE!
+global.botname = ' ✮𝐐𝐮𝐞𝐞𝐧-𝐄𝐥𝐬𝐚✮' //YOU CAN CHANGE<<<
+global.footer = '©_Kumuthu.'
+global.ig = 'https://github.com/nexusNw'
+global.region = 'India, South India, Kerala'
+global.sc = 'https://sites.google.com/view/queenelsabot/home'
+global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ'
+global.packname = ' ✮✮✮𝐐𝐔𝐄𝐄𝐍---𝐄𝐋𝐒𝐀✮✮✮' //YOU CAN CHANGE<<<
+global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯'
+global.sessionName = 'session'
+global.prefa = ['','!','.','😂','❤','💠']
+global.sp = '⭔'
 global.mess = { // Error Mesages 
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
