@@ -21,9 +21,9 @@ global.APIKeys = {
 
 // CUSTOMIZE SETTINGS \\ CHANGE THIS =============================
 
-global.alivemsg = `Hi Friends. I am alive
-My name is RED DRAGON
-My Creator is Kumuthu Prabhasha` //Customize Alive Message (type your message in `` )
+global.alivemsg = `🙂My name is RED DRAGON🔥
+My Creator is Kumuthu Prabhasha😎
+🤭🌹How are you?🔥🔥🔥🔥🔥🔥🔥🔥🔥` //Customize Alive Message Footer (type your message in `` )
 
 global.owner = ['380944814219'] //Owner number 1      (type your message in '' )
 global.premium = ['380944814219'] //Owner Number 2
