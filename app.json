@@ -1,8 +1,8 @@
 {
-  "name": "QUEEN-ELSA",
+  "name": "RED DRAGON BOT",
   "description": "whatsapp md bot build with nodejs",
   "repository": "https://github.com/nexusNw/Gojo-Satoru",
-  "logo": "https://i.ibb.co/9hvZFth/gojo.jpg",
+  "logo": "https://i.ibb.co/CwffZ61/20220605-104552.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
