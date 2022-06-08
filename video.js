@@ -1,3 +1,98 @@
+/*   speed.py
+
+import csv
+import datetime
+import errno
+import math
+import os
+import platform
+import re
+import signal
+import socket
+import sys
+import threading
+import timeit
+import xml.parsers.expat
+
+try:
+    import gzip
+    GZIP_BASE = gzip.GzipFile
+except ImportError:
+    gzip = None
+    GZIP_BASE = object
+
+__version__ = '2.1.4b1'
+
+
+class FakeShutdownEvent(object):
+    """Class to fake a threading.Event.isSet so that users of this module
+    are not required to register their own threading.Event()
+    """
+
+    @staticmethod
+    def isSet():
+        "Dummy method to always return false"""
+        return False
+
+    is_set = isSet
+
+
+# Some global variables we use
+DEBUG = False
+_GLOBAL_DEFAULT_TIMEOUT = object()
+PY25PLUS = sys.version_info[:2] >= (2, 5)
+PY26PLUS = sys.version_info[:2] >= (2, 6)
+PY32PLUS = sys.version_info[:2] >= (3, 2)
+PY310PLUS = sys.version_info[:2] >= (3, 10)
+
+# Begin import game to handle Python 2 and Python 3
+try:
+    import json
+except ImportError:
+    try:
+        import simplejson as json
+    except ImportError:
+        json = None
+
+try:
+    import xml.etree.ElementTree as ET
+    try:
+        from xml.etree.ElementTree import _Element as ET_Element
+    except ImportError:
+        pass
+except ImportError:
+    from xml.dom import minidom as DOM
+    from xml.parsers.expat import ExpatError
+    ET = None
+
+try:
+    from urllib2 import (urlopen, Request, HTTPError, URLError,
+                         AbstractHTTPHandler, ProxyHandler,
+                         HTTPDefaultErrorHandler, HTTPRedirectHandler,
+                         HTTPErrorProcessor, OpenerDirector)
+except ImportError:
+    from urllib.request import (urlopen, Request, HTTPError, URLError,
+                                AbstractHTTPHandler, ProxyHandler,
+                                HTTPDefaultErrorHandler, HTTPRedirectHandler,
+                                HTTPErrorProcessor, OpenerDirector)
+
+try:
+    from httplib import HTTPConnection, BadStatusLine
+except ImportError:
+    from http.client import HTTPConnection, BadStatusLine
+
+try:
+    from httplib import HTTPSConnection
+except ImportError:
+    try:
+        from http.client import HTTPSConnection
+    except ImportError:
+        HTTPSConnection = None
+
+*/
+
+
+
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
