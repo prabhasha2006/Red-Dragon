@@ -1,8 +1,7 @@
-//════════════(00)═════════════════//
+//════════════(00)═══════════════════════════════════════//
 //
-//   Created By: K.PRABHASHA 
-//
-//   github.com/prabhasha2006/Red-Dragon/main/settings.js 
+//                              K.PRABHASHA
+//𝙰𝙳𝙾𝙿𝚃𝙴𝙳 𝙵𝚁𝙾𝙼  𝚂𝙲𝚁𝙸𝙿𝚃 𝙾𝙵 𝙲𝙷𝙴𝙴𝙼𝚂𝙱𝙾𝚃 𝚅2 𝙱𝚈 𝙳𝙶𝚇𝚎𝚘𝚗 
 //
 //════════════(00)════════════════//
 
@@ -19,24 +18,35 @@ global.APIKeys = {
 	'https://zenzapis.xyz': 'sanzychan01', //credit goes to sanzy yt, if api key expire, buy it and put it here?\\
 }
 
-// CUSTOMIZE SETTINGS \\ CHANGE THIS =============================
+//customize settings\\
 
-global.owner = ['380944814219'] //DO NOT CHANGE!
-global.premium = ['380944814219'] //DO NOT CHANGE!
-global.ownernomer = '380944814219' //DO NOT CHANGE!
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //DO NOT CHANGE!
-global.botname = ' ✮𝐐𝐮𝐞𝐞𝐧-𝐄𝐥𝐬𝐚✮' //YOU CAN CHANGE<<<
-global.footer = '©_Kumuthu.'
-global.ig = 'https://github.com/nexusNw'
-global.region = 'India, South India, Kerala'
-global.sc = 'https://sites.google.com/view/queenelsabot/home'
-global.myweb = 'https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ'
-global.packname = ' ✮✮✮𝐐𝐔𝐄𝐄𝐍---𝐄𝐋𝐒𝐀✮✮✮' //YOU CAN CHANGE<<<
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯'
-global.sessionName = 'session'
-global.prefa = ['','!','.','😂','❤','💠']
-global.sp = '⭔'
-global.mess = { // Error Mesages 
+global.alivemsg = `Hi Friends. I am alive
+My name is RED DRAGON
+My Creator is Kumuthu Prabhasha` //Costomize Alive Message (type your message in `` )
+
+global.owner = ['380944814219'] //Owner number 1
+global.premium = ['380944814219'] //Owner Number 2
+global.ownernomer = '380944814219' //Owner Number 3
+
+global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
+global.botname = ' ☬RED༒DRAGON࿐' //Bot Name
+
+global.btn = '📱YouTube📍' //Costomize A Button Name In Alive Message
+global.btnurl = '' //Change Your Button's URL
+
+global.region = 'India, South India, Kerala' //Country Region
+
+global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
+global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
+global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
+global.sessionName = 'session' //Session Name!
+global.sp = '⭔' //A Charactor In Menu!
+
+
+global.ig = 'https://github.com/prabhasha2006' //Github Account!
+global.footer = '©_Kumuthu.' // DO NOT CHANGE!
+
+global.mess = { // Error Mesages
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
     botAdmin: 'Bot wants to be an Admin😥',
@@ -48,7 +58,7 @@ global.mess = { // Error Mesages
     error: 'Error!!! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
-// DO NOT CHANGE \\ =/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/
+// DO NOT CHANGE \\
     global.limitawal = {
     premium: "Infinity",
     free: 12,
