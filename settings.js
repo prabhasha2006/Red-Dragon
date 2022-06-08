@@ -31,7 +31,7 @@ global.ownernomer = '380944814219' //Owner Number 3
 global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
 global.botname = ' ☬RED༒DRAGON࿐' //Bot Name
 
-global.btn = '📱YouTube📍' //Costomize A Button Name In Alive Message
+global.button = '📱YouTube📍' //Costomize A Button Name In Alive Message
 global.btnurl = '' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
