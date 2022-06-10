@@ -35,10 +35,6 @@ Version 3.2 (Customize alive message) 2022-06-07 latest
 > 🙂➾ [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
  
 > 🙂➾ [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
-
-> 🙂➾ [Upload Your 'session.json' To The Git Here](https://github.com/prabhasha2006/Red-Dragon/upload/main)
-
-> 🙂➾ [Edit 'setting.js' With Your Choice Here](https://github.com/prabhasha2006/Red-Dragon/edit/main/settings.js)
  
 > 🙂➾ [Then Deploy The Bot From Here](https://heroku.com/deploy)
 
