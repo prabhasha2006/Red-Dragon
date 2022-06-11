@@ -31,7 +31,7 @@ global.ownername = '😎𝑾.𝑶𝒏𝒊𝒕𝒉𝒂' //Owner Name
 global.botname = ' ༺𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐬⃠ツ𝐃𝐢𝐧𝐮⃟༻' //Bot Name
 
 global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
-// global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
+global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
