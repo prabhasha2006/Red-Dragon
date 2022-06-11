@@ -20,7 +20,7 @@ global.APIKeys = {
 
 //customize settings\\
 
-alivemsg = `My name is 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
+global.alivemsg = `My name is 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
 My Creator is 𝐎𝐧𝐢𝐭𝐡𝐚 𝐖𝐚𝐭𝐡𝐦𝐢𝐫𝐚😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['94701733767'] //Owner number 1
