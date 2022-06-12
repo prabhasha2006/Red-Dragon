@@ -1371,7 +1371,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nRemoved'
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
@@ -1379,7 +1379,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nAdded'
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
@@ -1387,7 +1387,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
@@ -1401,13 +1401,13 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 	break
         case 'block': {
 		if (!isCreator) return replay(`${mess.owner}`)
-		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nBlocked!'
 		await GojoMdNx.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
         case 'unblock': {
 		if (!isCreator) return replay(`${mess.owner}`)
-		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nUnblocked!'
 		await GojoMdNx.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
@@ -3249,6 +3249,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 GojoMdNx.sendContact(m.chat, global.owner, m)
             }
             break
+            case 'owner': case 'creator': case '❮❮😎Owner👤❯❯':{
+				if (!text) return replay(`My Owner Is *${global.ownername}*\n*_wa.me/${global.owner}_*`)
+            }
+            break
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -3586,6 +3590,39 @@ Hello, ${pushname}
 ┃╠✹🔥 ${prefix}upvote
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
+┃╠✹🔥══☬❯ TEXT PRO ❮ 🐲👇
+┃║	        
+┃╠✹🔥 ${prefix}3dchristmas [txt]
+┃╠✹🔥 ${prefix}3ddeepsea [txt]
+┃╠✹🔥 ${prefix}americanflag [txt]
+┃╠✹🔥 ${prefix}3dscifi [txt]
+┃╠✹🔥 ${prefix}3drainbow [txt]
+┃╠✹🔥 ${prefix}3dwaterpipe [txt]
+┃╠✹🔥 ${prefix}halloweenskeleton [txt]
+┃╠✹🔥 ${prefix}sketch [txt]
+┃╠✹🔥 ${prefix}bluecircuit [txt]
+┃╠✹🔥 ${prefix}space [txt]
+┃╠✹🔥 ${prefix}metallic [txt]
+┃╠✹🔥 ${prefix}fiction [txt]
+┃╠✹🔥 ${prefix}greenhorror [txt]
+┃╠✹🔥 ${prefix}transformer [txt]
+┃╠✹🔥 ${prefix}berry [txt]
+┃╠✹🔥 ${prefix}thunder [txt]
+┃╠✹🔥 ${prefix}magma [txt]
+┃╠✹🔥 ${prefix}3dcrackedstone [txt]
+┃╠✹🔥 ${prefix}3dneonlight [txt]
+┃╠✹🔥 ${prefix}impressiveglitch [txt]
+┃╠✹🔥 ${prefix}naturalleaves [txt]
+┃╠✹🔥 ${prefix}fireworksparkle [txt]
+┃╠✹🔥 ${prefix}matrix [txt]
+┃╠✹🔥 ${prefix}dropwater [txt]
+┃╠✹🔥 ${prefix}harrypotter [txt]
+┃╠✹🔥 ${prefix}foggywindow [txt]
+┃╠✹🔥 ${prefix}neondevils [txt]
+┃╠✹🔥 ${prefix}christmasholiday [txt]
+┃╠✹🔥 ${prefix}3dgradient [txt]
+┃╠✹🔥 ${prefix}blackpink [txt]
+┃╠✹🔥 ${prefix}gluetext [txt]
 ┃║
 ┃╠✹🔥══☯︎❯ RPG ❮ 🐲👇
 ┃║
