@@ -3333,7 +3333,7 @@ ${global.alivemsg}
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: ' ',
+                                    displayText: '❮❮😎Owner👤❯❯',
                                     id: `${prefix}owner`
                                 }
                             }]
