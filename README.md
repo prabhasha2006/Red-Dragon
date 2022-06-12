@@ -32,7 +32,7 @@ Version 3.2 (Customize alive message) 2022-06-07 latest
 👇To proccess👇
 </p>
 
-> 🙂➾ [Scan QR In Your Whatsapp From Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
+> 🙂➾ [Scan QR In Your Whatsapp From Here](https://replit.com/@KumuthuPrabhash/Red-Dragon-Bot-Qr-Code?v=1)
  
 > 🙂➾ [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
  
