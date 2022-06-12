@@ -3247,8 +3247,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'owner': case 'creator': case '❮❮😎Owner👤❯❯': {
                 //GojoMdNx.sendContact(m.chat, global.owner, m)
-                reply(`My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*`)
-                GojoMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
+                reply(`🌹My Owner Is *${global.ownername}*\n\n*_https://wa.me/${global.ownernomer}_*\n\n🥇${global.botname}`)
+                //GojoMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
             }
             break
             
