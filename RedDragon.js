@@ -3250,7 +3250,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'owner': case 'creator': case '❮❮😎Owner👤❯❯':{
-				if (!text) return replay(`My Owner Is *${global.ownername}*\n*_wa.me/${global.owner}_*`)
+				if (!text) return replay(`My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*`)
             }
             break
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
