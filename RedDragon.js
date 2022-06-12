@@ -3283,6 +3283,11 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
+		     case anjh :{
+                result = fs.readFileSync(`./DragonMedia/image/${anjh}.jpg`)
+				GojoMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
+		     }
+                    break
                      case 'alive': case 'bot':{
                            	timestampe = speed();
 latensie = speed() - timestampe
@@ -3296,7 +3301,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `             ❯❯===(🤭❤️)===❮❮
 ╔●●🔥☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
 ▌ ╠ Hi, ${pushname} ╣
-╚●●●❖╠ I am Alive👋 ╣                          
+╚●●●❖╠ I am Alive👋 ╣                           
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
 ▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 : ${global.botname}
 ▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 : ${global.ownername}
