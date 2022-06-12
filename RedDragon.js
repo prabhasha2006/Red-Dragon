@@ -3245,15 +3245,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': {
-                GojoMdNx.sendContact(m.chat, global.owner, m)
-            }
-            break
-            case 'owner': case 'creator': case '❮❮😎Owner👤❯❯':{
+            case 'owner': case 'creator': case '❮❮😎Owner👤❯❯': {
+                //GojoMdNx.sendContact(m.chat, global.owner, m)
+                reply(`My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*`)
                 GojoMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
-				//if (!text) return replay(`My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*`)
             }
             break
+            
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -3335,7 +3333,7 @@ ${global.alivemsg}
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '❮❮😎Owner👤❯❯',
+                                    displayText: ' ',
                                     id: `${prefix}owner`
                                 }
                             }]
