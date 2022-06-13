@@ -2034,7 +2034,7 @@ break
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `🔰🌹 No : ${no++}\n🔰🌹 Type : ${i.type}\n🔰🌹 Video ID : ${i.videoId}\n🔰🌹 Title : ${i.title}\n🔰🌹 Views : ${i.views}\n🔰🌹 Duration : ${i.timestamp}\n🔰🌹 Uploaded On : ${i.ago}\n🔰🌹 Author : ${i.author.name}\n🔰🌹 Url : ${i.url}\n\n─────────────────\n\nPOWERD BY: ☬RED༒DRAGON࿐`
+                    teks += `🔰🌹 No : ${no++}\n🔰🌹 Type : ${i.type}\n🔰🌹 Video ID : ${i.videoId}\n🔰🌹 Title : ${i.title}\n🔰🌹 Views : ${i.views}\n🔰🌹 Duration : ${i.timestamp}\n🔰🌹 Uploaded On : ${i.ago}\n🔰🌹 Author : ${i.author.name}\n🔰🌹 Url : ${i.url}\n\n─────────────────\n\nPOWERD BY:  ${botname}`
                 }
                 RedDragonMdNx.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -2111,7 +2111,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\nPOWERD BY:  ${botname}`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2121,7 +2121,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\nPOWERD BY: ☬RED༒DRAGON࿐` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\nPOWERD BY:  ${botname}` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
@@ -2130,7 +2130,7 @@ break
                 let quality = args[1] ? args[1] : '128kbps'
                 let media = await yta(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🌝❤️-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '128kbps'}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🌝❤️-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '128kbps'}\n\nPOWERD BY:  ${botname}`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2144,7 +2144,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(urls[text - 1], quality)
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\nPOWERD BY: ☬RED༒DRAGON࿐` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${urls[text - 1]}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\nPOWERD BY:  ${botname}` }, { quoted: m })
             }
             break
             case 'pinterest': {
@@ -2381,7 +2381,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
@@ -2389,7 +2389,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'suamiistri': {
@@ -2397,7 +2397,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Husband's Name :* ${anu.message.suami.nama}\n🔰🌹 *Husband Born :* ${anu.message.suami.tgl_lahir}\n🔰🌹 *Wife's Name :* ${anu.message.istri.nama}\n🔰🌹 *Born Wife :* ${anu.message.istri.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Husband's Name :* ${anu.message.suami.nama}\n🔰🌹 *Husband Born :* ${anu.message.suami.tgl_lahir}\n🔰🌹 *Wife's Name :* ${anu.message.istri.nama}\n🔰🌹 *Born Wife :* ${anu.message.istri.tgl_lahir}\n🔰🌹 *Results :* ${anu.message.result}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
@@ -2405,7 +2405,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Your Name :* ${anu.message.nama_anda.nama}\n🔰🌹 *Your Birth :* ${anu.message.nama_anda.tgl_lahir}\n🔰🌹 *Couple Name :* ${anu.message.nama_pasangan.nama}\n🔰🌹 *Born Couple :* ${anu.message.nama_pasangan.tgl_lahir}\n🔰🌹 *Positive Side :* ${anu.message.sisi_positif}\n🔰🌹 *Negative Side :* ${anu.message.sisi_negatif}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'artinama': {
@@ -2420,7 +2420,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Born :* ${anu.message.tgl_lahir}\n🔰🌹 *Life Path :* ${anu.message.life_path}\n🔰🌹 *Destiny :* ${anu.message.destiny}\n🔰🌹 *Destiny Desire :* ${anu.message.destiny_desire}\n🔰🌹 *Personality :* ${anu.message.personality}\n🔰🌹 *Percentage :* ${anu.message.persentase_kecocokan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Born :* ${anu.message.tgl_lahir}\n🔰🌹 *Life Path :* ${anu.message.life_path}\n🔰🌹 *Destiny :* ${anu.message.destiny}\n🔰🌹 *Destiny Desire :* ${anu.message.destiny_desire}\n🔰🌹 *Personality :* ${anu.message.personality}\n🔰🌹 *Percentage :* ${anu.message.persentase_kecocokan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
@@ -2492,7 +2492,7 @@ case 'webtonsearch': case 'webtoon':
                 let [nama, gender, tahun] = text.split`,`
                 let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Born :* ${anu.message.tahun_lahir}\n🔰🌹 *Gender :* ${anu.message.jenis_kelamin}\n🔰🌹 *Kua Number :* ${anu.message.angka_kua}\n🔰🌹 *Group :* ${anu.message.kelompok}\n🔰🌹 *Character :* ${anu.message.karakter}\n🔰🌹 *Good Sector :* ${anu.message.sektor_baik}\n🔰🌹 *Bad Sector :* ${anu.message.sektor_buruk}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Name :* ${anu.message.nama}\n🔰🌹 *Born :* ${anu.message.tahun_lahir}\n🔰🌹 *Gender :* ${anu.message.jenis_kelamin}\n🔰🌹 *Kua Number :* ${anu.message.angka_kua}\n🔰🌹 *Group :* ${anu.message.kelompok}\n🔰🌹 *Character :* ${anu.message.karakter}\n🔰🌹 *Good Sector :* ${anu.message.sektor_baik}\n🔰🌹 *Bad Sector :* ${anu.message.sektor_buruk}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'haribaik': {
@@ -2548,7 +2548,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.weton_jawa(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Date :* ${anu.message.tanggal}\n🔰🌹 *Number Of Neptune :* ${anu.message.jumlah_neptu}\n🔰🌹 *Day Character :* ${anu.message.watak_hari}\n🔰🌹 *Dragon Day :* ${anu.message.naga_hari}\n🔰🌹 *Good Hour :* ${anu.message.jam_baik}\n🔰🌹 *Birth Character :* ${anu.message.watak_kelahiran}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Date :* ${anu.message.tanggal}\n🔰🌹 *Number Of Neptune :* ${anu.message.jumlah_neptu}\n🔰🌹 *Day Character :* ${anu.message.watak_hari}\n🔰🌹 *Dragon Day :* ${anu.message.naga_hari}\n🔰🌹 *Good Hour :* ${anu.message.jam_baik}\n🔰🌹 *Birth Character :* ${anu.message.watak_kelahiran}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'sifat': case 'karakter': {
@@ -2615,7 +2615,7 @@ case 'webtonsearch': case 'webtoon':
                 
                 let anu = await primbon.zodiak(zodiac)
                 if (anu.status == false) return reply(anu.message)
-                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Zodiac :* ${anu.message.zodiak}\n🔰🌹 *Number :* ${anu.message.nomor_keberuntungan}\n🔰🌹 *Aroma :* ${anu.message.aroma_keberuntungan}\n🔰🌹 *Planet :* ${anu.message.planet_yang_mengitari}\n🔰🌹 *Flower :* ${anu.message.bunga_keberuntungan}\n🔰🌹 *Color :* ${anu.message.warna_keberuntungan}\n🔰🌹 *Stone :* ${anu.message.batu_keberuntungan}\n🔰🌹 *Element :* ${anu.message.elemen_keberuntungan}\n🔰🌹 *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                RedDragonMdNx.sendText(m.chat, `🔰🌹 *Zodiac :* ${anu.message.zodiak}\n🔰🌹 *Number :* ${anu.message.nomor_keberuntungan}\n🔰🌹 *Aroma :* ${anu.message.aroma_keberuntungan}\n🔰🌹 *Planet :* ${anu.message.planet_yang_mengitari}\n🔰🌹 *Flower :* ${anu.message.bunga_keberuntungan}\n🔰🌹 *Color :* ${anu.message.warna_keberuntungan}\n🔰🌹 *Stone :* ${anu.message.batu_keberuntungan}\n🔰🌹 *Element :* ${anu.message.elemen_keberuntungan}\n🔰🌹 *Zodiac Couple :* ${anu.message.pasangan_zodiak}\n🔰🌹 *Notes :* ${anu.message.catatan}\n\nPOWERD BY:  ${botname}`, m)
             }
             break
             case 'shio': {
@@ -2664,13 +2664,13 @@ case 'webtonsearch': case 'webtoon':
                     if (!id) return reply(`No Query username, Example : ${prefix + command} ig josephxeon13`)
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/ig', { username: id }, 'apikey'))
                     if (anu.status == false) return reply(anu.result.message)
-                    RedDragonMdNx.sendMedia(m.chat, anu.caption.profile_hd, '', `🔰🌹 Full Name : ${anu.caption.full_name}\n🔰🌹 User Name : ${anu.caption.user_name}\n🔰🌹 ID ${anu.caption.user_id}\n🔰🌹 Following : ${anu.caption.followers}\n🔰🌹 Followers : ${anu.caption.following}\n🔰🌹 Bussines : ${anu.caption.bussines}\n🔰🌹 Professional : ${anu.caption.profesional}\n🔰🌹 Verified : ${anu.caption.verified}\n🔰🌹 Private : ${anu.caption.private}\n🔰🌹 Bio : ${anu.caption.biography}\n🔰🌹 Bio Url : ${anu.caption.bio_url}\n\nPOWERD BY: ☬RED༒DRAGON࿐`, m)
+                    RedDragonMdNx.sendMedia(m.chat, anu.caption.profile_hd, '', `🔰🌹 Full Name : ${anu.caption.full_name}\n🔰🌹 User Name : ${anu.caption.user_name}\n🔰🌹 ID ${anu.caption.user_id}\n🔰🌹 Following : ${anu.caption.followers}\n🔰🌹 Followers : ${anu.caption.following}\n🔰🌹 Bussines : ${anu.caption.bussines}\n🔰🌹 Professional : ${anu.caption.profesional}\n🔰🌹 Verified : ${anu.caption.verified}\n🔰🌹 Private : ${anu.caption.private}\n🔰🌹 Bio : ${anu.caption.biography}\n🔰🌹 Bio Url : ${anu.caption.bio_url}\n\nPOWERD BY:  ${botname}`, m)
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'npm') {
                     if (!id) return reply(`No Query username, Example : ${prefix + command} npm scrape-primbon`)
                     let { result: anu } = await fetchJson(api('zenz', '/api/stalker/npm', { query: id }, 'apikey'))
                     if (anu.status == false) return reply(anu.result.message)
-                    reply(`🔰🌹 Name : ${anu.name}\n🔰🌹 Version : ${Object.keys(anu.versions)}\n🔰🌹 Created : ${tanggal(anu.time.created)}\n🔰🌹 Modified : ${tanggal(anu.time.modified)}\n🔰🌹 Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n🔰🌹 Description : ${anu.description}\n🔰🌹 Homepage : ${anu.homepage}\n🔰🌹 Keywords : ${anu.keywords}\n🔰🌹 Author : ${anu.author.name}\n🔰🌹 License : ${anu.license}\n🔰🌹 Readme : ${anu.readme}\n\nPOWERD BY: ☬RED༒DRAGON࿐`)
+                    reply(`🔰🌹 Name : ${anu.name}\n🔰🌹 Version : ${Object.keys(anu.versions)}\n🔰🌹 Created : ${tanggal(anu.time.created)}\n🔰🌹 Modified : ${tanggal(anu.time.modified)}\n🔰🌹 Maintainers :\n ${anu.maintainers.map(v => `- ${v.name} : ${v.email}`).join('\n')}\n\n🔰🌹 Description : ${anu.description}\n🔰🌹 Homepage : ${anu.homepage}\n🔰🌹 Keywords : ${anu.keywords}\n🔰🌹 Author : ${anu.author.name}\n🔰🌹 License : ${anu.license}\n🔰🌹 Readme : ${anu.readme}\n\nPOWERD BY:  ${botname}`)
 		    db.data.users[m.sender].limit -= 1
                 } else {
                     reply(`Example : ${prefix +command} type id\n\nList Type :\n1. ff (Free Fire)\n2. ml (Mobile Legends)\n3. aov (Arena Of Valor)\n4. cod (Call Of Duty)\n5. pb (point Blank)\n6. ig (Instagram)\n7. npm (https://npmjs.com)`)
@@ -3251,6 +3251,44 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 //RedDragonMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
             }
             break
+            case 'info': case 'about':{
+                reply(`🤭🌹Hi,\nI am ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\nCreated by: K.Prabhasha\n\nRed Dragon Team ==(•)==`)
+            }
+            break
+        //chat bot\\
+            case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': {
+                RedDragonMdNx.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
+            }
+            break
+            case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'හුත්ති': case 'වේසි': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka':{
+                RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
+            }
+            break
+            case 'ado': case 'අඩෝ':{
+                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
+            }
+            break
+            case 'moko': case 'මොකෝ':{
+                RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
+            }
+            break
+            case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
+                RedDragonMdNx.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන😒💔💔*` }, { quoted: m })
+            }
+            break
+            case 'හායි': case 'hi':{
+                RedDragonMdNx.sendMessage(from, { text: `*🥴හූයි😁*` }, { quoted: m })
+            }
+            break
+            case 'kolukaraya': case 'කොලුකාරයා':{
+                RedDragonMdNx.sendMessage(from, { text: `*ඇයි මේ අපහාස😒*` }, { quoted: m })
+            }
+            break
+            case 'haminenawane': case 'හැමිනෙනවනෙ':{
+                RedDragonMdNx.sendMessage(from, { text: `*අනේ පලහ්😂*` }, { quoted: m })
+            }
+            break
+            /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
 					axios.get(`https://api.waifu.pics/sfw/${command}`)
@@ -3295,21 +3333,20 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')},
-                            hydratedFooterText: `             ❯❯===(🤭❤️)===❮❮
-╔●●🔥☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
+                            hydratedFooterText: `╔●●🔥${botname}
 ▌ ╠ Hi, ${pushname} ╣
 ╚●●●❖╠ I am Alive👋 ╣
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
-▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 : ${global.botname}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 : ${global.ownername}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 : ${global.owner}
+▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}
+▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}
 ▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds
 ▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
 ${global.alivemsg}
  ╗
- ╚✺➾Creator :║😁𝗞.𝗣𝗿𝗮𝗯𝗵𝗮𝘀𝗵𝗮🌚║
-   ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+ ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
+ ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Red Dragon Website🔖',
@@ -3353,8 +3390,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')}, 
-                            hydratedFooterText: `
-╔●●🔥☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
+                            hydratedFooterText: `╔●●🔥${botname}
 ▌ ╠ Hi, ${pushname} ╣
 ╚●●●❖╠ I am Alive👋 ╣
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
@@ -3366,8 +3402,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
 ${global.alivemsg}
  ╗
- ╚✺➾Creator :║😁𝗞.𝗣𝗿𝗮𝗯𝗵𝗮𝘀𝗵𝗮🌚║
-   ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+ ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
+ ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Red Dragon Website🔖',
@@ -3544,6 +3580,7 @@ Hello, ${pushname}
 ┃╔══☯︎❯ MAIN ❮ 🐲👇
 ┃║
 ┃╠✹🔥 ${prefix}alive
+┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
 ┃╠✹🔥 ${prefix}speedtest
 ┃╠✹🔥 ${prefix}ping
@@ -3860,6 +3897,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔═☬❯ MAIN ❮ 🐲👇
 ┃║
 ┃╠✹🔥 ${prefix}alive
+┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
 ┃╠✹🔥 ${prefix}speedtest
 ┃╠✹🔥 ${prefix}ping
