@@ -3320,6 +3320,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*බලමුකෝ😂👍*` }, { quoted: m })
             }
             break
+            case 'pala': case 'palayan': case 'පල': case 'පලහ්': case 'පලයන්': case 'පලකො':{
+                RedDragonMdNx.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ😒💔*` }, { quoted: m })
+            }
+            break
+            case 'aththada': case 'ඇත්තද': case 'සිරා ද': case 'ඇත්තෙයි': case 'අම්මපා': case 'ඇත්ත':{
+                RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෑ😒*` }, { quoted: m })
+            }
+            break
             /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
