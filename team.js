@@ -3308,7 +3308,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
             break
-            case 'ko': case 'koo': case 'කෝ': case 'කො':{
+            case 'ko': case 'koo': case 'කෝ': case 'කො':{
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
             break
