@@ -2111,7 +2111,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\nPOWERD BY:  ${botname}`, m)
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\nPOWERD BY:  ${botname}`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
