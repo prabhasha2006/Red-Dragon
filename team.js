@@ -3336,6 +3336,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය😌 හීනෙන් හොල්මන් පෙනෙන, මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන, පෙරේතයන් ඇද යටට එන, කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන, භයානක රාත්‍රියක් වේවා☠️👻👻*` }, { quoted: m })
             }
             break
+            case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
+                RedDragonMdNx.sendMessage(from, { text: `😘අයි ලව් යූ💗උම්මාහ්🥰🥰🤓` }, { quoted: m })
+            }
+            break
+            case 'බොටා වැලක් බලමුද?':{
+                RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\nhttps://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358\nhttps://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3\nhttps://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c\nhttps://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1` }, { quoted: m })
+            }
+            break
             /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
