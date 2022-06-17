@@ -4222,7 +4222,7 @@ Hello, ${pushname}
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')},
+                            jpegThumbnail: fs.getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')},
                             
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
