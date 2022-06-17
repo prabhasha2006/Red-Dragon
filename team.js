@@ -3387,7 +3387,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     case 'alive': case 'bot':
                         timestampe = speed();
                         latensie = speed() - timestampe
-var unicorn = await getBuffer(picak+'RED DRAGON')
+var unicorn = await getBuffer('./DragonMedia/image/red-_-dragon-kumuthu.jpg')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}
 ▌ ╠ Hi, ${pushname} ╣
 ╚●●●❖╠ I am Alive👋 ╣
