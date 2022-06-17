@@ -3387,7 +3387,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     case 'alive': case 'bot':
                         timestampe = speed();
                         latensie = speed() - timestampe
-var unicorn = await getBuffer('https://i.ibb.co/CwffZ61/20220605-104552.jpg')
+var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}
 ▌ ╠ Hi, ${pushname} ╣
 ╚●●●❖╠ I am Alive👋 ╣
@@ -3401,76 +3401,40 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}
 ${global.alivemsg}
  ╗
  ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
- ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+ ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
+    urlButton: {
+        displayText: 'Red Dragon Website🔖',
+            url: 'https://sites.google.com/view/red-dragon-bot/home'
+    }
+    }, {
+    urlButton: {
+        displayText: `${button}`,
+        url: `${btnurl}`
+    }                            	
+    }, {
+    quickReplyButton: {
+        displayText: '❮❮😎Owner👤❯❯',
+        id: `${prefix}owner`
+    }
+    },{
+        quickReplyButton: {
+            displayText: '❮❮🔮All Menu🔮❯❯',
+            id: `${prefix}allmenu`
+    }
+    }, {
+    quickReplyButton: {
+        displayText: '❮❮💎List Menu💎❯❯',
+        id: `${prefix}command`
+    }
+}] )
 break
 
-/*                    case 'alive': case 'bot':{
-                        timestampe = speed();
-                        latensie = speed() - timestampe
-                        let buttons = [
-                            {
-                                urlButton: {
-                                    displayText: 'Red Dragon Website🔖',
-                                        url: 'https://sites.google.com/view/red-dragon-bot/home'
-                                }                               
-                                }, {
-                                urlButton: {
-                                    displayText: `${button}`,
-                                    url: `${btnurl}`
-                                }                            	
-                                },{
-                                quickReplyButton: {
-                                    displayText: '❮❮😎Owner👤❯❯',
-                                    id: `${prefix}owner`
-                                }
-                                },{
-                                    quickReplyButton: {
-                                        displayText: '❮❮🔮All Menu🔮❯❯',
-                                        id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '❮❮💎List Menu💎❯❯',
-                                    id: `${prefix}command`
-                                }
-                                
-                            }]
-                    let buttonMessage = {
-                        image: { url: 'https://i.ibb.co/CwffZ61/20220605-104552.jpg' },
-                        caption: `╔●●🔥${botname}
-▌ ╠ Hi, ${pushname} ╣
-╚●●●❖╠ I am Alive👋 ╣
-▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
-▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}
-▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds
-▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
-▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
-${global.alivemsg}
- ╗
- ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
- ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-                        footer: RedDragonMdNx.user.name,
-                        buttons: buttons,
-                        headerType: 4
-                    }
-                    
-                    RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-                }
-                break
 
-                    case 'alive': case 'bot':{
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')},
-                            hydratedFooterText: `╔●●🔥${botname}
+case 'menu': case 'list':
+    timestampe = speed();
+    latensie = speed() - timestampe
+var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
+await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}
 ▌ ╠ Hi, ${pushname} ╣
 ╚●●●❖╠ I am Alive👋 ╣
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
@@ -3481,98 +3445,35 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
 ▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
 ${global.alivemsg}
- ╗
- ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
- ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'Red Dragon Website🔖',
-                                        url: 'https://sites.google.com/view/red-dragon-bot/home'
-                                }                               
-                                }, {
-                                urlButton: {
-                                    displayText: `${button}`,
-                                    url: `${btnurl}`
-                                }                            	
-                                },{
-                                quickReplyButton: {
-                                    displayText: '❮❮😎Owner👤❯❯',
-                                    id: `${prefix}owner`
-                                }
-                                },{
-                                    quickReplyButton: {
-                                        displayText: '❮❮🔮All Menu🔮❯❯',
-                                        id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '❮❮💎List Menu💎❯❯',
-                                    id: `${prefix}command`
-                                }
-                                
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
-break  */
-            case 'list': case 'menu': {
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')}, 
-                            hydratedFooterText: `╔●●🔥${botname}
-▌ ╠ Hi, ${pushname} ╣
-╚●●●❖╠ I am Alive👋 ╣
-▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
-▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 : ${global.botname}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 : ${global.ownername}
-▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 : ${global.owner}
-▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds
-▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}
-▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:
-${global.alivemsg}
- ╗
- ╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
- ❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: 'Red Dragon Website🔖',
-                                        url: 'https://sites.google.com/view/red-dragon-bot/home'
-                                }
-                                }, {
-                            	urlButton: {
-                                    displayText: `${button}`,
-                                    url: `${btnurl}`
-                                }                            	
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '❮❮😎Owner👤❯❯',
-                                    id: `${prefix}owner`
-                                }
-                                },{
-                                    quickReplyButton: {
-                                        displayText: '❮❮🔮All Menu🔮❯❯',
-                                        id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '❮❮💎List Menu💎❯❯',
-                                    id: `${prefix}command`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
-                break
+╗
+╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐
+❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
+urlButton: {
+displayText: 'Red Dragon Website🔖',
+url: 'https://sites.google.com/view/red-dragon-bot/home'
+}
+}, {
+urlButton: {
+displayText: `${button}`,
+url: `${btnurl}`
+}                            	
+}, {
+quickReplyButton: {
+displayText: '❮❮😎Owner👤❯❯',
+id: `${prefix}owner`
+}
+},{
+quickReplyButton: {
+displayText: '❮❮🔮All Menu🔮❯❯',
+id: `${prefix}allmenu`
+}
+}, {
+quickReplyButton: {
+displayText: '❮❮💎List Menu💎❯❯',
+id: `${prefix}command`
+}
+}] )
+break
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
@@ -3706,8 +3607,10 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`GitHub : https://github.com/prabhasha2006/Red-Dragon\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
             }
             break
-case 'allmenu': {
-  	anu = `
+
+            case 'allmenu':
+var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
+await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 🙂-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n
 
 Hello, ${pushname}
@@ -3763,6 +3666,7 @@ Hello, ${pushname}
 ┃╠✹🔥 ${prefix}upvote
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
+┃║
 ┃╠✹🔥══☬❯ TEXT PRO ❮ 🐲👇
 ┃║	        
 ┃╠✹🔥 ${prefix}3dchristmas [txt]
@@ -4002,30 +3906,17 @@ Hello, ${pushname}
 ┃╠✹🔥 ${prefix}shio (indo)
 ┃║
 ┃╚═══════✍︎𝕂.ℙ𝕣𝕒𝕓𝕙𝕒𝕤𝕙𝕒
-┗━❯ *Created By ${ownername}*  ━😎`
-    const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg')},
-                            hydratedFooterText: `${pushname}`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: `${button}`,
-                                    url: `${btnurl}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '❮❮😎Owner👤❯❯',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-            }
+┗━❯ *Created By ${ownername}*  ━😎`,unicorn, [{
+    urlButton: {
+        displayText: `${button}`,
+        url: `${btnurl}`
+    }
+}, {
+    quickReplyButton: {
+        displayText: '❮❮😎Owner👤❯❯',
+        id: `${prefix}owner`
+    }
+}] )
 break
 case 'mainmenu':
 var unicorn = await getBuffer(picak+'Main Menu')
