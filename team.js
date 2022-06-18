@@ -3407,7 +3407,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             },{
                             quickReplyButton: {
                             displayText: '❮❮🔮All Menu🔮❯❯',
-                            id: `${prefix}allmenu`
+                            id: `${prefix}menuall`
                             }
                             }, {
                             quickReplyButton: {
@@ -3555,7 +3555,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
                 
             
-case 'allmenu': {
+case 'allmenu': case 'menuall': {
                
                 let buttons = [
                     {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮😎Owner👤❯❯'}, type: 1}]
