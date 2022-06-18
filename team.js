@@ -3385,7 +3385,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                     break
 
                     
-                    case 'alive': case 'bot': case 'menu': case 'list':
+                    case 'alive': case 'bot': case 'menu': case 'list': case '.alive': case '.bot': case '.menu': case '.list':
     timestampe = speed();
     latensie = speed() - timestampe
 var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
