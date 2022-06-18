@@ -101,7 +101,8 @@ const nexusnw = require('xfarr-api')
    const isInventoryLimit = cekDuluJoinAdaApaKagaLimitnyaDiJson(m.sender)
    const isInventoryMonay = cekDuluJoinAdaApaKagaMonaynyaDiJson(m.sender)
    const ikan = ['🐟','🐠','🐡']   
-
+//\\
+global.namedd = '╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐'
 //rpg database\\
  let _limit = JSON.parse(fs.readFileSync('./storage/user/limit.json'));
  let _buruan = JSON.parse(fs.readFileSync('./storage/user/hasil_buruan.json'));
@@ -3388,7 +3389,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
-                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n╚✺➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
+                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
                             urlButton: {
                             displayText: 'Red Dragon Website🔖',
                             url: 'https://sites.google.com/view/red-dragon-bot/home'
