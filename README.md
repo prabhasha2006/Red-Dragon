@@ -4,7 +4,7 @@
 
 ## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐   Version 4.6 
   
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐+𝗕𝗢𝗧.;ᴘᴏᴡᴇʀᴅ+ʙʏ+ʀᴇᴅ+ᴅʀᴀɢᴏɴ+ᴛᴇᴀᴍ.;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
 Version 1.0 ('Queen Elsa bot')
 
@@ -116,6 +116,11 @@ Version 4.6 (Deploy error fixed) 2022-06-20 latest
 * [`Alien-Alfa`](https://github.com/Alien-Alfa)
 * [`DGXeon`](https://github.com/DGXeon)
 * [`AflahXrd`](https://github.com/nexusNw)
+	
+	
+<div align="center">
+	
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@KumuthuPrabhash/Red-Dragon-Bot-Qr-Code?v=1)
 
-
-License: [MIT](https://github.com/prabhasha2006/LICENSE)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+</div>
