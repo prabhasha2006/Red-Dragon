@@ -3385,7 +3385,7 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
-                    case 'bot': case 'alive': case 'menu': case 'list':
+                   /* case 'bot': case 'alive': case 'menu': case 'list':
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
@@ -3415,9 +3415,47 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             id: `${prefix}command`
                             }
                             }] )
-                            break
-                    
-                
+                            break*/
+
+                            case 'bot': case 'alive': case 'menu': case 'list':{
+                        timestampe = speed();
+                        latensie = speed() - timestampe
+                            let buttons = [{
+                                urlButton: {
+                                displayText: 'Red Dragon Website🔖',
+                                url: 'https://sites.google.com/view/red-dragon-bot/home'
+                                }
+                                }, {
+                                urlButton: {
+                                displayText: `${button}`,
+                                url: `${btnurl}`
+                                }                            	
+                                }, {
+                                quickReplyButton: {
+                                displayText: '❮❮😎Owner👤❯❯',
+                                id: `${prefix}owner`
+                                }
+                                },{
+                                quickReplyButton: {
+                                displayText: '❮❮🔮All Menu🔮❯❯',
+                                id: `${prefix}menuall`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                displayText: '❮❮💎List Menu💎❯❯',
+                                id: `${prefix}command`
+                                }
+                                }]
+                            let buttonMessage = {
+                                image: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg'),
+                                caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+                                footer: RedDragonMdNx.user.name,
+                                buttons: buttons,
+                                headerType: 4
+                            }
+                            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                        }
+                        break 
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
