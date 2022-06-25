@@ -3385,7 +3385,7 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
-                   /* case 'bot': case 'alive': case 'menu': case 'list':
+                    case 'bot': case 'alive': case 'menu': case 'list':
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
@@ -3415,9 +3415,9 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             id: `${prefix}command`
                             }
                             }] )
-                            break*/
+                            break
 
-                            case 'bot': case 'alive': case 'menu': case 'list':{
+                            /*case 'bot': case 'alive': case 'menu': case 'list':{
                         timestampe = speed();
                         latensie = speed() - timestampe
                             let buttons = [{
@@ -3455,7 +3455,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }
                             RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                         }
-                        break 
+                        break */
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
