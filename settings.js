@@ -47,7 +47,7 @@ global.footer = '©_Kumuthu.' // DO NOT CHANGE!
 
 global.mess = { // Error Mesages
     success: 'Done ✅',
-    admin: 'Only Admins can use it!😉',
+    admin: 'Only Admins can use it!😉🤟',
     botAdmin: 'Bot wants to be an Admin😥',
     owner: 'Only Owner can use this!😉',
     group: 'Feature Used Only For Groups!',
