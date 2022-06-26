@@ -3254,7 +3254,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'info': case 'about':{
-                reply(`🤭🌹Hi,\nI am ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\nCreated by: K.Prabhasha\n\nRed Dragon Team ==(•)==`)
+                reply(`🤭🌹Hi,\nI am ☬MeZo-𝗕𝗢𝗧࿐\nCreated by: MeZo\n\nRed Dragon Team ==(•)==`)
             }
             break
         //chat bot\\
@@ -3385,14 +3385,14 @@ Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
-                    case 'bot': case 'alive': case 'menu': case 'list':
+                    case 'bot': case 'alive': case 'menu': case 'list': case 'بوت': {
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
                         await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,unicorn, [{
                             urlButton: {
-                            displayText: 'Red Dragon Website🔖',
-                            url: 'https://sites.google.com/view/red-dragon-bot/home'
+                            displayText: '774217099🔖',
+                            url: 'https://sites.google.com'
                             }
                             }, {
                             urlButton: {
@@ -3401,17 +3401,17 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }                            	
                             }, {
                             quickReplyButton: {
-                            displayText: '❮❮😎Owner👤❯❯',
+                            displayText: '❮❮😎المالك👤❯❯',
                             id: `${prefix}owner`
                             }
                             },{
                             quickReplyButton: {
-                            displayText: '❮❮🔮All Menu🔮❯❯',
+                            displayText: '❮❮🔮كل المجموعات🔮❯❯',
                             id: `${prefix}menuall`
                             }
                             }, {
                             quickReplyButton: {
-                            displayText: '❮❮💎List Menu💎❯❯',
+                            displayText: '❮❮💎قائمة الأوامر💎❯❯',
                             id: `${prefix}command`
                             }
                             }] )
@@ -3456,60 +3456,60 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
                         }
                         break */
-                case 'command': {
+                case 'command': case 'قائمة': case 'الاوامر': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
-                    description: `Please Choose The Menu\n\n`,
-                    buttonText: "Menu",
+                    description: `يرجى اختيار امر من القائمة \n\n`,
+                    buttonText: "الأوامر🤖",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "Main Features",
+								"title": "الخصائص الرئيسية",
 								"rows": [
 									{
-										"title": "Main Menu",
-										"description": "Displays The List Of Main Features",
+										"title": "القائمة الرئيسية",
+										"description": "يعرض قائمة الميزات الرئيسية",
 										"rowId": `${prefix}mainmenu`
 									}
 								]
 							},
 							{
-								"title": "Bot Features",
+								"title": "ميزات البوت",
 								"rows": [
 									{
-										"title": "All Menu",
-										"description": "Displays The List Of All The Features!",
+										"title": "كل القائمة",
+										"description": "يعرض قائمة بجميع الميزات!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "Owner Menu",
-										"description": "Displays The List Of Owner Features",
+										"title": "قائمة المالك",
+										"description": "يعرض قائمة ميزات المالك",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "Group Menu",
-										"description": "Displays The List Of Main Features",
+										"title": "قائمة المجموعة",
+										"description": "يعرض قائمة الميزات الرئيسية",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "Rpg Menu",
-										"description": "Displays The List Of Rpg Features",
+										"title": "Rpg قائمة",
+										"description": "يعرض قائمة الميزات RPG",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "Download Menu",
-										"description": "Displays The List Of Download Features",
+										"title": "قائمة التنزيلات",
+										"description": "يعرض قائمة ميزات التنزيل",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "Search Menu",
-										"description": "Displays The List Of Searching Features",
+										"title": "قائمة البحث",
+										"description": "يعرض قائمة ميزات البحث",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "Random Menu",
-										"description": "Displays The List Of Random Features",
+											"title": "قائمة عشوائية",
+										"description": "يعرض قائمة ميزات عشوائيه",
 										"rowId": `${prefix}randommenu`
 										},
 										{
@@ -3593,7 +3593,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
                 
             
-case 'allmenu': case 'menuall': {
+case 'allmenu': case 'menuall': case 'تشغيل': {
                
                 let buttons = [
                     {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮😎Owner👤❯❯'}, type: 1}]
