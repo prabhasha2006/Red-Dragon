@@ -637,7 +637,7 @@ if (q.includes('--help')) return reply(examkosong)
       {
        buttonId: `${prefix + command}`, 
        buttonText: {
-        displayText: 'Mine Again⛏️'
+        displayText: 'ارسل مجددآ⛏️'
       }, type: 1},
     ]
     let buttonMessage = {
@@ -660,12 +660,12 @@ if (q.includes('--help')) return reply(examkosong)
   }   
   break  
   //transaction\\
- case 'beli': case 'buy':{
+ case 'beli': case 'buy': case 'شراء':{
 if (q.includes('--help')) return reply(examkosong) 
  if (!isInventoriBuruan){ addInventoriBuruan(m.sender) } 
  if (!isInventoryMonay){ addInventoriMonay(m.sender) }
  if (!isInventory){ addInventori(m.sender) }
- if (!q) return reply(`What Do You Want To Buy?\n\n1.potion\n2.baitfood\n3.limit\n\nExample: ${prefix + command} baitfood`)
+ if (!q) return reply(`ماذا تريد أن تشتري?\n\n1.potion\n2.baitfood\n3.limit\n\nExample: ${prefix + command} baitfood`)
  var anu = args[1]
   if (args[0] === 'potion'){
   let noh = 100000 * anu
