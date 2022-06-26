@@ -3339,7 +3339,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
-                RedDragonMdNx.sendMessage(from, { text: `*😘අයි ලව් යූ💗උම්මාහ්🥰🥰🤓*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(from, { text: `*😘امممممووواااحح 🤤💋🥰🥰🤓*` }, { quoted: m })
             }
             break
             case 'බොටා_වැලක්_බලමුද?':{
@@ -3593,7 +3593,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
                 
             
-case 'allmenu': case 'menuall': {
+case 'allmenu': case 'menuall': case 'بوت': {
                
                 let buttons = [
                     {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮😎Owner👤❯❯'}, type: 1}]
