@@ -20,17 +20,16 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `اسمي ميزو  حاكم  الدمار 🔥
-تم برمجه الريبوت بواسطة ميزو حاكم الدمار 😎` //Costomize Alive Message (type your message in `` )
+global.alivemsg = `اسمي ميزو  حاكم  الدمار 🔥تم برمجه الريبوت بواسطة ميزو حاكم الدمار 😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['+967774217099'] //Owner number in aive msg
 global.premium = ['+967774217099'] //Owner Number info
 global.ownernomer = '+967774217099' //Owner Number <<<
 
 global.ownername = '😎ميزو حاكم الدمار' //Owner Name
-global.botname = ' ☬بوت ميزو' //Bot Name
+global.botname = '☬بوت ميزو' //Bot Name
 
-global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
+global.button = '🤭මේක ටච් කරන්න' //Costomize A Button Name In Alive Message
 global.btnurl = '🙂🔥للتواصل واتس معا مالك البوت?😑' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
