@@ -46,14 +46,14 @@ global.ig = 'https://github.com/prabhasha2006' //Github Account!
 global.footer = '©_Kumuthu.' // DO NOT CHANGE!
 
 global.mess = { // Error Mesages
-    success: 'Done ✅',
-    admin: 'Only Admins can use it!😉',
-    botAdmin: 'Bot wants to be an Admin😥',
-    owner: 'Only Owner can use this!😉',
-    group: 'Feature Used Only For Groups!',
-    private: 'This Features Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot😝',
-    wait: '👉👈Pleas Wait...',
+    success: 'تفعل ✅',
+    admin: 'يمكن للمسؤولين فقط استخدامه!😉',
+    botAdmin: 'يريد البوت أن يكون مسؤولاً😥',
+    owner: 'يمكن للمالك فقط استخدام هذا!😉',
+    group: 'الميزة تستخدم فقط للمجموعات!',
+    private: 'هذه الميزات فقط للدردشة الخاصة!',
+    bot: 'هذه الميزة مخصصة للبوت فقط😝',
+    wait: '👉👈يرجى الانتظار...',
     error: 'Error!!! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
