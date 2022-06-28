@@ -1,8 +1,8 @@
 {
-  "name": "RED DRAGON BOT",
-  "description": "☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐ | By: RED-DRAGONᵀᴹ | 𝐌𝐑: ☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐",
+  "name": "elgazar alwazer BOT",
+  "description": "☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹༒𝑨𝑳𝑾𝑨𝒁𝑬𝑹-𝑩𝑶𝑻࿐ | By: RED-DRAGONᵀᴹ | 𝐌𝐑: ☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹༒𝑨𝑳𝑾𝑨𝒁𝑬𝑹-𝑩𝑶𝑻࿐",
   "repository": "https://github.com/prabhasha2006/Red-Dragon",
-  "logo": "https://i.ibb.co/CwffZ61/20220605-104552.jpg",
+  "logo": "https://telegra.ph/file/e523f48b0ac885a11d10d.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
