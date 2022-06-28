@@ -1,10 +1,10 @@
 <p align="center">
-<img src="https://i.ibb.co/CwffZ61/20220605-104552.jpg" alt="nz" width="350"/>
+<img src="https://telegra.ph/file/e523f48b0ac885a11d10d.jpg" alt="nz" width="350"/>
 </p>
 
-## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐   Version 4.6 
+## ☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹༒𝑨𝑳𝑾𝑨𝒁𝑬𝑹-𝑩𝑶𝑻࿐   Version 4.6 
   
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹༒𝑨𝑳𝑾𝑨𝒁𝑬𝑹࿐+𝑩𝑶𝑻.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝑬𝑳𝑮𝑨𝒁𝑨𝑹 𝑩𝑶𝑻+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝑬𝑳𝑮𝑨𝒁𝑨𝑹 𝑨𝑳𝑾𝑨𝒁𝑬𝑹;𝐌𝐑:+☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹 𝑨𝑳𝑾𝑨𝒁𝑬𝑹࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
 Version 1.0 ('Queen Elsa bot')
 
@@ -85,7 +85,7 @@ Version 4.6 (Deploy error fixed) 2022-06-20 latest
 > යටට ගිහින් "Then Deploy The Bot From Here "👈මෙතනින් deploy කරන්න විතරයි තියෙන්නෙ😁
 
 
-## 𝐌𝐑: ☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐
+## 𝑴𝑹: ☬𝑬𝑳𝑮𝑨𝒁𝑨𝑹༒𝑨𝑳𝑾𝑨𝒁𝑬𝑹࿐
 
 
 
