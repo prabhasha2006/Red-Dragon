@@ -146,7 +146,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
                 if (anu.action == 'add') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
 ⭐✑ اهلا👋 @${num.split("@")[0]},
-⭐✑ مرحبا بك ${metadata.subject}
+⭐✑ مرحبا بك في ${metadata.subject}
 
 ⭐✑ الوصف: ${metadata.desc}
 
