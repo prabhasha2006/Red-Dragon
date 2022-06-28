@@ -87,7 +87,7 @@ async function startRedDragonMdNx() {
         if (!RedDragonMdNx.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(RedDragonMdNx, mek, store)
-        require("./team")(RedDragonMdNx, m, chatUpdate, store)
+        require("./RedDragon")(RedDragonMdNx, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
