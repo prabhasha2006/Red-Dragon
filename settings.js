@@ -22,7 +22,7 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `My name is 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
+global.alivemsg = `I am 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
 My Creator is 𝐎𝐧𝐢𝐭𝐡𝐚 𝐖𝐚𝐭𝐡𝐦𝐢𝐫𝐚😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['94701733767'] //Owner number 1
@@ -42,7 +42,7 @@ global.author = '😎𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
-global.chatbotpre = true   //chat bot and auto reply: true/false
+//global.chatbotpre = true   //chat bot and auto reply: true/false
 
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
