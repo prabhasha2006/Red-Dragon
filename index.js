@@ -60,7 +60,7 @@ async function startRedDragonMdNx() {
     const RedDragonMdNx = NexusNwIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Gojo Satoru\nNexus','Safari','1.0.0'],
+        browser: ['Gojo Satoru\Nexus','Safari','1.0.0'],
         auth: state
     })
 
@@ -87,7 +87,7 @@ async function startRedDragonMdNx() {
         if (!RedDragonMdNx.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(RedDragonMdNx, mek, store)
-        require("./team")(RedDragonMdNx, m, chatUpdate, store)
+        require("./RedDragon")(RedDragonMdNx, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
@@ -104,15 +104,15 @@ async function startRedDragonMdNx() {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم إغلاق المجموعة من قبل المسؤول ، والآن يمكن للمسؤول فقط إرسال الرسائل !`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم فتح المجموعة من قبل المسؤول ، والآن يمكن للمشاركين إرسال الرسائل !`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم تقييد معلومات المجموعة ، والآن يمكن للمسؤول فقط تحرير معلومات المجموعة !`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم فتح معلومات المجموعة ، الآن يمكن للمشاركين تحرير معلومات المجموعة !`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم تغيير وصف المجموعة *${pea[0].subject}*`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
     })
 
@@ -145,16 +145,16 @@ Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURICom
 Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
-⭐✑ مرحبا👋 @${num.split("@")[0]},
-⭐✑ اهلا وسهلا بك في قروب ${metadata.subject}
+⭐✑ Hi👋 @${num.split("@")[0]},
+⭐✑ Welcome To ${metadata.subject}
 
-⭐✑ يرجى قراء شروط وقوانين القروب ${metadata.desc}
+⭐✑ Description: ${metadata.desc}
 
-⭐✑ مرحبًا بكم في قروبي يرجى الالتزام بقوانين القروباو سيتم ازالتك تلقائيابواسطةبوت الحمايه 🖤🤖 `} )
+⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
                 } else if (anu.action == 'remove') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ لاباس بمغادرتك القروب سوف نرحب بك مرة أخرى لاكن سوف يفوتك الاستمتاع بالمواضيع الجديده 😌✨` })
+⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
                 }
             }
         } catch (err) {
