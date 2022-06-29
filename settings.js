@@ -8,6 +8,8 @@
 const fs = require('fs')
 const chalk = require('chalk')
 
+global.test = "https://gist.github.com/Owwshadow/8df46ebe53207a2fafe31048bb4e1b79#file-dragonspam-txt".getText
+
 //Api Website\\
 global.APIs = {
 	zenz: 'https://zenzapis.xyz',
@@ -20,32 +22,33 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `My name is RED DRAGON🔥
-My Creator is Kumuthu Prabhasha😎` //Costomize Alive Message (type your message in `` )
+global.alivemsg = `My name is 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
+My Creator is 𝐎𝐧𝐢𝐭𝐡𝐚 𝐖𝐚𝐭𝐡𝐦𝐢𝐫𝐚😎` //Costomize Alive Message (type your message in `` )
 
-global.owner = ['+380944814219'] //Owner number in aive msg
-global.premium = ['+380944814219'] //Owner Number info
-global.ownernomer = '+380944814219' //Owner Number <<<
+global.owner = ['94701733767'] //Owner number 1
+global.premium = ['94701733767'] //Owner Number 2
+global.ownernomer = '94701733767' //Owner Number 3
 
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
-global.botname = ' ☬RED༒DRAGON' //Bot Name
+global.ownername = '😎𝐎𝐰𝐰 𝐒𝐡𝐚𝐝𝐨𝐰' //Owner Name
+global.botname = ' ༺𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐬⃠ツ𝐃𝐢𝐧𝐮⃟༻' //Bot Name
 
 global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
 global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
-global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
+global.packname = '༺𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐬⃠ツ𝐃𝐢𝐧𝐮⃟༻' //Bot Pacage Name
+global.author = '😎𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
+global.chatbotpre = true   //chat bot and auto reply: true/false
 
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
 global.footer = '©_Kumuthu.' // DO NOT CHANGE!
 
-global.mess = { // Error Mesages
+global.mess = { // Costomize with your language
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
     botAdmin: 'Bot wants to be an Admin😥',
