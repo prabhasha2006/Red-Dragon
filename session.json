@@ -42,11 +42,11 @@
     "nextPreKeyId": 31,
     "firstUnuploadedPreKeyId": 31,
     "serverHasPreKeys": true,
-    "account"     "accountSignatureKey": "eSSW6MfYePdFL5ywAxLPnHCnsl5y4CoctZzJ+sdnODs=",
-      "accountSignature": "Q5+MxipWnjzptWvSZ+jCVlJOQqhUYq0uTgdbEN1Sfh5uURfHOlkjBH/QueL01XuuQ9GHlL42FOFYNXskr3SqAg==",
-      "deviceSignature": "TDpOABl: {
+    "account": {
       "details": "CKrZksMCELLg2pUGGAE=",
- xHlKnZOvvFpUiTAeyUyH+lx8zv/iRkD601DiyNd2bS1uoGDKt9XySSjMIoQzZhlgHOcArCBZluD8RgQ=="
+      "accountSignatureKey": "eSSW6MfYePdFL5ywAxLPnHCnsl5y4CoctZzJ+sdnODs=",
+      "accountSignature": "Q5+MxipWnjzptWvSZ+jCVlJOQqhUYq0uTgdbEN1Sfh5uURfHOlkjBH/QueL01XuuQ9GHlL42FOFYNXskr3SqAg==",
+      "deviceSignature": "TDpOABlxHlKnZOvvFpUiTAeyUyH+lx8zv/iRkD601DiyNd2bS1uoGDKt9XySSjMIoQzZhlgHOcArCBZluD8RgQ=="
     },
     "me": {
       "id": "94701733767:12@s.whatsapp.net",
