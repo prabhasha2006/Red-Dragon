@@ -1,5 +1,6 @@
 // 🤭RED DRAGON BOT🌹
 require('./settings')
+require('./DragonSpam')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
@@ -257,25 +258,29 @@ const reply = (teks) => {
         }
 
         //auto reply 
-        for (let anji of setik){
+            for (let anji of setik){
+                if (global.chatbotpre = false) return
 				if (budy === anji){
 					result = fs.readFileSync(`./DragonMedia/sticker/${anji}.webp`)
 					RedDragonMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
+                if (global.chatbotpre = false) return
 				if (budy === anju){
 					result = fs.readFileSync(`./DragonMedia/RedDragonVoice/${anju}.mp3`)
 					RedDragonMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
+                if (global.chatbotpre = false) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/image/${anjh}.jpg`)
 					RedDragonMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-					for (let anjh of videox){
+			for (let anjh of videox){
+                if (global.chatbotpre = false) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/vid/${anjh}.mp4`)
 					RedDragonMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
@@ -3431,7 +3436,86 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
-            
+
+            //spam\\
+case 'spama': {
+    if (!isCreator) return replay(`${mess.owner}`)
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    if (!text) return reply("Type how many spams do you want to send\nExample: .spama 5")
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspama}`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+}
+break
+case 'spamb': {
+    if (!isCreator) return replay(`${mess.owner}`)
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    if (!text) return reply("Type how many spams do you want to send\nExample: .spamb 27")
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamb}`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+}
+break
+case 'spamc': {
+    if (!isCreator) return replay(`${mess.owner}`)
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    if (!text) return reply("Type how many spams do you want to send\nExample: .spamc 9")
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamc}`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+}
+break
+case 'antispam': {
+    if (!isAdmins) return replay(`${mess.admin}`)
+    RedDragonMdNx.sendMessage(m.chat, { text: `☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
+    💦💦💦💦💦💦💦💦💦💦💦
+    ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
+    💦💦💦💦💦💦💦💦💦💦💦
+    ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
+    💦💦💦💦💦💦💦💦💦💦💦\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️
+\n\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nපහලට යෑමෙන් වළකින්න!
+DO NOT GO DOWN !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nපහලට යෑමෙන් වළකින්න!
+DO NOT GO DOWN !\n\n\nචැට් Clear කරන්න!
+CLEAR CHAT !\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
+CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n`}, { quoted: m })          
+}
+break
             /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
@@ -3493,46 +3577,11 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }
                             }] )
                             break
-
-                            /*case 'bot': case 'alive': case 'menu': case 'list':{
-                        timestampe = speed();
-                        latensie = speed() - timestampe
-                            let buttons = [{
-                                urlButton: {
-                                displayText: 'Red Dragon Website🔖',
-                                url: 'https://sites.google.com/view/red-dragon-bot/home'
-                                }
-                                }, {
-                                urlButton: {
-                                displayText: `${button}`,
-                                url: `${btnurl}`
-                                }                            	
-                                }, {
-                                quickReplyButton: {
-                                displayText: '❮❮😎Owner👤❯❯',
-                                id: `${prefix}owner`
-                                }
-                                },{
-                                quickReplyButton: {
-                                displayText: '❮❮🔮All Menu🔮❯❯',
-                                id: `${prefix}menuall`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                displayText: '❮❮💎List Menu💎❯❯',
-                                id: `${prefix}command`
-                                }
-                                }]
-                            let buttonMessage = {
-                                image: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg'),
-                                caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
-                                footer: RedDragonMdNx.user.name,
-                                buttons: buttons,
-                                headerType: 4
+                            case 'notice':{
+                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot auto reply or chat bot commands,\nYou should be delete it for everyone.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
+                                replay(`හායි, ${global.ownername}\nRED-DRAGON විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් auto reply ක්‍රියාත්මක වන විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
                             }
-                            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-                        }
-                        break */
+                            break
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
@@ -3679,6 +3728,7 @@ case 'allmenu': case 'menuall': {
                 caption: `🙂-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
 ┃╔══☯︎❯ MAIN ❮ 🐲👇
 ┃║
+┃╠✹🔥 ${prefix}notice (Advise For Owner)
 ┃╠✹🔥 ${prefix}alive
 ┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
@@ -3691,6 +3741,7 @@ case 'allmenu': case 'menuall': {
 ┃╠✹🔥 ${prefix}quoted
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
+┃╠✹🔥 ${prefix}antispam
 ┃║
 ┃╠✹🔥══☬❯ OWNER ❮ 🐲👇
 ┃║
@@ -3703,6 +3754,11 @@ case 'allmenu': case 'menuall': {
 ┃╠✹🔥 ${prefix}bcall [text]
 ┃╠✹🔥 ${prefix}setppbot [image]
 ┃╠✹🔥 ${prefix}setexif
+┃╠✹🔥 ${prefix}chatbot [on/off]
+┃╠✹🔥 ${prefix}spama [number] ⚠
+┃╠✹🔥 ${prefix}spamb [number] ⚠
+┃╠✹🔥 ${prefix}spamc [number] ⚠
+┃╠✹🔥 ${prefix}notice (Advise For Owner)
 ┃║
 ┃╠✹🔥══☬❯ GROUP ❮ 🐲👇   
 ┃║   
@@ -3982,6 +4038,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━❯ ${botname} ❮━━😎 
 ┃╔═☬❯ MAIN ❮ 🐲👇
 ┃║
+┃╠✹🔥 ${prefix}oticen (Advise For Owner)
 ┃╠✹🔥 ${prefix}alive
 ┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
@@ -3994,6 +4051,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}quoted
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
+┃╠✹🔥 ${prefix}antispam
 ┃╚═════════════☬
 ┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
@@ -4104,7 +4162,8 @@ var unicorn = await getBuffer(picak+'Owner Menu')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━❯ ${botname} ❮━━😎 
 ┃╔═☬❯ OWNER ❮ 🐲👇	   
-┃║     
+┃║
+┃╠✹🔥 ${prefix}notice (Advise For Owner)
 ┃╠✹🔥 ${prefix}grouplink
 ┃╠✹🔥 ${prefix}ephemeral [option]
 ┃╠✹🔥 ${prefix}setgcpp [image]
@@ -4125,6 +4184,9 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}upvote
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
+┃╠✹🔥 ${prefix}spama [number]
+┃╠✹🔥 ${prefix}spamb [number]
+┃╠✹🔥 ${prefix}spamc [number]
 ┃╚═════════════☬
 ┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
