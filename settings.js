@@ -32,7 +32,7 @@ global.ownernomer = '94701733767' //Owner Number 3
 global.ownername = '😎𝐎𝐰𝐰 𝐒𝐡𝐚𝐝𝐨𝐰' //Owner Name
 global.botname = ' ༺𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐬⃠ツ𝐃𝐢𝐧𝐮⃟༻' //Bot Name
 
-global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
+global.button = '🤭Youtube📍' //Costomize A Button Name In Alive Message
 global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
@@ -42,7 +42,7 @@ global.author = '😎𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
-//global.chatbotpre = true   //chat bot and auto reply: true/false
+global.chatbotpre = true   //chat bot and auto reply: true/false
 
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
