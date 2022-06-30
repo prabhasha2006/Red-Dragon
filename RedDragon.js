@@ -2087,13 +2087,13 @@ break
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytmp3btn ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
                     {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `                    
-🌝❤️-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n
+🌝❤️ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n
 🔰🌹 Title : ${anu.title}
 🔰🌹 Channel : ${anu.author.url}
 🔰🌹 Author : ${anu.author.name}
@@ -2111,14 +2111,75 @@ break
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-	    case 'ytmp3': case 'getmusic': case 'ytaudio': {
+	    case 'ytmp3btn': {
                 let { yta } = require('./lib/y2mate')
                 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`, m)
+                let buttons = [
+                    {buttonId: `ytaudio ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytdoc ${anu.url}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                    {buttonId: `ytvoice ${anu.url}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: { url: anu.thumbnail },
+                    caption: `                    
+🌝❤️ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n
+🔰🌹 Title : ${media.title}`,
+                    footer: RedDragonMdNx.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+            case 'ytaudio': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            }
+            break
+            case 'ytdoc': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                RedDragonMdNx.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            }
+            break
+            case 'ytvoice': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` , ptt: true}, { quoted: m })
+            }
+            break
+            case 'ytmp3': case 'getmusic': case 'ytaudio': {
+                let { yta } = require('./lib/y2mate')
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                let quality = args[1] ? args[1] : '320kbps'
+                let media = await yta(text, quality)
+                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                let buttons = [
+                    {buttonId: `ytaudio ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytdoc ${anu.url}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                    {buttonId: `ytvoice ${anu.url}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+                ]
+                let buttonMessage = {
+                    image: { url: media.thumb},
+                    caption: `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
+                    footer: RedDragonMdNx.user.name,
+                    buttons: buttons,
+                    headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
             case 'ytmp4': case 'getvideo': case 'ytvideo': {
@@ -3504,16 +3565,16 @@ break
 case 'antispam': {
     if (!isAdmins) return replay(`${mess.admin}`)
     RedDragonMdNx.sendMessage(m.chat, { text: `☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-    💦💦💦💦💦💦💦💦💦💦💦
-    ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-    💦💦💦💦💦💦💦💦💦💦💦
-    ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-    💦💦💦💦💦💦💦💦💦💦💦\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️
-\n\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nපහලට යෑමෙන් වළකින්න!
-DO NOT GO DOWN !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nපහලට යෑමෙන් වළකින්න!
-DO NOT GO DOWN !\n\n\nචැට් Clear කරන්න!
+💦💦💦💦💦💦💦💦💦💦💦
+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
+💦💦💦💦💦💦💦💦💦💦💦
+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
+💦💦💦💦💦💦💦💦💦💦💦\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️
+\n\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nඉහලට යෑමෙන් වළකින්න!
+DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nඉහලට යෑමෙන් වළකින්න!
+DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
 CLEAR CHAT !\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
-CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n`}, { quoted: m })          
+CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCLEAR CHAT !\n\n\n\n\n\n\n\nචැට් Clear කරන්න!\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n`}, { quoted: m })          
 }
 break
             /////////////////////////////////////////////
@@ -3578,8 +3639,8 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }] )
                             break
                             case 'notice':{
-                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot auto reply or chat bot commands,\nYou should be delete it for everyone.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
-                                replay(`හායි, ${global.ownername}\nRED-DRAGON විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් auto reply ක්‍රියාත්මක වන විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
+                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
+                                replay(`හායි, ${global.ownername}\nRED-DRAGON විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
                             }
                             break
                 case 'command': {
@@ -4184,6 +4245,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}upvote
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
+┃╠✹🔥 ${prefix}chatbot [on/off]
 ┃╠✹🔥 ${prefix}spama [number]
 ┃╠✹🔥 ${prefix}spamb [number]
 ┃╠✹🔥 ${prefix}spamc [number]
