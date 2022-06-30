@@ -2117,7 +2117,7 @@ break
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮  🎶Audio🎶  ❯❯'}, type: 1},
                     {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
                     {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
@@ -2167,7 +2167,7 @@ break
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮  🎶Audio🎶  ❯❯'}, type: 1},
                     {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
                     {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
@@ -3627,12 +3627,12 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }                            	
                             }, {
                             quickReplyButton: {
-                            displayText: '❮❮😎Owner👤❯❯',
+                            displayText: '⫷ OWNER ⫸',
                             id: `${prefix}owner`
                             }
                             },{
                             quickReplyButton: {
-                            displayText: '❮❮💎List Menu💎❯❯',
+                            displayText: '⫷ LIST MENU ⫸',
                             id: `${prefix}command`
                             }
                             }] )
@@ -3645,8 +3645,8 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: ` Choose The List Menu\n ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n`,
+                    title: `Hi ${pushname}👀\n`,
+                    description: ` Choose The List Menu\n\n ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n 📧 ${global.ownername}`,
                     buttonText: "List Menu",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
@@ -4113,7 +4113,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}report [bug]
 ┃╠✹🔥 ${prefix}antispam
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -4143,7 +4143,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'rpgmenu':
 var unicorn = await getBuffer(picak+'Rpg Menu')
@@ -4161,7 +4161,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}buy [option]
 ┃╠✹🔥 ${prefix}sell [option]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -4215,7 +4215,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}math [mode]
 ┃╠✹🔥 ${prefix}suitpvp [tag]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'ownermenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
@@ -4249,7 +4249,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}spamb [number]
 ┃╠✹🔥 ${prefix}spamc [number]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4265,7 +4265,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}joox [query]
 ┃╠✹🔥 ${prefix}soundcloud [url]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4285,7 +4285,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}ringtone [query]
 ┃╠✹🔥 ${prefix}webtoon [query]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4297,7 +4297,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}animequote (indo)
 ┃╠✹🔥 ${prefix}couplepp
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4333,7 +4333,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}dance
 ┃╠✹🔥 ${prefix}cringe
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4373,7 +4373,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}blackpink [txt]
 ┃╠✹🔥 ${prefix}gluetext [txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4393,7 +4393,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}ebinary [reply txt]
 ┃╠✹🔥 ${prefix}dbinary [reply txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4410,7 +4410,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}getmsg
 ┃╠✹🔥 ${prefix}delmsg
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4423,7 +4423,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}next
 ┃╠✹🔥 ${prefix}leave
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4433,7 +4433,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃║	        
 ┃╠✹🔥 ${prefix}juzamma
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4453,7 +4453,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}slow [reply aud]
 ┃╠✹🔥 ${prefix}squirrel [reply aud]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4492,7 +4492,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}zodiak (indo)
 ┃╠✹🔥 ${prefix}shio (indo)
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
