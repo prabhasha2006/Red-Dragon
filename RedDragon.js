@@ -2093,17 +2093,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `                    
-🌝❤️ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n
-🔰🌹 Title : ${anu.title}
-🔰🌹 Channel : ${anu.author.url}
-🔰🌹 Author : ${anu.author.name}
-🔰🌹 Ext : Search
-🔰🌹 ID : ${anu.videoId}
-🔰🌹 Duration : ${anu.timestamp}
-🔰🌹 Viewes : ${anu.views}
-🔰🌹 Uploaded On : ${anu.ago}
-🔰🌹 Description : ${anu.description}
-🔰🌹 Url : ${anu.url}`,
+╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║\n
+╠🧸 Title : ${anu.title}
+╠📍 Channel : ${anu.author.url}
+╠✏️ Author : ${anu.author.name}
+╠📧 ID : ${anu.videoId}
+╠💡 Duration : ${anu.timestamp}
+╠👀 Viewes : ${anu.views}
+╠📤 Uploaded On : ${anu.ago}
+╠🗒️ Description : ${anu.description}
+╠🔗 Url : ${anu.url}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2121,8 +2120,8 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `                    
-🌝❤️ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n
-🔰🌹 Title : ${media.title}`,
+╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║\n
+╠🧸 Title : ${media.title}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2166,7 +2165,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: media.thumb},
-                    caption: `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
+                    caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n║ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
