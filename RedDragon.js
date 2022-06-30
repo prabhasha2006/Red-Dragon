@@ -2112,15 +2112,11 @@ break
             }
             break
 	    case 'ytmp3btn': {
-                let { yta } = require('./lib/y2mate')
                 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${anu.url}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${anu.url}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
@@ -2162,15 +2158,11 @@ break
             }
             break
             case 'ytmp3': case 'getmusic': case 'ytaudio': {
-                let { yta } = require('./lib/y2mate')
                 if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${anu.url}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${anu.url}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: media.thumb},
@@ -3639,7 +3631,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }] )
                             break
                             case 'notice':{
-                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
+                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
                                 replay(`හායි, ${global.ownername}\nRED-DRAGON විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
                             }
                             break
