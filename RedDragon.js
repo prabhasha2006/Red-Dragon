@@ -2117,14 +2117,13 @@ break
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮  🎶Audio🎶  ❯❯'}, type: 1},
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
                     {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
                     {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: media.thumb },
-                    caption: `                    
-╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║\n
+                    caption: `╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
 ╠🧸 Title : ${media.title}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
@@ -2167,7 +2166,7 @@ break
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
                 let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮  🎶Audio🎶  ❯❯'}, type: 1},
+                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
                     {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
                     {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
@@ -2187,7 +2186,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '360p'}\n║\n╠ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '360p'}\n║\n╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
