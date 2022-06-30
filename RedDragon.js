@@ -2112,7 +2112,7 @@ break
             break
 	    case 'ytmp3btn': {
             let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -2122,7 +2122,7 @@ break
                     {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: { url: anu.thumbnail },
+                    image: { url: media.thumb },
                     caption: `                    
 ╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║\n
 ╠🧸 Title : ${media.title}`,
@@ -2135,7 +2135,7 @@ break
             break
             case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -2144,7 +2144,7 @@ break
             break
             case 'ytdoc': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -2153,7 +2153,7 @@ break
             break
             case 'ytvoice': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -2162,7 +2162,7 @@ break
             break
             case 'ytmp3': case 'getmusic': case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -2173,7 +2173,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: media.thumb},
-                    caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n║ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
+                    caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n╠ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2183,7 +2183,7 @@ break
             break
             case 'ytmp4': case 'getvideo': case 'ytvideo': {
                 let { ytv } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 360p`)
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
@@ -3615,7 +3615,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
-                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `●●➾ ${botname}\n●●➾ ╠ Hi, ${pushname} ╣\n●●➾ ╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n❯❯●●●●●●●●●●●    ●●●●●●●●●●●❮❮`,unicorn, [{
+                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `●●➾ Hi, ${pushname}\n●●➾ I am Alive👋\n●●➾ ${botname}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n❯❯●●●●●●●●●●●    ●●●●●●●●●●●❮❮`,unicorn, [{
                             urlButton: {
                             displayText: 'Red Dragon Website ●',
                             url: 'https://sites.google.com/view/red-dragon-bot/home'
