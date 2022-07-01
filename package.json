@@ -41,6 +41,7 @@
     "lowdb": "^2.1.0",
     "mongoose": "^6.2.1",
     "moment-timezone": "^0.5.34",
+    "mumaker": "^1.0.0",
     "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
     "node-webpmux": "^3.1.0",
