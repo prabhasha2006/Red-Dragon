@@ -3317,7 +3317,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'info': case 'about':{
-                reply(`🤭🌹Hi,\nI am ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\nCreated by: K.Prabhasha\n\nRed Dragon Team ==(•)==`)
+                reply(`      🤭🌹Hi,\nI am ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\nCreated by: K.Prabhasha\n\nRed Dragon Team ==(•)==`)
             }
             break
         //chat bot\\
