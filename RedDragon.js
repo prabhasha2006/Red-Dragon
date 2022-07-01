@@ -3492,72 +3492,57 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
                 if (global.chatbotpre = false) return
                 if (global.chatbotpre = true) {
-                RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹*` })}
+                RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
 
             //spam\\
 case 'spama': {
     if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
     if (!text) return reply("Type how many spams do you want to send\nExample: .spama 5")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
     🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspama}`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspama}`})
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
 }
 break
 case 'spamb': {
     if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
     if (!text) return reply("Type how many spams do you want to send\nExample: .spamb 27")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
     🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamb}`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamb}`})
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
 }
 break
 case 'spamc': {
     if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`}, { quoted: m })
+    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
+    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
     if (!text) return reply("Type how many spams do you want to send\nExample: .spamc 9")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
+    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
     🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓𝐈𝐍𝐆࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamc}`}, { quoted: m })
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])}, { quoted: m })
+    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
+    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamc}`})
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
 }
 break
 case 'antispam': {
@@ -3572,7 +3557,7 @@ case 'antispam': {
 DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nඉහලට යෑමෙන් වළකින්න!
 DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
 CLEAR CHAT !\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
-CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCLEAR CHAT !\n\n\n\n\n\n\n\nචැට් Clear කරන්න!\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n`}, { quoted: m })          
+CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCLEAR CHAT !\n\n\n\n\n\n\n\nචැට් Clear කරන්න!\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n`})          
 }
 break
             /////////////////////////////////////////////
