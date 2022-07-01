@@ -19,42 +19,45 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `My name is RED DRAGON🔥
-My Creator is Kumuthu Prabhasha😎` //Costomize Alive Message (type your message in `` )
+global.alivemsg = `👋🏻𝙷𝚒! 𝙸 𝚊𝚖 𝙾𝚗𝚕𝚒𝚗𝚎 𝙽𝚘𝚠👋🏻
 
-global.owner = ['+380944814219'] //Owner number in aive msg
-global.premium = ['+380944814219'] //Owner Number info
-global.ownernomer = '+380944814219' //Owner Number <<<
+🎃 𝙸  𝚊𝚖 𝚂𝚊𝚌𝚑𝚒𝚢𝚊 𝚊𝚗 𝚞𝚜𝚎𝚛 𝚋𝚘𝚝 𝙵𝚘𝚛 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 🎃
 
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
-global.botname = ' ☬RED༒DRAGON' //Bot Name
+🥰 𝙷𝚊𝚟𝚎 𝚊 𝚗𝚒𝚌𝚎 𝚍𝚊𝚢! 🥰` //Costomize Alive Message (type your message in `` )
 
-global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
+global.owner = ['+94764526054'] //Owner number in aive msg
+global.premium = ['+94764526054'] //Owner Number info
+global.ownernomer = ['+94764526054'] //Owner Number <<<
+
+global.ownername = '😎𝐌𝐑.𝐒𝐀𝐂𝐇𝐈𝐘𝐀😎' //Owner Name
+global.botname = '✿ᴍʀ.ꜱᴀᴄʜɪʏᴀ ʙᴏᴛ✿' //Bot Name
+
+global.button = '🤭Touch this📍' //Costomize A Button Name In Alive Message
 global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
-global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
+global.packname = '𝐌𝐑.𝐒𝐀𝐂𝐇𝐈𝐘𝐀' //Bot Pacage Name
+global.author = '😎𝐌𝐑.𝐒𝐀𝐂𝐇𝐈𝐘𝐀❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
-global.sessionName = 'session' //Session Name!
+global.sessionName = '𝐌𝐑.𝐒𝐀𝐂𝐇𝐈𝐘𝐀' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
-global.footer = '©_Kumuthu.' //In list menu
-global.chatbotpre = true  // Chat bot true/false
+global.footer = '© ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ᴍʀ.ꜱᴀᴄʜɪʏᴀ.' //In list menu
+global.chatbotpre false  // Chat bot true/false
 
 
-global.ig = 'https://github.com/prabhasha2006' //Github Account!
+global.ig = 'https://www.youtube.com/channel/UC2FkdjIyfmzaxBv39lC0ryg' //Github Account!
 
 global.mess = { // Error Mesages
-    success: 'Done ✅',
-    admin: 'Only Admins can use it!😉',
-    botAdmin: 'Bot wants to be an Admin😥',
-    owner: 'Only Owner can use this!😉',
-    group: 'Feature Used Only For Groups!',
-    private: 'This Features Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot😝',
-    wait: '👉👈Pleas Wait...',
-    error: 'Error!!! Maybe Api Key Is Expired🤔!',
+    success: 'Done ✓🌹⃝⃘̉̉̉̉̉̉🧚',
+    admin: 'This Feature Is Only For Admin!✾ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٖٖٜ۬ـٰٖٜ۬ـٰٖٜ۬ـٰٰٖٖٜ۬ـٰٰٰٖٖٖٜ۬ـٰٰٰٰٖٖٖٖٜ۬✾➣',
+    botAdmin: 'Bot Must Be Admin First!❤️⃟✦⃝̮̮̮̯̯̯😌',
+    owner: 'This Feature Is Only For Owner😯⃟💦᭄᭄̊̊̊̊࿔!',
+    group: 'Feature Used Only For Groups!😒⃝⃟ꦾ👌ꦿ',
+    private: 'Features Used Only For Private Chat😯⃟💦᭄᭄̊̊̊̊࿔!',
+    bot: 'This Feature Is Only For Bot❤️⃝➤⃟̱̱̱̱̄̄̄̄😢',
+    wait: 'Wait A minute...🦋⃝❉⃟࿔ꦿ',
+    error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
 }
 // DO NOT CHANGE \\
