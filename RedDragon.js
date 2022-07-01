@@ -259,28 +259,28 @@ const reply = (teks) => {
 
         //auto reply 
             for (let anji of setik){
-                if (global.chatbotpre = 'false' ) return
+                if (global.chatbotpre === 'false'  ) return
 				if (budy === anji){
 					result = fs.readFileSync(`./DragonMedia/sticker/${anji}.webp`)
 					RedDragonMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
-                if (global.chatbotpre = 'false' ) return
+                if (global.chatbotpre === 'false'  ) return
 				if (budy === anju){
 					result = fs.readFileSync(`./DragonMedia/RedDragonVoice/${anju}.mp3`)
 					RedDragonMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
-                if (global.chatbotpre = 'false' ) return
+                if (global.chatbotpre === 'false'  ) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/image/${anjh}.jpg`)
 					RedDragonMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
 			for (let anjh of videox){
-                if (global.chatbotpre = 'false' ) return
+                if (global.chatbotpre === 'false'  ) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/vid/${anjh}.mp4`)
 					RedDragonMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
@@ -3324,12 +3324,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
         case 'chatbot': {
             //if (!isCreator) return replay(`${mess.owner}`)
             if (args[0] === "on") {
-            if (global.chatbotpre = 'true' ) return reply(`Activated`)
-            global.chatbotpre = 'true' 
+            if (global.chatbotpre === 'true'  ) return reply(`Activated`)
+            global.chatbotpre = 'true'  
             reply(`Chat Bot Active !`)
             } else if (args[0] === "off") {
-            if (global.chatbotpre = 'false' ) return reply(`Deactivated`)
-            global.chatbotpre = 'false' 
+            if (global.chatbotpre === 'false'  ) return reply(`Deactivated`)
+            global.chatbotpre = 'false'  
             reply(`Chat Bot Inactive !`)
             } else {
              let buttons = [
@@ -3341,157 +3341,157 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
          }
          break
             case 'ba': case 'baa': case 'බැ': case 'බෑ': case 'බැහැ': {
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
                 }
             }
             break
             case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'pumka':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
                 }
             }
             break
             case 'ado': case 'අඩෝ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
                 }
             }
             break
             case 'moko': case 'මොකෝ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
                 }
             }
             break
             case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන😒💔💔*` }, { quoted: m })
                 }
             }
             break
             case 'හායි': case 'hi':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*🥴හූයි😁*` }, { quoted: m })
                 }
             }
             break
             case 'kolukaraya': case 'කොලුකාරයා':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*ඇයි මේ අපහාස😒*` }, { quoted: m })
                 }
             }
             break
             case 'haminenawane': case 'හැමිනෙනවනෙ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*අනේ පලහ්😂*` }, { quoted: m })
                 }
             }
             break
             case 'e': case 'ee': case 'ඒ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ🌚*` }, { quoted: m })
                 }
             }
             break
             case 'ane': case 'අනෙ': case 'අනේ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ අනේ🤭🤭*` }, { quoted: m })
                 }
             }
             break
             case 'ow': case 'ඔව්': case 'ඕ': case 'oo':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*එහෙනම් එච්චරයි🤭*` }, { quoted: m })
                 }
             }
             break
             case 'halo': case 'hello': case 'haloo': case 'හලො': case 'හලෝ': case 'හලූ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*🌝මොකෝ හලෝ🤭*` }, { quoted: m })
                 }
             }
             break
             case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
                 }
             }
             break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
                 }
             }
             break
             case 'kamak': case 'kamanna': case 'කමක්': case 'කමන්නෑ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*ආ කමක් නෑ...😂👍*` }, { quoted: m })
                 }
             }
             break
             case 'balamu': case 'balanna': case 'බලමු': case 'බලන්න':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*බලමුකෝ😂👍*` }, { quoted: m })
                 }
             }
             break
             case 'pala': case 'palayan': case 'පල': case 'පලහ්': case 'පලයන්': case 'පලකො':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ😒💔*` }, { quoted: m })}
             }
             break
             case 'aththada': case 'ඇත්තද': case 'සිරාද': case 'ඇත්තෙයි': case 'අම්මපා': case 'ඇත්ත':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෑ😒*` }, { quoted: m })}
             }
             break
             case 'gm': case 'goodmorning': case 'gummoninm': case 'ගුඩ්මෝනිං': case 'ගුම්මෝනිං': case 'ගුඩ්මෝනිං😌': case 'ගුම්මෝනිං❤️': case 'ගුඩ්මෝනිම්':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*🎤දහසක් මල්🌸 විකසිත වන😊 මේ හිමිදිරි උදෑසනේ🌄 පතන්නම් ඔබ සැමට🙏 සුභම සුභ උදෑසනක් කියා...😃*` }, { quoted: m })}
             }
             break
             case 'gn': case 'goodnight': case 'gumnight': case 'ගුඩ්නයිට්': case 'ගුම්නයිත්': case 'ගුඩ්නයිට්😌': case 'ගුම්නයිට්❤️': case 'ගුඩ්නයිට්🌚❤️':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය😌 හීනෙන් හොල්මන් පෙනෙන, මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන, පෙරේතයන් ඇද යටට එන, කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන, භයානක රාත්‍රියක් වේවා☠️👻👻*` }, { quoted: m })}
             }
             break
             case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*😘අයි ලව් යූ💗උම්මාහ්🥰🥰🤓*` }, { quoted: m })}
             }
             break
             case 'බොටා_වැලක්_බලමුද?':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\nhttps://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358\nhttps://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3\nhttps://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c\nhttps://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1` }, { quoted: m })
                 }
             }
             break
             case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
-                if (global.chatbotpre = 'false' ) return
-                if (global.chatbotpre = 'true' ) {
+                if (global.chatbotpre === 'false'  ) return
+                if (global.chatbotpre === 'true'  ) {
                 RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
