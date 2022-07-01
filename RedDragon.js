@@ -1,6 +1,5 @@
 // 🤭RED DRAGON BOT🌹
 require('./settings')
-require('./DragonSpam')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
@@ -258,29 +257,25 @@ const reply = (teks) => {
         }
 
         //auto reply 
-            for (let anji of setik){
-                if (global.chatbotpre === 'false'  ) return
+        for (let anji of setik){
 				if (budy === anji){
 					result = fs.readFileSync(`./DragonMedia/sticker/${anji}.webp`)
 					RedDragonMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
-                if (global.chatbotpre === 'false'  ) return
 				if (budy === anju){
 					result = fs.readFileSync(`./DragonMedia/RedDragonVoice/${anju}.mp3`)
 					RedDragonMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
-                if (global.chatbotpre === 'false'  ) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/image/${anjh}.jpg`)
 					RedDragonMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-			for (let anjh of videox){
-                if (global.chatbotpre === 'false'  ) return
+					for (let anjh of videox){
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/vid/${anjh}.mp4`)
 					RedDragonMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
@@ -2087,22 +2082,23 @@ break
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
                 let buttons = [
-                    {buttonId: `ytmp3btn ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                    {buttonId: `ytmp3 ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
                     {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `                    
-╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
-╠🧸 Title : ${anu.title}
-╠📍 Channel : ${anu.author.url}
-╠✏️ Author : ${anu.author.name}
-╠📧 ID : ${anu.videoId}
-╠💡 Duration : ${anu.timestamp}
-╠👀 Viewes : ${anu.views}
-╠📤 Uploaded On : ${anu.ago}
-╠🗒️ Description : ${anu.description}
-╠🔗 Url : ${anu.url}`,
+🌝❤️-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n
+🔰🌹 Title : ${anu.title}
+🔰🌹 Channel : ${anu.author.url}
+🔰🌹 Author : ${anu.author.name}
+🔰🌹 Ext : Search
+🔰🌹 ID : ${anu.videoId}
+🔰🌹 Duration : ${anu.timestamp}
+🔰🌹 Viewes : ${anu.views}
+🔰🌹 Uploaded On : ${anu.ago}
+🔰🌹 Description : ${anu.description}
+🔰🌹 Url : ${anu.url}`,
                     footer: RedDragonMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2110,83 +2106,23 @@ break
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-	    case 'ytmp3btn': {
-            let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: media.thumb },
-                    caption: `╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
-╠🧸 Title : ${media.title}`,
-                    footer: RedDragonMdNx.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
-            case 'ytaudio': {
+	    case 'ytmp3': case 'getmusic': case 'ytaudio': {
                 let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 128kbps`)
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+                RedDragonMdNx.sendImage(m.chat, media.thumb, `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '320kbps'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`, m)
                 RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-            }
-            break
-            case 'ytdoc': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-            }
-            break
-            case 'ytvoice': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` , ptt: true}, { quoted: m })
-            }
-            break
-            case 'ytmp3': case 'getmusic': case 'ytaudio': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: media.thumb},
-                    caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n╠ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
-                    footer: RedDragonMdNx.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
             case 'ytmp4': case 'getvideo': case 'ytvideo': {
                 let { ytv } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 360p`)
+                if (!text) return reply(`Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`)
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '360p'}\n║\n╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
+                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🙂🔥${botname}\n\n🔰🌹 Title : ${media.title}\n🔰🌹 File Size : ${media.filesizeF}\n🔰🌹 Url : ${isUrl(text)}\n🔰🌹 Ext : MP3\n🔰🌹 Resolution : ${args[1] || '360p'}\n\n*ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
             }
             break
 	    case 'getmusicxxx': {
@@ -3322,14 +3258,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
         //chat bot\\
         case 'chatbot': {
-            //if (!isCreator) return replay(`${mess.owner}`)
+            if (!isCreator) return replay(`${mess.owner}`)
             if (args[0] === "on") {
-            if (global.chatbotpre === 'true'  ) return reply(`Activated`)
-            global.chatbotpre = 'true'  
+            if (global.chatbotpre) return reply(`Activated`)
+            global.chatbotpre = true
             reply(`Chat Bot Active !`)
             } else if (args[0] === "off") {
-            if (global.chatbotpre === 'false'  ) return reply(`Deactivated`)
-            global.chatbotpre = 'false'  
+            if (global.chatbotpre) return reply(`Deactivated`)
+            global.chatbotpre = false
             reply(`Chat Bot Inactive !`)
             } else {
              let buttons = [
@@ -3341,225 +3277,161 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
          }
          break
             case 'ba': case 'baa': case 'බැ': case 'බෑ': case 'බැහැ': {
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*බැරි නම් නිකං ඉන්න😏*` }, { quoted: m })
                 }
             }
             break
             case 'whoththo': case 'හුත්තෝ': case 'පකය': case 'pakaya': case 'කැරියා': case 'කැම්රි': case 'කැම්රියා': case 'kamriya': case 'humtha': case 'හුත්ති': case 'හුම්ත': case 'හුම්ති': case 'පම්ක': case 'වේසි': case 'වේම්සි': case 'ඇට දෙක': case 'hutti': case 'kari': case 'besikaya': case 'බේසික': case 'පකය': case 'pamka': case 'පොයන්නා': case 'පොන්නයා': case 'පින්නයා': case 'pinnaya': case 'wesi': case 'බඩුව': case 'baduwa': case 'ukkapan': case 'උක්': case 'පයිය': case 'පුක': case 'puka': case 'pumka':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
                 }
             }
             break
             case 'ado': case 'අඩෝ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
                 }
             }
             break
             case 'moko': case 'මොකෝ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
                 }
             }
             break
             case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*එන්නෙපා බල්ල ගාගෙන😒💔💔*` }, { quoted: m })
                 }
             }
             break
             case 'හායි': case 'hi':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*🥴හූයි😁*` }, { quoted: m })
                 }
             }
             break
             case 'kolukaraya': case 'කොලුකාරයා':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*ඇයි මේ අපහාස😒*` }, { quoted: m })
                 }
             }
             break
             case 'haminenawane': case 'හැමිනෙනවනෙ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*අනේ පලහ්😂*` }, { quoted: m })
                 }
             }
             break
             case 'e': case 'ee': case 'ඒ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ🌚*` }, { quoted: m })
                 }
             }
             break
             case 'ane': case 'අනෙ': case 'අනේ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මොකෝ අනේ🤭🤭*` }, { quoted: m })
                 }
             }
             break
             case 'ow': case 'ඔව්': case 'ඕ': case 'oo':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*එහෙනම් එච්චරයි🤭*` }, { quoted: m })
                 }
             }
             break
             case 'halo': case 'hello': case 'haloo': case 'හලො': case 'හලෝ': case 'හලූ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*🌝මොකෝ හලෝ🤭*` }, { quoted: m })
                 }
             }
             break
             case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
                 }
             }
             break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
                 }
             }
             break
             case 'kamak': case 'kamanna': case 'කමක්': case 'කමන්නෑ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*ආ කමක් නෑ...😂👍*` }, { quoted: m })
                 }
             }
             break
             case 'balamu': case 'balanna': case 'බලමු': case 'බලන්න':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*බලමුකෝ😂👍*` }, { quoted: m })
                 }
             }
             break
             case 'pala': case 'palayan': case 'පල': case 'පලහ්': case 'පලයන්': case 'පලකො':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*හා උබ කියනකන් හිටියෙ😒💔*` }, { quoted: m })}
             }
             break
             case 'aththada': case 'ඇත්තද': case 'සිරාද': case 'ඇත්තෙයි': case 'අම්මපා': case 'ඇත්ත':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෑ😒*` }, { quoted: m })}
             }
             break
             case 'gm': case 'goodmorning': case 'gummoninm': case 'ගුඩ්මෝනිං': case 'ගුම්මෝනිං': case 'ගුඩ්මෝනිං😌': case 'ගුම්මෝනිං❤️': case 'ගුඩ්මෝනිම්':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*🎤දහසක් මල්🌸 විකසිත වන😊 මේ හිමිදිරි උදෑසනේ🌄 පතන්නම් ඔබ සැමට🙏 සුභම සුභ උදෑසනක් කියා...😃*` }, { quoted: m })}
             }
             break
             case 'gn': case 'goodnight': case 'gumnight': case 'ගුඩ්නයිට්': case 'ගුම්නයිත්': case 'ගුඩ්නයිට්😌': case 'ගුම්නයිට්❤️': case 'ගුඩ්නයිට්🌚❤️':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*ලබන්නාවූ රාත්‍රිය😌 හීනෙන් හොල්මන් පෙනෙන, මහ රෑ දාඩියෙන් තෙමී ඇහැරෙන, පෙරේතයන් ඇද යටට එන, කුම්භාණ්ඩයින් ජනෙල් වලින් එබී බලන, භයානක රාත්‍රියක් වේවා☠️👻👻*` }, { quoted: m })}
             }
             break
             case '🥰': case '😗': case '😙': case '😘😘': case '😘': case '😍': case 'umma': case '💗':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*😘අයි ලව් යූ💗උම්මාහ්🥰🥰🤓*` }, { quoted: m })}
             }
             break
             case 'බොටා_වැලක්_බලමුද?':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `ම්ම්ම්...බලමු😋\nhttps://www.pornhub.com/view_video.php?viewkey=ph61acfce1cf358\nhttps://www.pornhub.com/view_video.php?viewkey=ph61a3626db0be3\nhttps://www.pornhub.com/view_video.php?viewkey=ph61572e2818e7c\nhttps://www.pornhub.com/view_video.php?viewkey=ph615b0d4e909d1` }, { quoted: m })
                 }
             }
             break
             case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
-                if (global.chatbotpre === 'false'  ) return
-                if (global.chatbotpre === 'true'  ) {
+                if (global.chatbotpre = false) return
+                if (global.chatbotpre = true) {
                 RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
-
-            //spam\\
-case 'spama': {
-    if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
-    if (!text) return reply("Type how many spams do you want to send\nExample: .spama 5")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspama}`})
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
-}
-break
-case 'spamb': {
-    if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
-    if (!text) return reply("Type how many spams do you want to send\nExample: .spamb 27")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamb}`})
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
-}
-break
-case 'spamc': {
-    if (!isCreator) return replay(`${mess.owner}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(3)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(4)===`})
-    RedDragonMdNx.sendMessage(m.chat, { text: `===(5)===`})
-    if (!text) return reply("Type how many spams do you want to send\nExample: .spamc 9")
-    let spama = await RedDragonMdNx.sendMessage(m.chat, { text: `*☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-    *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
-    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspamc}`})
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
-}
-break
-case 'antispam': {
-    if (!isAdmins) return replay(`${mess.admin}`)
-    RedDragonMdNx.sendMessage(m.chat, { text: `☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-💦💦💦💦💦💦💦💦💦💦💦
-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-💦💦💦💦💦💦💦💦💦💦💦
-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❕🙊𝐆𝐔𝐀𝐑𝐃࿐
-💦💦💦💦💦💦💦💦💦💦💦\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️
-\n\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nඉහලට යෑමෙන් වළකින්න!
-DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nඉහලට යෑමෙන් වළකින්න!
-DO NOT GO UP !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
-CLEAR CHAT !\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
-CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCLEAR CHAT !\n\n\n\n\n\n\n\nචැට් Clear කරන්න!\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n`})          
-}
-break
+            
             /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
@@ -3599,7 +3471,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                         timestampe = speed();
                         latensie = speed() - timestampe
                         var unicorn = await getBuffer('https://i.ibb.co/x7qYTrq/20220605-103944.jpg')
-                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `●●➾ Hi, ${pushname}\n●●➾ I am Alive👋\n●●➾ ${botname}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n❯❯●●●●●●●●●●●    ●●●●●●●●●●●❮❮`,unicorn, [{
+                        await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `●●➾ ${botname}\n●●➾ ╠ Hi, ${pushname} ╣\n●●➾ ╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n\n●●➾ ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n❯❯●●●●●●●●●●●    ●●●●●●●●●●●❮❮`,unicorn, [{
                             urlButton: {
                             displayText: 'Red Dragon Website ●',
                             url: 'https://sites.google.com/view/red-dragon-bot/home'
@@ -3611,26 +3483,61 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                             }                            	
                             }, {
                             quickReplyButton: {
-                            displayText: '⫷ OWNER ⫸',
+                            displayText: '❮❮😎Owner👤❯❯',
                             id: `${prefix}owner`
                             }
                             },{
                             quickReplyButton: {
-                            displayText: '⫷ LIST MENU ⫸',
+                            displayText: '❮❮💎List Menu💎❯❯',
                             id: `${prefix}command`
                             }
                             }] )
                             break
-                            case 'notice':{
-                                replay(`Hi, ${global.ownername}\nFrom RED-DRAGON\n\nDear owner,\nIf you use bot commands,\nYou should be delete it for everyone after send.\nElse, if your bot refreshing or restarting times, your bot send auto replies for your messages non stop. It is a interruption to users. This note only for bot owner.`)
-                                replay(`හායි, ${global.ownername}\nRED-DRAGON විසින්\n\nඅයිිතිකරු වෙත,\nඔබ විසින් විධාන භාවිතා කරනවානම් එය සැමගෙන් මකා දැමිය යුතුය.\nඑසේ නොකළහොත් ඔබේ බොට් ක්‍රියාකාරීත්වය අලුත් වන සෑම විටම ඔබ යැවූ විධාන සඳහා කිහිප වරක් හෝ දිගටම auto reply යැවීමට ඉඩ ඇත. මෙය අයිතිකරු හට පමණක් වලංගු වේ.`)
+
+                            /*case 'bot': case 'alive': case 'menu': case 'list':{
+                        timestampe = speed();
+                        latensie = speed() - timestampe
+                            let buttons = [{
+                                urlButton: {
+                                displayText: 'Red Dragon Website🔖',
+                                url: 'https://sites.google.com/view/red-dragon-bot/home'
+                                }
+                                }, {
+                                urlButton: {
+                                displayText: `${button}`,
+                                url: `${btnurl}`
+                                }                            	
+                                }, {
+                                quickReplyButton: {
+                                displayText: '❮❮😎Owner👤❯❯',
+                                id: `${prefix}owner`
+                                }
+                                },{
+                                quickReplyButton: {
+                                displayText: '❮❮🔮All Menu🔮❯❯',
+                                id: `${prefix}menuall`
+                                }
+                                }, {
+                                quickReplyButton: {
+                                displayText: '❮❮💎List Menu💎❯❯',
+                                id: `${prefix}command`
+                                }
+                                }]
+                            let buttonMessage = {
+                                image: fs.readFileSync('./DragonMedia/image/red-_-dragon-kumuthu.jpg'),
+                                caption: `╔●●🔥${botname}\n▌ ╠ Hi, ${pushname} ╣\n╚●●●❖╠ I am Alive👋 ╣\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n▌❮✮❯ 𝘽𝙤𝙩 𝙉𝙖𝙢𝙚 :${global.botname}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙖𝙢𝙚 :${global.ownername}\n▌❮✮❯ 𝙊𝙬𝙣𝙚𝙧 𝙉𝙪𝙢𝙗𝙚𝙧 :${global.owner}\n▌❮✮❯ 𝙎𝙥𝙚𝙚𝙙 : ${latensie.toFixed(4)} miliseconds\n▌❮✮❯ 𝙋𝙡𝙖𝙩𝙛𝙤𝙧𝙢 : ${os.platform()}\n▌⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀⦀:\n${global.alivemsg}\n╗\n${global.namedd}\n❯❯●●●●●●●●●●     ●●●●●●●●●●❮❮`,
+                                footer: RedDragonMdNx.user.name,
+                                buttons: buttons,
+                                headerType: 4
                             }
-                            break
+                            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                        }
+                        break */
                 case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}👀\n`,
-                    description: ` Choose The List Menu\n\n ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\n 📧 ${global.ownername}`,
+                    title: `Hi ${pushname}`,
+                    description: ` Choose The List Menu\n ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n`,
                     buttonText: "List Menu",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
@@ -3772,7 +3679,6 @@ case 'allmenu': case 'menuall': {
                 caption: `🙂-☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
 ┃╔══☯︎❯ MAIN ❮ 🐲👇
 ┃║
-┃╠✹🔥 ${prefix}notice (Advise For Owner)
 ┃╠✹🔥 ${prefix}alive
 ┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
@@ -3785,7 +3691,6 @@ case 'allmenu': case 'menuall': {
 ┃╠✹🔥 ${prefix}quoted
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
-┃╠✹🔥 ${prefix}antispam
 ┃║
 ┃╠✹🔥══☬❯ OWNER ❮ 🐲👇
 ┃║
@@ -3798,11 +3703,6 @@ case 'allmenu': case 'menuall': {
 ┃╠✹🔥 ${prefix}bcall [text]
 ┃╠✹🔥 ${prefix}setppbot [image]
 ┃╠✹🔥 ${prefix}setexif
-┃╠✹🔥 ${prefix}chatbot [on/off]
-┃╠✹🔥 ${prefix}spama [number] ⚠
-┃╠✹🔥 ${prefix}spamb [number] ⚠
-┃╠✹🔥 ${prefix}spamc [number] ⚠
-┃╠✹🔥 ${prefix}notice (Advise For Owner)
 ┃║
 ┃╠✹🔥══☬❯ GROUP ❮ 🐲👇   
 ┃║   
@@ -4082,7 +3982,6 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━❯ ${botname} ❮━━😎 
 ┃╔═☬❯ MAIN ❮ 🐲👇
 ┃║
-┃╠✹🔥 ${prefix}oticen (Advise For Owner)
 ┃╠✹🔥 ${prefix}alive
 ┃╠✹🔥 ${prefix}info
 ┃╠✹🔥 ${prefix}script
@@ -4095,9 +3994,8 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}quoted
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
-┃╠✹🔥 ${prefix}antispam
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 
 case 'grupmenu': case 'groupmenu':
@@ -4127,7 +4025,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'rpgmenu':
 var unicorn = await getBuffer(picak+'Rpg Menu')
@@ -4145,7 +4043,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}buy [option]
 ┃╠✹🔥 ${prefix}sell [option]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -4199,15 +4097,14 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}math [mode]
 ┃╠✹🔥 ${prefix}suitpvp [tag]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'ownermenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━❯ ${botname} ❮━━😎 
 ┃╔═☬❯ OWNER ❮ 🐲👇	   
-┃║
-┃╠✹🔥 ${prefix}notice (Advise For Owner)
+┃║     
 ┃╠✹🔥 ${prefix}grouplink
 ┃╠✹🔥 ${prefix}ephemeral [option]
 ┃╠✹🔥 ${prefix}setgcpp [image]
@@ -4228,12 +4125,8 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}upvote
 ┃╠✹🔥 ${prefix}checkvote
 ┃╠✹🔥 ${prefix}delvote
-┃╠✹🔥 ${prefix}chatbot [on/off]
-┃╠✹🔥 ${prefix}spama [number]
-┃╠✹🔥 ${prefix}spamb [number]
-┃╠✹🔥 ${prefix}spamc [number]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
@@ -4249,7 +4142,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}joox [query]
 ┃╠✹🔥 ${prefix}soundcloud [url]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
@@ -4269,7 +4162,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}ringtone [query]
 ┃╠✹🔥 ${prefix}webtoon [query]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
@@ -4281,7 +4174,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}animequote (indo)
 ┃╠✹🔥 ${prefix}couplepp
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
@@ -4317,7 +4210,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}dance
 ┃╠✹🔥 ${prefix}cringe
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
@@ -4357,7 +4250,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}blackpink [txt]
 ┃╠✹🔥 ${prefix}gluetext [txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
@@ -4377,7 +4270,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}ebinary [reply txt]
 ┃╠✹🔥 ${prefix}dbinary [reply txt]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4394,7 +4287,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}getmsg
 ┃╠✹🔥 ${prefix}delmsg
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
@@ -4407,7 +4300,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}next
 ┃╠✹🔥 ${prefix}leave
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
@@ -4417,7 +4310,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃║	        
 ┃╠✹🔥 ${prefix}juzamma
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
@@ -4437,7 +4330,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}slow [reply aud]
 ┃╠✹🔥 ${prefix}squirrel [reply aud]
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
@@ -4476,7 +4369,7 @@ await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠✹🔥 ${prefix}zodiak (indo)
 ┃╠✹🔥 ${prefix}shio (indo)
 ┃╚═════════════☬
-┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⫷ OWNER ⫸","id": 'owner'}}] )
+┗━━❯ ${pushname} ❮━😎`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "Red Dragon Website🔖","url": `https://sites.google.com/view/red-dragon-bot/home`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "�Owner👤","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
