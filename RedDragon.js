@@ -3498,7 +3498,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
             //spam\\
 case 'spama': {
-    if (!isCreator) return replay(`${mess.owner}`)
+    //if (!isCreator) return replay(`${mess.owner}`)
     RedDragonMdNx.sendMessage(m.chat, { text: `\`\`\`===(...RUNNING..RED..DRAGON...)===\`\`\`\n\`\`\`===(...SPAM..HUNTING...)===\`\`\`\n\n\`\`\`===(...POWERFULL..SPAM..LAB...)===\`\`\``})
     RedDragonMdNx.sendMessage(m.chat, { text: `===(1)===`})
     RedDragonMdNx.sendMessage(m.chat, { text: `===(2)===`})
@@ -3510,7 +3510,7 @@ case 'spama': {
     🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
     *☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡❗🐲𝐇𝐔𝐍𝐓࿐*
     🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥\n\n\n\n${global.reddragonspama}`})
-    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(args[0])})
+    RedDragonMdNx.sendMessage(m.chat, { text: spama.repeat(2)})
 }
 break
 case 'spamb': {
