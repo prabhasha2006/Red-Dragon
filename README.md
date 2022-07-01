@@ -20,6 +20,8 @@ Version 4.5 (Chat bot)
 
 Version 4.6 (Deploy error fixed) 2022-06-20 latest 
 
+Version 4.8 (Text pro logo not working [Fixed])
+
 Version 5.0 (You can get songs AUDIO/DOCUMENT/VOICE types)
 
 
