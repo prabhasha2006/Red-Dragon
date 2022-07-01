@@ -258,29 +258,25 @@ const reply = (teks) => {
         }
 
         //auto reply 
-            for (let anji of setik){
-                if (global.chatbotpre = false) return
+        for (let anji of setik){
 				if (budy === anji){
 					result = fs.readFileSync(`./DragonMedia/sticker/${anji}.webp`)
 					RedDragonMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
-                if (global.chatbotpre = false) return
 				if (budy === anju){
 					result = fs.readFileSync(`./DragonMedia/RedDragonVoice/${anju}.mp3`)
 					RedDragonMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 					}
 			}
 			for (let anjh of imagi){
-                if (global.chatbotpre = false) return
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/image/${anjh}.jpg`)
 					RedDragonMdNx.sendMessage(m.chat, { image: result }, { quoted: m })
 					}
 			}
-			for (let anjh of videox){
-                if (global.chatbotpre = false) return
+					for (let anjh of videox){
 				if (budy === anjh){
 					result = fs.readFileSync(`./DragonMedia/vid/${anjh}.mp4`)
 					RedDragonMdNx.sendMessage(m.chat, { video: result }, { quoted: m })
@@ -2082,17 +2078,17 @@ break
         }
         break
 	    case 'play': case 'song': case 'ytplay': {
-                if (!text) return reply(`Example : ${prefix + command} Stay`)
-                let yts = require("yt-search")
-                let search = await yts(text)
-                let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-                let buttons = [
-                    {buttonId: `ytmp3btn ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
-                    {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: anu.thumbnail },
-                    caption: `                    
+            if (!text) return reply(`Example : ${prefix + command} Stay`)
+            let yts = require("yt-search")
+            let search = await yts(text)
+            let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+            let buttons = [
+                {buttonId: `ytmp3btn ${anu.url}`, buttonText: {displayText: '❮❮🎶Audio🎶❯❯'}, type: 1},
+                {buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '❮❮📽️Video📽️❯❯'}, type: 1}
+            ]
+            let buttonMessage = {
+                image: { url: anu.thumbnail },
+                caption: `                    
 ╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
 ╠🧸 Title : ${anu.title}
 ╠📍 Channel : ${anu.author.url}
@@ -2103,92 +2099,92 @@ break
 ╠📤 Uploaded On : ${anu.ago}
 ╠🗒️ Description : ${anu.description}
 ╠🔗 Url : ${anu.url}`,
-                    footer: RedDragonMdNx.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                footer: RedDragonMdNx.user.name,
+                buttons: buttons,
+                headerType: 4
             }
-            break
-	    case 'ytmp3btn': {
-            let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: media.thumb },
-                    caption: `╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
+            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+        }
+        break
+    case 'ytmp3btn': {
+        let { yta } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+            let quality = args[1] ? args[1] : '320kbps'
+            let media = await yta(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            let buttons = [
+                {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
+                {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+            ]
+            let buttonMessage = {
+                image: { url: media.thumb },
+                caption: `╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*\n║
 ╠🧸 Title : ${media.title}`,
-                    footer: RedDragonMdNx.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+                footer: RedDragonMdNx.user.name,
+                buttons: buttons,
+                headerType: 4
             }
-            break
-            case 'ytaudio': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+        }
+        break
+        case 'ytaudio': {
+            let { yta } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+            let quality = args[1] ? args[1] : '320kbps'
+            let media = await yta(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+        }
+        break
+        case 'ytdoc': {
+            let { yta } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+            let quality = args[1] ? args[1] : '320kbps'
+            let media = await yta(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            RedDragonMdNx.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+        }
+        break
+        case 'ytvoice': {
+            let { yta } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+            let quality = args[1] ? args[1] : '320kbps'
+            let media = await yta(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` , ptt: true}, { quoted: m })
+        }
+        break
+        case 'ytmp3': case 'getmusic': case 'ytaudio': {
+            let { yta } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
+            let quality = args[1] ? args[1] : '320kbps'
+            let media = await yta(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            let buttons = [
+                {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
+                {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
+                {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
+            ]
+            let buttonMessage = {
+                image: { url: media.thumb},
+                caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n╠ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
+                footer: RedDragonMdNx.user.name,
+                buttons: buttons,
+                headerType: 4
             }
-            break
-            case 'ytdoc': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
-            }
-            break
-            case 'ytvoice': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` , ptt: true}, { quoted: m })
-            }
-            break
-            case 'ytmp3': case 'getmusic': case 'ytaudio': {
-                let { yta } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 128kbps`)
-                let quality = args[1] ? args[1] : '320kbps'
-                let media = await yta(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                let buttons = [
-                    {buttonId: `ytaudio ${text}`, buttonText: {displayText: '❮❮   🎶Audio🎶   ❯❯'}, type: 1},
-                    {buttonId: `ytdoc ${text}`, buttonText: {displayText: '❮❮🔊Document🔊❯❯'}, type: 1},
-                    {buttonId: `ytvoice ${text}`, buttonText: {displayText: '❮❮🎤Voice Note🎤❯❯'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: media.thumb},
-                    caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '320kbps'}\n║\n╠ *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`,
-                    footer: RedDragonMdNx.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
-            case 'ytmp4': case 'getvideo': case 'ytvideo': {
-                let { ytv } = require('./lib/y2mate')
-                if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 360p`)
-                let quality = args[1] ? args[1] : '360p'
-                let media = await ytv(text, quality)
-                if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '360p'}\n║\n╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
-            }
-            break
+            RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+        }
+        break
+        case 'ytmp4': case 'getvideo': case 'ytvideo': {
+            let { ytv } = require('./lib/y2mate')
+            if (!text) return reply(`Example : ${prefix + command} https://youtu.be/E5C-lrl_g9I 360p`)
+            let quality = args[1] ? args[1] : '360p'
+            let media = await ytv(text, quality)
+            if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
+            RedDragonMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `╠🙂🔥${botname}\n║\n╠🧸 Title : ${media.title}\n╠📂 File Size : ${media.filesizeF}\n╠🔗 Url : ${isUrl(text)}\n╠🪣 Ext : MP3\n╠🎞️ Resolution : ${args[1] || '360p'}\n║\n╠🤓 *ᴘᴏᴡᴇʀᴅ ʙʏ:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*` }, { quoted: m })
+        }
+        break
 	    case 'getmusicxxx': {
                 let { yta } = require('./lib/y2mate')
 		let urls = quoted.text.match(new RegExp(/(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?:watch|v|embed|shorts)(?:\.php)?(?:\?.*v=|\/))([a-zA-Z0-9\_-]+)/, 'gi'))
@@ -3495,7 +3491,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
-
             //spam\\
 case 'spama': {
     if (!isCreator) return replay(`${mess.owner}`)
@@ -3560,6 +3555,7 @@ CLEAR CHAT !\n\n\n\n\n\n\n\n\n\nචැට් Clear කරන්න!
 CLEAR CHAT !\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhttps://sites.google.com/view/red-dragon-bot/home\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCLEAR CHAT !\n\n\n\n\n\n\n\nචැට් Clear කරන්න!\n\n\n\n\n\n\n\n\n❤️☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐❤️\n🛡️𝗔𝗡𝗧𝗜 𝗦𝗣𝗔𝗠 𝗚𝗨𝗔𝗥𝗗🛡️\n\n\n\n\n\n`})          
 }
 break
+            /////////////////////////////////////////////
             /////////////////////////////////////////////
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
 					reply(mess.wait)
@@ -3763,7 +3759,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             
                 
             
-case 'allmenu': case 'menuall': {
+            case 'allmenu': case 'menuall': {
                
                 let buttons = [
                     {buttonId: `${prefix}owner`, buttonText: {displayText: '❮❮😎Owner👤❯❯'}, type: 1}]
