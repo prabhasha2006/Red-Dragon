@@ -22,7 +22,7 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `I am 𝐎𝐖𝐖 𝐒𝐇𝐀𝐃𝐎𝐖🔥
+global.alivemsg = `I am 𝐎𝐰𝐰 𝐒𝐡𝐚𝐝𝐨𝐰😎🔥
 My Creator is 𝐎𝐧𝐢𝐭𝐡𝐚 𝐖𝐚𝐭𝐡𝐦𝐢𝐫𝐚😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['94701733767'] //Owner number 1
@@ -33,7 +33,7 @@ global.ownername = '😎𝐎𝐰𝐰 𝐒𝐡𝐚𝐝𝐨𝐰' //Owner Name
 global.botname = ' ༺𝐏𝐫𝐢𝐧𝐜𝐞𝐬𝐬⃠ツ𝐃𝐢𝐧𝐮⃟༻' //Bot Name
 
 global.button = '🤭Youtube📍' //Costomize A Button Name In Alive Message
-global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
+global.btnurl = 'Youtube Link Not Supported' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
@@ -42,7 +42,7 @@ global.author = '😎𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
-global.footer = '©_Kumuthu.'
+global.footer = '©_𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰.'
 global.chatbotpre = false   //chat bot and auto reply: true/false
 
 
