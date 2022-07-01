@@ -43,7 +43,7 @@ global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,ali
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
 global.footer = '©_𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰.'
-global.chatbotpre = false   //chat bot and auto reply: true/false
+global.chatbotpre = 'false'   //chat bot and auto reply: true/false
 
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
