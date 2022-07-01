@@ -42,7 +42,7 @@ global.author = '😎𝐎𝐰𝐰𝐬𝐡𝐚𝐝𝐨𝐰❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor In Menu!
-global.chatbotpre = true   //chat bot and auto reply: true/false
+global.chatbotpre = false   //chat bot and auto reply: true/false
 
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
