@@ -3322,13 +3322,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
         //chat bot\\
         case 'chatbot': {
-            if (!isCreator) return replay(`${mess.owner}`)
+            //if (!isCreator) return replay(`${mess.owner}`)
             if (args[0] === "on") {
-            if (global.chatbotpre) return reply(`Activated`)
+            if (global.chatbotpre === "on") return reply(`Activated`)
             global.chatbotpre = true
             reply(`Chat Bot Active !`)
             } else if (args[0] === "off") {
-            if (global.chatbotpre) return reply(`Deactivated`)
+            if (global.chatbotpre === "off") return reply(`Deactivated`)
             global.chatbotpre = false
             reply(`Chat Bot Inactive !`)
             } else {
