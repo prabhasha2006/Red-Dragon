@@ -3492,7 +3492,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'na': case 'naa': case 'නැ': case 'නෑ': case 'නෑනෙ': case 'nane': case 'naha': case 'නැතෝ':{
                 if (global.chatbotpre = false) return
                 if (global.chatbotpre = true) {
-                RedDragonMdNx.sendMessage({ text: `*හේ හේ, නැද්ද☹️*` })}
+                RedDragonMdNx.sendMessage({ text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })}
             }
             break
 
