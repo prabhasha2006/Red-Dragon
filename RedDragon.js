@@ -3310,6 +3310,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 result = fs.readFileSync(`./src/dragonowner/info.mp3`)
                 RedDragonMdNx.sendMessage(m.chat, { audio: result, mimetype: 'audio/mp4', ptt: true }, { quoted: m })
                 reply(`🌹My Owner Is *${global.ownername}*\n\n*_https://wa.me/${global.ownernomer}_*\n\n🥇${global.botname}`)
+                RedDragonMdNx.sendContact(m.chat, global.owner, m)
                  
             }
             break
