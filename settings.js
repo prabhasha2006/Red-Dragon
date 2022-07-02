@@ -29,8 +29,8 @@ global.ownernomer = '+380944814219' //Owner Number <<<
 global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
 global.botname = ' ☬RED༒DRAGON' //Bot Name
 
-global.button = '🤭මේක ටච් කරන්න📍' //Costomize A Button Name In Alive Message
-global.btnurl = '🙂🔥දැන් සැපද?😑' //Change Your Button's URL
+global.button = '🤭Youtube📍' //Costomize A Button Name In Alive Message
+global.btnurl = 'https://youtu.be/E5C-lrl_g9I' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
@@ -45,7 +45,8 @@ global.chatbotpre = 'true'  // Chat bot true/false
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
 
-global.mess = { // Error Mesages
+global.mess = { // cOSTOMIZE WITH YOUR LANGUAGE
+	
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
     botAdmin: 'Bot wants to be an Admin😥',
