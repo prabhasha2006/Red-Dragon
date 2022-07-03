@@ -3837,7 +3837,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     }
                 }
                 RedDragonMdNx.sendMessage(m.chat, reactionMessage)
-            }
+            
             }
             break    
             case 'allmenu': case 'menuall': {
