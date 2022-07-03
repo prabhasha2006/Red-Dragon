@@ -3823,14 +3823,14 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                     {buttonId: `${prefix}alive`, buttonText: {displayText: '⫷ ALIVE ⫸'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/FKJvwZ3/20220703-093716.jpg'},
-                caption: `Your Version Is 6.0\n\ncheck your updates\nhttps://sites.google.com/view/red-dragon-bot/home` ,
+                caption: `*Your Version is 6.0*\n\ncheck your updates\nhttps://sites.google.com/view/red-dragon-bot/home` ,
                 footer: '◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ MD',
                 react: "✅",
                 buttons,
                 headerType: 4
                 }
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
-            
+            RedDragonMdNx.sendReaction(m.chat, {react: "✅"} { quoted: m })
             }
             break    
             case 'allmenu': case 'menuall': {
