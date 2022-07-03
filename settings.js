@@ -1,8 +1,8 @@
-//════════════(00)═══════════════════════════════════════//
+//════════════(00)════════════════\\
 //
-//          RED DRAGON v5.0
+//          RED DRAGON v6.0
 //
-//════════════(00)════════════════//
+//════════════(00)════════════════\\
 
 const fs = require('fs')
 const chalk = require('chalk')
@@ -38,7 +38,8 @@ global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
 global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
-global.sp = '⭔' //A Charactor In Menu!
+global.sp = '⭔' //A Charactor
+global.dragonemoji = '🧩' // Menu emoji
 global.footer = '©_Kumuthu.' //In list menu
 global.chatbotpre = 'true'  // Chat bot true/false
 
