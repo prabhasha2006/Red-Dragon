@@ -104,15 +104,15 @@ async function startRedDragonMdNx() {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `Group Settings Change Message`, wm_fatih, [])
        } else {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `🪀 Group Settings Changed 🪀\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `Group Settings Change Message`, wm_fatih, [])
      }
     })
 
@@ -140,9 +140,9 @@ async function startRedDragonMdNx() {
         let nama = await RedDragonMdNx.getName(num)
 memb = metadata.participants.length
 
-Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Kon = await getBuffer(`https://hardianto.xyz/api/welcome3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.ibb.co/x7qYTrq/20220605-103944.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
 
-Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://telegra.ph/file/8bbe8a7de5c351dfcb077.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
+Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURIComponent(ppuser)}&name=${encodeURIComponent(nama)}&bg=https://i.ibb.co/x7qYTrq/20220605-103944.jpg&namegb=${encodeURIComponent(metadata.subject)}&member=${encodeURIComponent(memb)}`)
                 if (anu.action == 'add') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
 🤭🌹 Hi👋 @${num.split("@")[0]},
@@ -150,7 +150,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 🤭🌹 Description: ${metadata.desc}
 
-🤭🌹 Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+🤭🌹 Welcome To Our Group😋,\n\n*Powerd by:* ◉ *ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ*`} )
                 } else if (anu.action == 'remove') {
                     RedDragonMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
