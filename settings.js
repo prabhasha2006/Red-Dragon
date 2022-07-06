@@ -20,17 +20,17 @@ global.APIKeys = {
 //customize settings\\
 
 global.alivemsg = `My name is RED DRAGON🔥
-My Creator is Kumuthu Prabhasha😎` //Costomize Alive Message (type your message in `` )
+My Creator is Dineth Randinu 😎` //Costomize Alive Message (type your message in `` )
 
-global.owner = ['+380944814219'] //Owner number in aive msg
-global.premium = ['+380944814219'] //Owner Number info
-global.ownernomer = '+380944814219' //Owner Number <<<
+global.owner = ['+94703199484'] //Owner number in aive msg
+global.premium = ['+94703199484'] //Owner Number info
+global.ownernomer = '+94703199484' //Owner Number <<<
 
-global.ownername = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖' //Owner Name
+global.ownername = '😎𝙆.D.D.R' //Owner Name
 global.botname = ' ☬RED༒DRAGON࿐' //Bot Name
 
 global.button = '🤭Youtube📍' //Costomize A Button Name In Alive Message
-global.btnurl = 'https://youtu.be/E5C-lrl_g9I' //Change Your Button's URL
+global.btnurl = 'https://t.me/Rawana_Developers/210' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
