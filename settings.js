@@ -40,8 +40,8 @@ global.prefa = ['','!','.','😂','❤️','💠'] //Command Prefix eg:(.alive ,
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor
 global.dragonemoji = '🧩' // Menu emoji
-global.footer = '©_Kumuthu.' //In list menu
-global.chatbotpre = 'true'  // Chat bot true/false
+global.footer = 'Panuwa.' //In list menu
+global.chatbotpre = 'false'  // Chat bot true/false
 
 global.ig = 'https://github.com/prabhasha2006' //Github Account!
 
