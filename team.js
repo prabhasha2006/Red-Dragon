@@ -3314,6 +3314,132 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
             break
+		
+		case 'الاقسام': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `Hi ${pushname}`,
+                    description: `يرجى اختيار امر من القائمة \n\n`,
+                    buttonText: "الأوامر🤖",
+                    footerText: `${global.footer}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "الخصائص الرئيسية",
+								"rows": [
+									{
+										"title": "قسم النسائي",
+										"description": "يعرض قائمة الميزات الرئيسية",
+										"rowId": `${prefix}mainmenu`
+									}
+								]
+							},
+							{
+								"title": "ميزات البوت",
+								"rows": [
+									{
+										"title": "كل القائمة",
+										"description": "يعرض قائمة بجميع الميزات!",
+										"rowId": `${prefix}allmenu`
+									},
+									{
+										"title": "قائمة المالك",
+										"description": "يعرض قائمة ميزات المالك",
+										"rowId": `${prefix}ownermenu`
+										},
+									{
+										"title": "قائمة المجموعة",
+										"description": "يعرض قائمة الميزات الرئيسية",
+										"rowId": `${prefix}groupmenu`
+										},
+									{
+										"title": "Rpg قائمة",
+										"description": "يعرض قائمة الميزات RPG",
+										"rowId": `${prefix}rpgmenu`
+									},
+									{
+										"title": "قائمة التنزيلات",
+										"description": "يعرض قائمة ميزات التنزيل",
+										"rowId": `${prefix}downloadmenu`
+									},
+									{
+										"title": "قائمة البحث",
+										"description": "يعرض قائمة ميزات البحث",
+										"rowId": `${prefix}searchmenu`
+									},
+									{
+											"title": "قائمة عشوائية",
+										"description": "يعرض قائمة ميزات عشوائيه",
+										"rowId": `${prefix}randommenu`
+										},
+										{
+											"title": "Random Anime Menu",
+										"description": "Displays The List Of Random Anime Features",
+										"rowId": `${prefix}randomanimemenu`
+										},
+										{
+											"title": "Fun Menu",
+										"description": "Displays The List Of Fun Features",
+										"rowId": `${prefix}funmenu`
+										},
+										{
+											"title": "Convert Menu",
+										"description": "Displays The List Of Convert Features",
+										"rowId": `${prefix}convertmenu`
+										},
+										{
+											"title": "Database Menu",
+										"description": "Displays The List Of Database Features",
+										"rowId": `${prefix}databasemenu`
+										},
+										{
+											"title": "Voice Changer Menu",
+										"description": "Displays The List Of Voice Changing Features",
+										"rowId": `${prefix}voicechangermenu`
+										},
+										{
+											"title": "TXT-to-IMG Menu",
+										"description": "Displays The List Of Textpro Features",
+										"rowId": `${prefix}textpromenu`
+										},
+										{
+											"title": "Islamic Menu",
+										"description": "Displays The List Of Islamic Features",
+										"rowId": `${prefix}islamicmenu`
+										},
+										{
+											"title": "Horoscope Menu",
+										"description": "Displays The List Of Horoscope Features",
+										"rowId": `${prefix}horoscopemenu`
+										}
+								]
+							},
+							{
+								"title": "Chat With Fellow Users",
+								"rows": [
+									{
+										"title": "Anonymous Chat Menu",
+										"description": "Displays The List Of Anonymous Chat Features",
+										"rowId": `${prefix}anonymouschatmenu`
+									}
+								]
+							},
+							{
+								"title": "Credit",
+								"rows": [
+									{
+										"title": "Thanks To",
+										"description": "Displays The List Of Credit Of The Bot !!",
+										"rowId": `${prefix}tqtt`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
