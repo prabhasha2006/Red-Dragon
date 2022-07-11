@@ -3306,6 +3306,10 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*﴾ֆ👋🏻🌚 g⅃᎗බ*` }, { quoted: m })
             }
             break
+		case 'هاي': {
+                RedDragonMdNx.sendMessage(from, { text: `*﴾ֆ👋🏻🌚 g⅃😃බ*` }, { quoted: m })
+            }
+            break
             case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
