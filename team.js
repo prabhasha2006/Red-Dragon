@@ -3314,101 +3314,100 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
             }
             break
-		
 		case 'الاقسام': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
-                    title: `Hi ${pushname}`,
-                    description: `يرجى اختيار امر من القائمة \n\n`,
-                    buttonText: "الأوامر🤖",
+                    title: `مرحبا ${pushname}`,
+                    description: `يرجى اختيار القسم الذي تريد \n\n`,
+                    buttonText: "الاقسام🤖",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "الخصائص الرئيسية",
+								"title": "الدور الاول",
 								"rows": [
 									{
-										"title": "قسم النسائي",
-										"description": "يعرض قائمة الميزات الرئيسية",
+										"title": "قسم الرجالي",
+										"description": "يوجد جميع الملابس الرجالي و الشبابيه",
 										"rowId": `${prefix}mainmenu`
 									}
 								]
 							},
 							{
-								"title": "ميزات البوت",
+								"title": "الدور الثاني",
 								"rows": [
 									{
-										"title": "كل القائمة",
-										"description": "يعرض قائمة بجميع الميزات!",
+										"title": "قسم الولادي",
+										"description": "جميع انواع الملابس الولاديه و الاطفال!",
 										"rowId": `${prefix}allmenu`
 									},
 									{
-										"title": "قائمة المالك",
-										"description": "يعرض قائمة ميزات المالك",
+										"title": "قسم النسائي",
+										"description": "يوجد جميع الملابس النسائيه",
 										"rowId": `${prefix}ownermenu`
 										},
 									{
-										"title": "قائمة المجموعة",
-										"description": "يعرض قائمة الميزات الرئيسية",
+										"title": "قسم الادوات المنزليه",
+										"description": "يوجد جميع الادوات المنزليه",
 										"rowId": `${prefix}groupmenu`
 										},
 									{
-										"title": "Rpg قائمة",
-										"description": "يعرض قائمة الميزات RPG",
+										"title": "قسم المنظفات",
+										"description": "يوجد جميع المنظفات و الروائح",
 										"rowId": `${prefix}rpgmenu`
 									},
 									{
-										"title": "قائمة التنزيلات",
-										"description": "يعرض قائمة ميزات التنزيل",
+										"title": "قسم الهدايا",
+										"description": "يوجد جميعالهدايا و التحف",
 										"rowId": `${prefix}downloadmenu`
 									},
 									{
-										"title": "قائمة البحث",
-										"description": "يعرض قائمة ميزات البحث",
+										"title": "قسم المكسرات",
+										"description": "يوجد جميع انواع المكسرات",
 										"rowId": `${prefix}searchmenu`
 									},
 									{
-											"title": "قائمة عشوائية",
-										"description": "يعرض قائمة ميزات عشوائيه",
+											"title": "قسم المشروبات",
+										"description": "يوجد جميع انواع الغازات و المشروبات",
 										"rowId": `${prefix}randommenu`
 										},
 										{
-											"title": "Random Anime Menu",
-										"description": "Displays The List Of Random Anime Features",
+											"title": "قسم الحلويات",
+										"description": "يوجد جميع انواع الحلويات",
 										"rowId": `${prefix}randomanimemenu`
 										},
 										{
-											"title": "Fun Menu",
-										"description": "Displays The List Of Fun Features",
+											"title": "قسم الملابس الداخليه",
+										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
 										"rowId": `${prefix}funmenu`
 										},
 										{
-											"title": "Convert Menu",
-										"description": "Displays The List Of Convert Features",
+											"title": "قسم خاص",
+										"description": "خاص بادوات المحل",
 										"rowId": `${prefix}convertmenu`
 										},
 										{
-											"title": "Database Menu",
-										"description": "Displays The List Of Database Features",
+											"title": "تواصل معا الادارة",
+										"description": "للتواصل و الاستفسار و شكاوي للادارة",
 										"rowId": `${prefix}databasemenu`
 										},
 										{
-											"title": "Voice Changer Menu",
-										"description": "Displays The List Of Voice Changing Features",
+											"title": "للتواصل معا مطور البوت",
+										"description": "للتواصل و الاستفسار و طلب بوت خاص",
 										"rowId": `${prefix}voicechangermenu`
 										},
 										{
-											"title": "TXT-to-IMG Menu",
-										"description": "Displays The List Of Textpro Features",
+											"title": "عن مطور البوت",
+										"description": "تم برمجه البوت ببرمجيات خاصه و متطورة لزياده اداء وسهوله استخدام واتس اب",
 										"rowId": `${prefix}textpromenu`
 										},
 										{
-											"title": "Islamic Menu",
-										"description": "Displays The List Of Islamic Features",
+											"title": "خدمات اخرى",
+										"description": "جميع الخدمات هنا",
 										"rowId": `${prefix}islamicmenu`
 										},
 										{
-											"title": "Horoscope Menu",
-										"description": "Displays The List Of Horoscope Features",
+											"title": "بوت ميزو",
+										"description": "شكرا لاستخدامكم بوت ميزو",
 										"rowId": `${prefix}horoscopemenu`
 										}
 								]
