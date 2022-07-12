@@ -3868,12 +3868,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`GitHub : https://github.com/prabhasha2006/Red-Dragon\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
             }
             break
+
             case 'update': case 'updates': case 'checkupdate': case 'version': {
 
                 getupdates = "https://pastebin.com/raw/x5kgbHEh"
                 axios.get(`${getupdates}`)
                   .then(updateornottext =>{ 
-                        const ucheckresult = updateornottext.data   })
+                        const ucheckresult = updateornottext.data  
                         const upresult = ucheckresult.text
                   
                 let buttons = [
@@ -3886,9 +3887,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 buttons,
                 headerType: 4
                 }
-                RedDragonMdNx.sendMessage(m.chat, buttonMessage)
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage) })
             }
-            break    
+            break
             case 'allmenu': case 'menuall': {
                 let buttons = [
                     {buttonId: `${prefix}owner`, buttonText: {displayText: '⫷ OWNER ⫸'}, type: 1},
