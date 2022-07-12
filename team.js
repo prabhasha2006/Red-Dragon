@@ -3268,7 +3268,7 @@ reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك 
              case 'botmarkit':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sman'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}},{"quickReplyButton": {"displayText": "قسم الولادي","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم ادوات تجميل","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الادوات المنزليه","id": 'donate'}}] )
 break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
