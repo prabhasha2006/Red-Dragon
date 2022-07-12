@@ -3421,11 +3421,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
+								"title": "قسم شراء بوت رد تلقائي",
 								"rows": [
 									{
-										"title": "Anonymous Chat Menu",
-										"description": "Displays The List Of Anonymous Chat Features",
+										"title": "شراء بوت رد تلقائي",
+										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
 										"rowId": `${prefix}anonymouschatmenu`
 									}
 								]
