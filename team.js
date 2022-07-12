@@ -3421,7 +3421,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "Chat With Fellow Users",
+								"title": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
 								"rows": [
 									{
 										"title": "Anonymous Chat Menu",
