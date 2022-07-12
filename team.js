@@ -3431,11 +3431,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "Credit",
+								"title": "الاعدادات",
 								"rows": [
 									{
-										"title": "Thanks To",
-										"description": "Displays The List Of Credit Of The Bot !!",
+										"title": "شراء بوت خاص",
+										"description": "شراء بوت متعدد المهام",
 										"rowId": `${prefix}tqtt`
 									}
 								]
