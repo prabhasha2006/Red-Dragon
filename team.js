@@ -3265,6 +3265,11 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
                     break
+             case 'botmarkit':
+var unicorn = await getBuffer(picak+'Developer')
+await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}}] )
+break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
                 RedDragonMdNx.sendMessage(from, { text: `*كم نسبه الحب لي 🤭❤*` }, { quoted: m })
@@ -3436,7 +3441,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت خاص",
 										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}tqtt`
+										"rowId": `${prefix}botmarkit`
 									}
 								]
 							}
