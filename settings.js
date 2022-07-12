@@ -35,7 +35,7 @@ global.btnurl = 'https://youtu.be/E5C-lrl_g9I' //Change Your Button's URL
 global.region = 'India, South India, Kerala' //Country Region
 
 global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
-global.author = '😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯' //Author Name
+global.author = '😎PANUWA❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤️','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor
