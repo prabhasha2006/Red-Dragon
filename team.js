@@ -3268,10 +3268,30 @@ reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك 
              case 'botmarkit':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sman'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}},{"quickReplyButton": {"displayText": "قسم الولادي","id": 'whoththo'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sman'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}},{"quickReplyButton": {"displayText": "قسم الولادي","id": 'swamn'}}] )
 break
 		case 'sman': {
                 RedDragonMdNx.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/vw6T46j/IMG-20211206-WA0016.jpg' }, caption: `*مرحبا, ${m.pushName}*\n ☬مرحبا بكم في بوت ميزو 🤖࿐\nمطور البوت: *ميزو*\n*قسم الملابس النسائيه*\n*يوجد جميع الملابس النسائيه موديلات جديده و تخفيضات و سعر مناسب لطلب السعر و الاستفسار يرجى ارسال رقم المنتج👇🏻*\n\nشراء 2091` }, { quoted: m })
+            }
+            break
+            case 'swamn': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}owner`, buttonText: {displayText: 'شراء🤖'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/djTh2cn/FB-IMG-1656972839190.jpg'},
+                caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ MAIN ❮ 🐲👇
+┃║
+مرحبا بكم في بوت ميزو للخدمات التجاريه وتحسين خدمه واتس اب و ردود الواتس اب التلقائيه 🤖\n\nللحصول على المنتج اضغط على شراء 
+┃║
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
         //chat bot\\
