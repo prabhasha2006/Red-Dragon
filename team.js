@@ -3277,7 +3277,7 @@ break
             case 'swamn': {
                
                 let buttons = [
-                    {buttonId: `${prefix}شراء`, buttonText: {displayText: 'شراء🤖'}, type: 1}]
+                    {buttonId: `${prefix}شراء`, buttonText: {displayText: 'شراء منتج 313'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/djTh2cn/FB-IMG-1656972839190.jpg'},
                 caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
