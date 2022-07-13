@@ -3277,7 +3277,7 @@ break
             case 'swamn': {
                
                 let buttons = [
-                    {buttonId: `${prefix}saler`, buttonText: {displayText: 'شراء'}, type: 1}]
+                    {buttonId: `${prefix}saler`, buttonText: {displayText: 'شراء منتج رقم 313'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/djTh2cn/FB-IMG-1656972839190.jpg'},
                 caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3296,7 +3296,7 @@ break
             break
 case 'saler': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
-هذي رساله طلب الشراء\n\n: ${text: رقم }` })
+هذي رساله طلب الشراء\n\n: ${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
@@ -3309,8 +3309,8 @@ case 'saler': {
                 RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
             }
             break
-            case 'ado': case 'අඩෝ':{
-                RedDragonMdNx.sendMessage(from, { text: `*මොකෝ ඩෝ🌚*` }, { quoted: m })
+            case 'ado': case 'අඩෝ': case 'كيفك':{
+                RedDragonMdNx.sendMessage(from, { text: `*الحمدلله تمام شكرا على سالك عني 🤍🦋*` }, { quoted: m })
             }
             break
             case 'moko': case 'මොකෝ':{
