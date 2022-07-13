@@ -112,7 +112,7 @@ async function startRedDragonMdNx() {
        } else if (pea[0].restrict == false) {
        RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم فتح معلومات المجموعة ، الآن يمكن للمشاركين تحرير معلومات المجموعة !`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
        } else {
-       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم تغيير وصف المجموعة *${pea[0].subject}*`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
+       RedDragonMdNx.send5ButImg(pea[0].id, `「 تم تغيير إعدادات المجموعة 」\n\nتم تغيير اسم المجموعة *${pea[0].subject}*`, `رسالة تغيير إعدادات المجموعة`, wm_fatih, [])
      }
     })
 
