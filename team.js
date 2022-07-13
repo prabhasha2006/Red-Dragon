@@ -3268,8 +3268,12 @@ reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك 
              case 'botmarkit':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sman'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}},{"quickReplyButton": {"displayText": "قسم الولادي","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم ادوات تجميل","id": 'donate'}},{"quickReplyButton": {"displayText": "قسم الادوات المنزليه","id": 'donate'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sman'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'owner'}},{"quickReplyButton": {"displayText": "قسم الولادي","id": 'whoththo'}}] )
 break
+		case 'sman': {
+                RedDragonMdNx.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/vw6T46j/IMG-20211206-WA0016.jpg' }, caption: `*مرحبا, ${m.pushName}*\n ☬مرحبا بكم في بوت ميزو 🤖࿐\nمطور البوت: *ميزو*\n*قسم الملابس النسائيه*\n*يوجد جميع الملابس النسائيه موديلات جديده و تخفيضات و سعر مناسب لطلب السعر و الاستفسار يرجى ارسال رقم المنتج👇🏻*\n\nشراء 2091` }, { quoted: m })
+            }
+            break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
                 RedDragonMdNx.sendMessage(from, { text: `*كم نسبه الحب لي 🤭❤*` }, { quoted: m })
