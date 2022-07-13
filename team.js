@@ -3277,7 +3277,7 @@ break
             case 'swamn': {
                
                 let buttons = [
-                    {buttonId: `${prefix}saler`, buttonText: {displayText: 'شراء منتج رقم 313'}, type: 1}]
+                    {buttonId: `${prefix}saler`, buttonText: {displayText: 'شراء'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/djTh2cn/FB-IMG-1656972839190.jpg'},
                 caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3309,12 +3309,12 @@ case 'saler': {
                 RedDragonMdNx.sendMessage(from, { text: `*කුනුහරුප කියන්න එපා පගෝ😑💔*` }, { quoted: m })
             }
             break
-            case 'ado': case 'අඩෝ': case 'كيفك':{
-                RedDragonMdNx.sendMessage(from, { text: `*الحمدلله تمام شكرا على سالك عني 🤍🦋*` }, { quoted: m })
+            case 'ado': case 'අඩෝ': case 'السلام':{
+                RedDragonMdNx.sendMessage(from, { text: `*وعليكم السلام ورحمة الله وبركاته🤗*` }, { quoted: m })
             }
             break
-            case 'moko': case 'මොකෝ':{
-                RedDragonMdNx.sendMessage(from, { text: `*ඇයි ඇයි මොකෝ😎*` }, { quoted: m })
+            case 'moko': case 'මොකෝ': case 'وينك':{
+                RedDragonMdNx.sendMessage(from, { text: `*بوت ميزو متوفر في الوقت الحالي كيف يمكنني انا اساعدك 🤖*` }, { quoted: m })
             }
             break
             case 'bllo': case 'bamla': case 'බල්ලො': case 'බල්ලා': case 'බම්ලො': case 'බම්ලා': {
