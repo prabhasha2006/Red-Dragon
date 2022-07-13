@@ -3277,7 +3277,7 @@ break
             case 'swamn': {
                
                 let buttons = [
-                    {buttonId: `${prefix}شراء`, buttonText: {displayText: 'شراء منتج 313'}, type: 1}]
+                    {buttonId: `${prefix}saler`, buttonText: {displayText: 'شراء'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/djTh2cn/FB-IMG-1656972839190.jpg'},
                 caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3294,6 +3294,12 @@ break
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+case 'saler': {
+                    	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
+هذي رساله طلب الشراء\n\n: ${text}` })
+            return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
+                           }
+                    break
         //chat bot\\
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
                 RedDragonMdNx.sendMessage(from, { text: `*كم نسبه الحب لي 🤭❤*` }, { quoted: m })
