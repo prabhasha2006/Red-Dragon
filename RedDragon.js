@@ -1,6 +1,3 @@
-// K.Prabhasha
-// ᴘᴏᴡᴇʀᴇᴅ ʙʏ ◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ʙᴏᴛ
-
 require('./settings')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -2084,7 +2081,7 @@ break
         })
         }
         break
-	    case 'play': case 'song': case 'ytplay': {
+	    case 'play': case 'song': case 'ytplay':case 'video': {
             if (!text) return reply(`Example : ${prefix + command} Stay`)
             let yts = require("yt-search")
             let search = await yts(text)
@@ -4043,6 +4040,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 ┃║
 ┃╠${dragonemoji} ${prefix}play [query]
 ┃╠${dragonemoji} ${prefix}song [query]
+┃╠${dragonemoji} ${prefix}video [query]
 ┃╠${dragonemoji} ${prefix}yts [query]
 ┃╠${dragonemoji} ${prefix}google [query]
 ┃╠${dragonemoji} ${prefix}gimage [query]
@@ -4483,6 +4481,7 @@ case 'searchmenu': {
 ┃║	        
 ┃╠${dragonemoji} ${prefix}play [query]
 ┃╠${dragonemoji} ${prefix}song [query]
+┃╠${dragonemoji} ${prefix}video [query]
 ┃╠${dragonemoji} ${prefix}yts [query]
 ┃╠${dragonemoji} ${prefix}google [query]
 ┃╠${dragonemoji} ${prefix}gimage [query]
