@@ -17,6 +17,13 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const nexusnw = require('xfarr-api')
 const maker = require('mumaker')
 
+//react function
+const reactionMessage = {
+    react: {
+    text: args[0],
+    key: { remoteJid: m.chat, fromMe: true, id: quoted.id }
+        }
+    }
 //rpg function\\
    const { 
      addInventoriDarah, 
