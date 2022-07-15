@@ -3268,10 +3268,27 @@ reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك 
            case 'botmarkit':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sallerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellerm'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sallerm'}}] )
 break
-case 'sellerm': { let buttons = [ {buttonId: `${prefix}saler1`, buttonText: {displayText: 'شراء'}, type: 1}] let buttonMessage = { image: { url: 'https://i.ibb.co/pxnrMkb/7.jpg'}, caption: `🙂-☬مرحبا بكم في بوت ميزو 🤖࿐\n\nHello, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃┃╔══☯︎❯ MAIN ❮ 🐲👇┃║مرحبا بكم في بوت ميزو للخدمات التجاريه وتحسين خدمه واتس اب و ردود الواتس اب التلقائيه 🤖\n\nللحصول على المنتج اضغط على شراء ┃║┃╚═══════✍︎☬┗━❯ *مطور البوت ${ownername}* ━😎`, footer: RedDragonMdNx.user.name, buttons, headerType: 4 } RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m }) } 
-break
+case 'sellerm': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallerm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
 case 'sallerm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n: ${text}` })
