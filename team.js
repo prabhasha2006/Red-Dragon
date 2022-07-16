@@ -3258,6 +3258,131 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
          //اوامر مبيعات\\
+             case 'الاقسام': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `مرحبا ${pushname}`,
+                    description: `يرجى اختيار القسم الذي تريد \n\n`,
+                    buttonText: "الاقسام🤖",
+                    footerText: `${global.footer}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{
+								"title": "الدور الاول",
+								"rows": [
+									{
+										"title": "قسم الرجالي",
+										"description": "يوجد جميع الملابس الرجالي و الشبابيه",
+										"rowId": `${prefix}seller1`
+									}
+								]
+							},
+							{
+								"title": "الدور الثاني",
+								"rows": [
+									{
+										"title": "قسم الولادي",
+										"description": "جميع انواع الملابس الولاديه و الاطفال!",
+										"rowId": `${prefix}seller2`
+									},
+									{
+										"title": "قسم النسائي",
+										"description": "يوجد جميع الملابس النسائيه",
+										"rowId": `${prefix}seller3`
+										},
+									{
+										"title": "قسم الادوات المنزليه",
+										"description": "يوجد جميع الادوات المنزليه",
+										"rowId": `${prefix}seller4`
+										},
+									{
+										"title": "قسم المنظفات",
+										"description": "يوجد جميع المنظفات و الروائح",
+										"rowId": `${prefix}seller5`
+									},
+									{
+										"title": "قسم الهدايا",
+										"description": "يوجد جميعالهدايا و التحف",
+										"rowId": `${prefix}seller6`
+									},
+									{
+										"title": "قسم المكسرات",
+										"description": "يوجد جميع انواع المكسرات",
+										"rowId": `${prefix}seller7`
+									},
+									{
+											"title": "قسم المشروبات",
+										"description": "يوجد جميع انواع الغازات و المشروبات",
+										"rowId": `${prefix}seller8`
+										},
+										{
+											"title": "قسم الحلويات",
+										"description": "يوجد جميع انواع الحلويات",
+										"rowId": `${prefix}seller9`
+										},
+										{
+											"title": "قسم الملابس الداخليه",
+										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
+										"rowId": `${prefix}seller10`
+										},
+										{
+											"title": "قسم خاص",
+										"description": "خاص بادوات المحل",
+										"rowId": `${prefix}seller11`
+										},
+										{
+											"title": "تواصل معا الادارة",
+										"description": "للتواصل و الاستفسار و شكاوي للادارة",
+										"rowId": `${prefix}seller12`
+										},
+										{
+											"title": "للتواصل معا مطور البوت",
+										"description": "للتواصل و الاستفسار و طلب بوت خاص",
+										"rowId": `${prefix}seller13`
+										},
+										{
+											"title": "عن مطور البوت",
+										"description": "تم برمجه البوت ببرمجيات خاصه و متطورة لزياده اداء وسهوله استخدام واتس اب",
+										"rowId": `${prefix}seller14`
+										},
+										{
+											"title": "خدمات اخرى",
+										"description": "جميع الخدمات هنا",
+										"rowId": `${prefix}seller15`
+										},
+										{
+											"title": "بوت ميزو",
+										"description": "شكرا لاستخدامكم بوت ميزو",
+										"rowId": `${prefix}seller16`
+										}
+								]
+							},
+							{
+								"title": "قسم شراء بوت رد تلقائي",
+								"rows": [
+									{
+										"title": "شراء بوت رد تلقائي",
+										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
+										"rowId": `${prefix}seller17`
+									}
+								]
+							},
+							{
+								"title": "الاعدادات",
+								"rows": [
+									{
+										"title": "شراء بوت خاص",
+										"description": "شراء بوت متعدد المهام",
+										"rowId": `${prefix}seller18`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
              case 'شراء': {
                     	if(!text) return reply(`يرجى كتابه اسم المنتج الذي تريد الشراء منه\n\n=(مثال)= ${command} ملابس نسائيه`)
                     	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
@@ -3265,7 +3390,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
                     break
-           case 'botmarkit':
+           case 'seller1':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellerm'}}] )
@@ -3350,131 +3475,6 @@ case 'sallerm': {
             break
             case 'danna': case 'danne na': case 'දන්නෑ': case 'දන්නෙ නෑ':{
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
-            }
-            break
-		case 'الاقسام': {
-let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                listMessage :{
-                    title: `مرحبا ${pushname}`,
-                    description: `يرجى اختيار القسم الذي تريد \n\n`,
-                    buttonText: "الاقسام🤖",
-                    footerText: `${global.footer}`,
-                    listType: "SINGLE_SELECT",
-                    sections: [{
-								"title": "الدور الاول",
-								"rows": [
-									{
-										"title": "قسم الرجالي",
-										"description": "يوجد جميع الملابس الرجالي و الشبابيه",
-										"rowId": `${prefix}mainmenu`
-									}
-								]
-							},
-							{
-								"title": "الدور الثاني",
-								"rows": [
-									{
-										"title": "قسم الولادي",
-										"description": "جميع انواع الملابس الولاديه و الاطفال!",
-										"rowId": `${prefix}allmenu`
-									},
-									{
-										"title": "قسم النسائي",
-										"description": "يوجد جميع الملابس النسائيه",
-										"rowId": `${prefix}ownermenu`
-										},
-									{
-										"title": "قسم الادوات المنزليه",
-										"description": "يوجد جميع الادوات المنزليه",
-										"rowId": `${prefix}groupmenu`
-										},
-									{
-										"title": "قسم المنظفات",
-										"description": "يوجد جميع المنظفات و الروائح",
-										"rowId": `${prefix}rpgmenu`
-									},
-									{
-										"title": "قسم الهدايا",
-										"description": "يوجد جميعالهدايا و التحف",
-										"rowId": `${prefix}downloadmenu`
-									},
-									{
-										"title": "قسم المكسرات",
-										"description": "يوجد جميع انواع المكسرات",
-										"rowId": `${prefix}searchmenu`
-									},
-									{
-											"title": "قسم المشروبات",
-										"description": "يوجد جميع انواع الغازات و المشروبات",
-										"rowId": `${prefix}randommenu`
-										},
-										{
-											"title": "قسم الحلويات",
-										"description": "يوجد جميع انواع الحلويات",
-										"rowId": `${prefix}randomanimemenu`
-										},
-										{
-											"title": "قسم الملابس الداخليه",
-										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
-										"rowId": `${prefix}funmenu`
-										},
-										{
-											"title": "قسم خاص",
-										"description": "خاص بادوات المحل",
-										"rowId": `${prefix}convertmenu`
-										},
-										{
-											"title": "تواصل معا الادارة",
-										"description": "للتواصل و الاستفسار و شكاوي للادارة",
-										"rowId": `${prefix}databasemenu`
-										},
-										{
-											"title": "للتواصل معا مطور البوت",
-										"description": "للتواصل و الاستفسار و طلب بوت خاص",
-										"rowId": `${prefix}voicechangermenu`
-										},
-										{
-											"title": "عن مطور البوت",
-										"description": "تم برمجه البوت ببرمجيات خاصه و متطورة لزياده اداء وسهوله استخدام واتس اب",
-										"rowId": `${prefix}textpromenu`
-										},
-										{
-											"title": "خدمات اخرى",
-										"description": "جميع الخدمات هنا",
-										"rowId": `${prefix}islamicmenu`
-										},
-										{
-											"title": "بوت ميزو",
-										"description": "شكرا لاستخدامكم بوت ميزو",
-										"rowId": `${prefix}horoscopemenu`
-										}
-								]
-							},
-							{
-								"title": "قسم شراء بوت رد تلقائي",
-								"rows": [
-									{
-										"title": "شراء بوت رد تلقائي",
-										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
-										"rowId": `${prefix}anonymouschatmenu`
-									}
-								]
-							},
-							{
-								"title": "الاعدادات",
-								"rows": [
-									{
-										"title": "شراء بوت خاص",
-										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}botmarkit`
-									}
-								]
-							}
-						],
-          listType: 1
-                }
-            }), {})
-            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
