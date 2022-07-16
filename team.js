@@ -3272,7 +3272,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "قسم الرجالي",
 										"description": "يوجد جميع الملابس الرجالي و الشبابيه",
-										"rowId": `${prefix}seller1`
+										"rowId": `${prefix}chatinfo`
 									}
 								]
 							},
@@ -3287,72 +3287,72 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "قسم النسائي",
 										"description": "يوجد جميع الملابس النسائيه",
-										"rowId": `${prefix}seller3`
+										"rowId": `${prefix}chatinfo`
 										},
 									{
 										"title": "قسم الادوات المنزليه",
 										"description": "يوجد جميع الادوات المنزليه",
-										"rowId": `${prefix}seller4`
+										"rowId": `${prefix}chatinfo`
 										},
 									{
 										"title": "قسم المنظفات",
 										"description": "يوجد جميع المنظفات و الروائح",
-										"rowId": `${prefix}seller5`
+										"rowId": `${prefix}chatinfo`
 									},
 									{
 										"title": "قسم الهدايا",
 										"description": "يوجد جميعالهدايا و التحف",
-										"rowId": `${prefix}seller6`
+										"rowId": `${prefix}chatinfo`
 									},
 									{
 										"title": "قسم المكسرات",
 										"description": "يوجد جميع انواع المكسرات",
-										"rowId": `${prefix}seller7`
+										"rowId": `${prefix}chatinfo`
 									},
 									{
 											"title": "قسم المشروبات",
 										"description": "يوجد جميع انواع الغازات و المشروبات",
-										"rowId": `${prefix}seller8`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "قسم الحلويات",
 										"description": "يوجد جميع انواع الحلويات",
-										"rowId": `${prefix}seller9`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "قسم الملابس الداخليه",
 										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
-										"rowId": `${prefix}seller10`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "قسم خاص",
 										"description": "خاص بادوات المحل",
-										"rowId": `${prefix}seller11`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "تواصل معا الادارة",
 										"description": "للتواصل و الاستفسار و شكاوي للادارة",
-										"rowId": `${prefix}seller12`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "للتواصل معا مطور البوت",
 										"description": "للتواصل و الاستفسار و طلب بوت خاص",
-										"rowId": `${prefix}seller13`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "عن مطور البوت",
 										"description": "تم برمجه البوت ببرمجيات خاصه و متطورة لزياده اداء وسهوله استخدام واتس اب",
-										"rowId": `${prefix}seller14`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "خدمات اخرى",
 										"description": "جميع الخدمات هنا",
-										"rowId": `${prefix}seller15`
+										"rowId": `${prefix}chatinfo`
 										},
 										{
 											"title": "بوت ميزو",
 										"description": "شكرا لاستخدامكم بوت ميزو",
-										"rowId": `${prefix}seller16`
+										"rowId": `${prefix}chatinfo`
 										}
 								]
 							},
@@ -3362,7 +3362,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت رد تلقائي",
 										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
-										"rowId": `${prefix}seller17`
+										"rowId": `${prefix}chatinfo`
 									}
 								]
 							},
@@ -3372,7 +3372,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت خاص",
 										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}seller18`
+										"rowId": `${prefix}chatinfo`
 									}
 								]
 							}
