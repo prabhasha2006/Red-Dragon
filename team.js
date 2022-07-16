@@ -3390,15 +3390,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
                     break
-           case 'seller1':
+           case 'seller2':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellerm'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'seller21'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'seller22'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'seller23'}}] )
 break
-case 'sellerm': {
+case 'seller21': {
                
                 let buttons = [
-                    {buttonId: `${prefix}sallerm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}saller21`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3414,9 +3414,60 @@ case 'sellerm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sallerm': {
+case 'saller21': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
-هذي رساله طلب الشراء\n\n: ملابس نسائية داخليه كلسون و سنتيانه لون احمر رقم المنتج  213${text}` })
+هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  213${text}` })
+            return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
+                           }
+                    break
+case 'seller22': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}saller22`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃║يوجد جميع انواع الملابس الولادي 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'saller22': {
+                    	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
+هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  214${text}` })
+            return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
+                           }
+                    break
+🔥🔥
+case 'seller23': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}saller23`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃║يوجد جميع انواع الملابس الداخليه الولادي 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'saller23': {
+                    	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
+هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  215${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
