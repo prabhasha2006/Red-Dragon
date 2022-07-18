@@ -20,7 +20,7 @@ global.APIKeys = {
 //customize settings\\
 
 global.alivemsg = `My name is RED sanjaya🔥
-My Creator is Kumuthu Prabhasha😎` //Costomize Alive Message (type your message in `` )
+My Creator is Tharusha Ashan 😎` //Costomize Alive Message (type your message in `` )
 
 global.owner = ['+94760390292'] //Owner number in aive msg
 global.premium = ['+94710330800'] //Owner Number info
@@ -45,11 +45,11 @@ global.dragonemoji = '🧩' // Menu emoji
 global.footer = '©_Kumuthu.' //In list menu
 global.chatbotpre = 'true'  // Chat bot true/false
 
-global.ig = 'https://github.com/prabhasha2006' //Github Account!
+global.ig = 'https://github.com/prabhasha2006' //Github Acco
 
 global.mess = { // COSTOMIZE WITH YOUR LANGUAGE
 	
-    success: 'Done ✅',
+    success: 'Done ✅',😢
     admin: 'Only Admins can use it!😉',
     botAdmin: 'Bot wants to be an Admin😥',
     owner: 'Only Owner can use this!😉',
