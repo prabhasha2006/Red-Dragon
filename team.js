@@ -3362,7 +3362,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت رد تلقائي",
 										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}allmenu`
 									}
 								]
 							},
