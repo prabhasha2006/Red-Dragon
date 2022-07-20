@@ -3472,6 +3472,10 @@ case 'saller23': {
                            }
                     break
         //chat bot\\
+            case 'بوت': {
+                RedDragonMdNx.sendMessage(from, { text: `*مرحبا بكم انا بوت ميزو لخدمات الواتس و الرد التلقائي يرجى ارسال كلمه مساعده*` }, { quoted: m })
+            }
+            break
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
                 RedDragonMdNx.sendMessage(from, { text: `*كم نسبه الحب لي 🤭❤*` }, { quoted: m })
             }
