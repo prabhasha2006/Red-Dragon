@@ -3257,8 +3257,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 reply(`🤭🌹Hi,\nI am ☬MeZo-𝗕𝗢𝗧࿐\nمطور البوت: MeZo\n\nnشكرا لستخدامكم بوت ميزو ==(🌹)==`)
             }
             break
-         //اوامر مبيعات\\
-             case 'الاقسام': {
+            case 'الاقسام': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `مرحبا ${pushname}`,
@@ -3272,7 +3271,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "قسم الرجالي",
 										"description": "يوجد جميع الملابس الرجالي و الشبابيه",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}mainmenu`
 									}
 								]
 							},
@@ -3282,77 +3281,77 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "قسم الولادي",
 										"description": "جميع انواع الملابس الولاديه و الاطفال!",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}allmenu`
 									},
 									{
 										"title": "قسم النسائي",
 										"description": "يوجد جميع الملابس النسائيه",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}ownermenu`
 										},
 									{
 										"title": "قسم الادوات المنزليه",
 										"description": "يوجد جميع الادوات المنزليه",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}groupmenu`
 										},
 									{
 										"title": "قسم المنظفات",
 										"description": "يوجد جميع المنظفات و الروائح",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}rpgmenu`
 									},
 									{
 										"title": "قسم الهدايا",
 										"description": "يوجد جميعالهدايا و التحف",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}downloadmenu`
 									},
 									{
 										"title": "قسم المكسرات",
 										"description": "يوجد جميع انواع المكسرات",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}searchmenu`
 									},
 									{
 											"title": "قسم المشروبات",
 										"description": "يوجد جميع انواع الغازات و المشروبات",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}randommenu`
 										},
 										{
 											"title": "قسم الحلويات",
 										"description": "يوجد جميع انواع الحلويات",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}randomanimemenu`
 										},
 										{
 											"title": "قسم الملابس الداخليه",
 										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}funmenu`
 										},
 										{
 											"title": "قسم خاص",
 										"description": "خاص بادوات المحل",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}convertmenu`
 										},
 										{
 											"title": "تواصل معا الادارة",
 										"description": "للتواصل و الاستفسار و شكاوي للادارة",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}databasemenu`
 										},
 										{
 											"title": "للتواصل معا مطور البوت",
 										"description": "للتواصل و الاستفسار و طلب بوت خاص",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}voicechangermenu`
 										},
 										{
 											"title": "عن مطور البوت",
 										"description": "تم برمجه البوت ببرمجيات خاصه و متطورة لزياده اداء وسهوله استخدام واتس اب",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}textpromenu`
 										},
 										{
 											"title": "خدمات اخرى",
 										"description": "جميع الخدمات هنا",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}islamicmenu`
 										},
 										{
 											"title": "بوت ميزو",
 										"description": "شكرا لاستخدامكم بوت ميزو",
-										"rowId": `${prefix}chatinfo`
+										"rowId": `${prefix}horoscopemenu`
 										}
 								]
 							},
@@ -3362,7 +3361,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت رد تلقائي",
 										"description": "شراء بوت واتس اب رد تلقائي للاعمال التجارية🤖",
-										"rowId": `${prefix}allmenu`
+										"rowId": `${prefix}anonymouschatmenu`
 									}
 								]
 							},
@@ -3372,7 +3371,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت خاص",
 										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}sellerr`
+										"rowId": `${prefix}botmarkit`
 									}
 								]
 							}
@@ -3390,15 +3389,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
                     break
-           case 'sellerr':
+           case 'botmarkit':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerrm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellerrmm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellerrmmm'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellermm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellermmm'}}] )
 break
-case 'sellerrm': {
+case 'sellerm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}sallerrm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallerm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3414,21 +3413,21 @@ case 'sellerrm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sallerrm': {
+case 'sallerm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
-هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  213${text}` })
+هذي رساله طلب الشراء\n\n: ملابس نسائية داخليه كلسون و سنتيانه لون احمر رقم المنتج  213${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
-case 'sellerrmm': {
+case 'sellermm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}sallerrmm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
 ┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
-┃║يوجد جميع انواع الملابس الولادي 
+┃║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
 ┃║بجميع المقاسات و الاحجام 
 ┃╚═══════✍︎☬
 ┗━❯ *مطور البوت ${ownername}*  ━😎`,
@@ -3439,22 +3438,21 @@ case 'sellerrmm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sallerrmm': {
+case 'sallermm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
-هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  214${text}` })
+هذي رساله طلب الشراء\n\n: ملابس نسائية داخليه كلسون و سنتيانه لون احمر رقم المنتج  213${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
-🔥🔥
-case 'sellerrmmm': {
+case 'sellermmm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}sallerrmmm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallermmm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
 ┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
-┃║يوجد جميع انواع الملابس الداخليه الولادي 
+┃║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
 ┃║بجميع المقاسات و الاحجام 
 ┃╚═══════✍︎☬
 ┗━❯ *مطور البوت ${ownername}*  ━😎`,
@@ -3465,9 +3463,9 @@ case 'sellerrmmm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'sallerrmmm': {
+case 'sallermmm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
-هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  215${text}` })
+هذي رساله طلب الشراء\n\n: ملابس نسائية داخليه كلسون و سنتيانه لون احمر رقم المنتج  213${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
