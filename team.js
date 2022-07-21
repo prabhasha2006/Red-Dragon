@@ -3372,7 +3372,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت خاص",
 										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}seller2`
+										"rowId": `${prefix}sellerr`
 									}
 								]
 							}
@@ -3390,15 +3390,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
                     break
-           case 'seller2':
+           case 'sellerr':
 var unicorn = await getBuffer(picak+'Developer')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
-مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'seller21'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'seller22'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'seller23'}}] )
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerrm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellerrmm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellerrmmm'}}] )
 break
-case 'seller21': {
+case 'sellerrm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}saller21`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallerrm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3414,16 +3414,16 @@ case 'seller21': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'saller21': {
+case 'sallerrm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  213${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
-case 'seller22': {
+case 'sellerrmm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}saller22`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallerrmm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3439,17 +3439,17 @@ case 'seller22': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'saller22': {
+case 'sallerrmm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  214${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
 🔥🔥
-case 'seller23': {
+case 'sellerrmmm': {
                
                 let buttons = [
-                    {buttonId: `${prefix}saller23`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                    {buttonId: `${prefix}sallerrmmm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3465,7 +3465,7 @@ case 'seller23': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'saller23': {
+case 'sallerrmmm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n: ملابس ولادي رقم المنتج  215${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
