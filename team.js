@@ -3321,7 +3321,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										{
 											"title": "قسم الملابس الداخليه",
 										"description": "يوجد جميع انواع الملابس الداخليه النسائيه",
-										"rowId": `${prefix}funmenu`
+										"rowId": `${prefix}botmarkit`
 										},
 										{
 											"title": "قسم خاص",
@@ -3371,7 +3371,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "شراء بوت خاص",
 										"description": "شراء بوت متعدد المهام",
-										"rowId": `${prefix}botmarkit`
+										"rowId": `${prefix}funmenu`
 									}
 								]
 							}
@@ -3384,7 +3384,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
              case 'شراء': {
                     	if(!text) return reply(`يرجى كتابه اسم المنتج الذي تريد الشراء منه\n\n=(مثال)= ${command} ملابس نسائيه`)
-                    	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
+                    	RedDragonMdNx.sendMessage(`967736269849@s.whatsapp.net`, {text: `*رساله من طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n ${text}` })
 reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                     }
@@ -3495,7 +3495,7 @@ case 'sallermmm': {
             case 'بوت': {
                
                 let buttons = [
-                    {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮شكرا❯❯'}, type: 1}]
+                    {buttonId: `${prefix}الاقسام`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/Tcbn4Nz/Da6-EOL0-Xc-AAl-OYt.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -3530,7 +3530,7 @@ case 'sallermmm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-            case 'ما عملك': { RedDragonMdNx.sendMessage(from, { text: `*محاسب و مبرمج محترف*` }, { quoted: m }) 
+            case 'عملك': { RedDragonMdNx.sendMessage(from, { text: `*محاسب و مبرمج محترف*` }, { quoted: m }) 
             } 
             break
             case 'شكرا': { RedDragonMdNx.sendMessage(from, { text: `*نرحب بكم مره اخرى 🤗*` }, { quoted: m }) 
