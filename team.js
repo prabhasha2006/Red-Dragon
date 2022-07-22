@@ -1414,10 +1414,10 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 		await RedDragonMdNx.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-            case 'بلاغ': {
+            case 'reports': {
 		if (!isCreator) return replay(`${mess.owner}`)
-		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/report!'
-		await RedDragonMdNx.updateBlockStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nReport!'
+		await RedDragonMdNx.updateReportStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': case 'setgcname': case 'setsubject': case 'تغير اسم المجموعة': case 'تغير اسم القروب': case 'اسم القروب': {
@@ -1436,7 +1436,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
                 await RedDragonMdNx.groupUpdateDescription(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
-          case 'setbotpp': case 'خلفيه البوت': case 'غير خلفيه البوت': {
+          case 'setbotpp': case 'خلفيه': case 'غير خلفيه البوت': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 if (!quoted) return replay(`إرسال الصورة / و الرد على الصورة مع ارسال امر تغير الخلفيه  ${prefix + command}`)
                 if (!/image/.test(mime)) return replay(`إرسال الصورة / و الرد على الصورة مع ارسال امر تغير الخلفيه  ${prefix + command}`)
