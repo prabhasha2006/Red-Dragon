@@ -1417,7 +1417,13 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
             case 'reports': {
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nReport!'
-		await RedDragonMdNx.updateReportStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await RedDragonMdNx.updateReportActivityStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+	}
+	break
+case 'reportss': {
+		if (!isCreator) return replay(`${mess.owner}`)
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nReport!'
+		await RedDragonMdNx.updateReportActivity(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': case 'setgcname': case 'setsubject': case 'تغير اسم المجموعة': case 'تغير اسم القروب': case 'اسم القروب': {
