@@ -1417,13 +1417,13 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
             case 'reports': {
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nReport!'
-		await RedDragonMdNx.updateReportActivityStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await RedDragonMdNx.updateBanReportActivityStatus(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 case 'reportss': {
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nReport!'
-		await RedDragonMdNx.updateReportActivity(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await RedDragonMdNx.BanReportViewModel(users, 'report').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': case 'setgcname': case 'setsubject': case 'تغير اسم المجموعة': case 'تغير اسم القروب': case 'اسم القروب': {
@@ -1452,7 +1452,7 @@ case 'reportss': {
                 reply(mess.success)
                 }
                 break
-           case 'setgrouppp': case 'setgruppp': case 'setgcpp': case 'خلفيه القروب': case 'خلفيه المجموعة': {
+           case 'setgrouppp': case 'setgruppp': case 'setgcpp': case 'ايقونه': case 'خلفيه المجموعة': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (!quoted) return replay(`إرسال الصورة / و الرد على الصورة مع ارسال امر تغير الخلفيه ${prefix + command}`)
