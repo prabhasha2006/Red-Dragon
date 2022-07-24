@@ -1896,7 +1896,7 @@ break
                 }
             }
             break
-case 'smemex': case 'stickermemex': case 'stickmemex': case 'كتابه على ملصق': case 'كتابه في ملصق': case 'كتابه ملصق': {
+case 'smemex': case 'stickermemex': case 'stickmemex': case 'كتابه على ملصق': case 'كتابه في ملصق': case 'كتابه$ملصق': {
 let { TelegraPh } = require('./lib/uploader')
 if (!text) return reply(`يرجى الرد على الفيديو او الصورة ثم كتابه امر تحويل الى ملصق ${prefix + command} *ثم اكتب اي نص تريد ان يظهر في الملصق*`)
 if (text.includes('|')) return reply(`يرجى الرد على الفيديو او الصورة ثم كتابه امر تحويل الى ملصق ${prefix + command} *ثم اكتب اي نص تريد ان يظهر في الملصق*`)
