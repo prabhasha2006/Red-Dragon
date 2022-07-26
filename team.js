@@ -3545,7 +3545,7 @@ break
             }
             break
 case 'بووت':
-var unicorn = await getBuffer(picak+'بوت ميزو')
+var unicorn = await getBuffer(picak+'BoT MeZo')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellermm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellermmm'}}] )
 break
