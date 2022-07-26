@@ -1736,7 +1736,7 @@ break
                 }
              }
              break
-            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': case 'رابط القروب': case 'رابط المجموعه': case 'رابط': {
+            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': case 'رابط القروب': case 'رابط المجموعه': case 'رابط$القروب': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 let response = await RedDragonMdNx.groupInviteCode(m.chat)
                 RedDragonMdNx.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\n${groupMetadata.subject} هذا رابط قروب 🔰`, m, { detectLink: true })
@@ -1925,7 +1925,7 @@ break
             reply(db)
         }
         break
-            case 'emojimix': case 'دمج ايموجي': {
+            case 'emojimix': case 'دمج': {
 	        if (!text) return replay(`ارسال الامر معا الايموجي + الايموجي الثاني مثال 》》 : ${prefix + command} 😅+🤔`)
 		let [emoji1, emoji2] = text.split`+`
 		let anu = await fetchJson(`https://tenor.googleapis.com/v2/featured?key=AIzaSyAyimkuYQYF_FXVALexPuGQctUWRURdCYQ&contentfilter=high&media_filter=png_transparent&component=proactive&collection=emoji_kitchen_v5&q=${encodeURIComponent(emoji1)}_${encodeURIComponent(emoji2)}`)
@@ -3501,7 +3501,8 @@ case 'sallermmm': {
 🔶استخراج اعضاء جروبات الواتساب
 يمكنك الان استخراج اعضاء جروبات الواتساب المهتمين بمجال عملك وارسال حملات تسويقية لهم
 
-ملحوظة هامة💯💯💯: هذة برمجة متطورة لتحسين خدمة الواتساب وليس api رسميا للواتساب` }, { quoted: m }) } break
+ملحوظة هامة💯💯💯: هذة برمجة متطورة لتحسين خدمة الواتساب وليس api رسميا للواتساب` }, { quoted: m }) } 
+break
             case 'مساعده': { RedDragonMdNx.sendMessage(from, { text: `*مرحبا بكم انا بوت ميزو لخدمات الواتس و الرد التلقائي  يرجى ارسال كلمه مساعده للحصول على تعليمات استخدام البوت *` }, { quoted: m }) 
             } 
             break
@@ -3543,6 +3544,11 @@ case 'sallermmm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+case 'بووت':
+var unicorn = await getBuffer(picak+'بوت ميزو')
+await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
+مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellermm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellermmm'}}] )
+break
             case 'عملك': { RedDragonMdNx.sendMessage(from, { text: `*محاسب و مبرمج محترف*` }, { quoted: m }) 
             } 
             break
