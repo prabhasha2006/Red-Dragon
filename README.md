@@ -6,11 +6,19 @@
 <img src="https://i.ibb.co/CwffZ61/20220605-104552.jpg" alt="nz" width="350"/>
 </p>
 
+<<<<<<< HEAD
 ## 𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉 -𝗕𝗢𝗧࿐   Version 8.0
   
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+𝙍𝙀𝘿╺+𝘿𝙍𝘼𝙂𝙊𝙉+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
 LATEST VERSION 8.0 (2022-07-29 [Reactions added, Messages updated, add more options])
+=======
+## ☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡-𝗕𝗢𝗧࿐   Version 7.0
+  
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+☬𝗥𝗘𝗗༒𝗗𝗥𝗔𝗚𝗢𝗡࿐+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
+
+LATEST VERSION 7.0 (2022-07-17 [Search videos/songs results are not match =fixed=])
+>>>>>>> 59dc5d8c7da817e98961b937910fe4f2030705da
 
 > [🔄Please Follow Me🤭](https://github.com/prabhasha2006)
 
@@ -44,7 +52,11 @@ LATEST VERSION 8.0 (2022-07-29 [Reactions added, Messages updated, add more opti
 
 
 <p align="center">
+<<<<<<< HEAD
 <img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="370"/>
+=======
+<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="600"/>
+>>>>>>> 59dc5d8c7da817e98961b937910fe4f2030705da
 </p>
 
 </details>
