@@ -19,30 +19,30 @@ global.APIKeys = {
 
 //customize settings\\
 
-global.alivemsg = `My name is RED sanjaya🔥
+global.alivemsg = `My name is RED Ashan🔥
 My Creator is Tharusha Ashan 😎` //Costomize Alive Message (type your message in `` )
 
-global.owner = ['+94760390292'] //Owner number in aive msg
+global.owner = ['+94710330800'] //Owner number in aive msg
 global.premium = ['+94710330800'] //Owner Number info
 global.ownernomer = '+94710330800' //Owner Number <<<
 
 global.ownername = '😎Tharusha ' //Owner Name
-global.botname = ' ☬sanjaya༒࿐' //Bot Name
+global.botname = ' ☬Ashan༒࿐' //Bot Name
 
 global.button = '🤭Youtube📍' //Costomize A Button Name In Alive Message
-global.btnurl = '
+global.btnurl = 'https://youtube.com/channel/UCxUr80-Cfr40KOyAqYo4Ofw'
 
 https://youtube.com/channel/UCxUr80-Cfr40KOyAqYo4Ofw' //Change Your Button's URL
 
 global.region = 'India, South India, Kerala' //Country Region
 
-global.packname = '☬RED༒DRAGON࿐' //Bot Pacage Name
+global.packname = '☬RED༒Ashan࿐' //Bot Pacage Name
 global.author = '😎ashan ❯❯' //Author Name
 global.prefa = ['','!','.','😂','❤️','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
 global.sessionName = 'session' //Session Name!
 global.sp = '⭔' //A Charactor
 global.dragonemoji = '🧩' // Menu emoji
-global.footer = '©_Kumuthu.' //In list menu
+global.footer = '©_Ashan ' //In list menu
 global.chatbotpre = 'true'  // Chat bot true/false
 
 global.ig = 'https://github.com/prabhasha2006' //Github Acco
