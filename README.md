@@ -1,141 +1,123 @@
 <p align="center">
-<img src="https://i.ibb.co/Xp5WQXK/image.jpg" alt="nz" width="350"/>
+<img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="349"/>
 </p>
 
-## QUEEN--ELSA
-> <a href="https://youtu.be/W-QCp2fWRTo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+<p align="center">
+<img src="https://i.ibb.co/CwffZ61/20220605-104552.jpg" alt="nz" width="350"/>
+</p>
 
-> [Automated Multi Device whatsapp bot created](https://github.com/nexusNw/Gojo-Satoru) by [nexusNw](github.com/nexusNw)
-
-> Dont forget to give a star bro.🥲 IF Heroku Deploy seems Error, Fork This Repo And Try Deploy Again
-
-> If The Api Of This Bot Run Empty You Can Change it To Your Own Api By Changing [Here](https://github.com/nexusNw/Gojo-Satoru/blob/master/settings.js#L18) And Register [here](https://zenzapis.xyz/) to get apikey
-
-
-</br>
-
-<a href="https://github.com/nexusNw"><img title="Author" src="https://img.shields.io/badge/Author-nexusNw-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
-<a href="https://github.com/nexusNw/Gojo-Satoru"><img title="Stars" src="https://img.shields.io/github/stars/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/nexusNw/Gojo-Satoru/network/members"><img title="Forks" src="https://img.shields.io/github/forks/nexusNw/Gojo-Satoru?color=54aeff&style=flat-square" /></a>
-<a href="https://github.com/nexusNw/Gojo-Satoru/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/nexusNw/Gojo-Satoru?label=watchers&color=54aeff&style=flat-square" /></a> <br>
-
----
-
-<!-- Requirements -->
-<b><details><summary>Requirements</summary></b>
-* Some Text Editor
-* [Node JS](https://nodejs.org/en/)
-* [Git](https://git-scm.com/downloads)
-* [FFMPEG](https://ffmpeg.org/download.html)
+## 𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉 -𝗕𝗢𝗧࿐   Version 8.0
   
-```bash
-Add FFmpeg to PATH environment variable
-```
-</details>
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+𝙍𝙀𝘿╺+𝘿𝙍𝘼𝙂𝙊𝙉+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
+
+LATEST VERSION 8.0 (2022-07-29 [Reactions added, Messages updated, add more options])
+
+> [🔄Please Follow Me🤭](https://github.com/prabhasha2006)
+
+<img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
+
+> Image Designed By  ==(Dineth Indusara)== RED DRAGON TEAM
+
+> Created By ==(Kumuthu Prabhasha)== RED DRAGON TEAM
+
+<img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
+
+<p align="center">
+❯❯😎Kick bellow topics😒❮❮
+</p>
+<p align="center">
+👇To proccess👇
+</p>
+
+## 🙂➾ [Scan QR In Your Whatsapp From Here](https://replit.com/@KumuthuPrabhash/Red-Dragon-Bot-Qr-Code?v=1)
+ 
+## 🙂➾ [Fork This Repo By Clicking Here](https://github.com/prabhasha2006/Red-Dragon/fork)
+ 
+## 🙂➾ [Then Deploy The Bot From Here](https://heroku.com/deploy)
+
+## 🙂➾ [Red Dragon Bot Official Website Here](https://sites.google.com/view/red-dragon-bot/home)
 
 
-<!-- Start via Heroku -->
-<b><details><summary>Start via Heroku</summary></b>
-
-* Scan QR In Your Whatsapp From [Here](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
-* Fork This Repo By Clicking [Here](https://github.com/nexusNw/Gojo-Satoru/fork)
-* then Deploy The Bot From [Here](https://heroku.com/deploy)
-* Wait 5-10 Min To Deploy 
-* After Deploying On The Worker And Check The Logs
-
-</details>
+<img src="https://camo.githubusercontent.com/71b837571c48af3aa60a73dbc9d5936aa359d78efbfa8a6743cbbbc16b80ef4d/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3830353930323039333930363630383138362f3830353931333937323533353539303932322f74656e6f722e676966" alt="nz" width="600"/>
 
 
 
-<!-- Installation via Termux -->
-<b><details><summary>Installation on Termux</summary></b>
-```bash
-> apt update
-> apt upgrade
-> pkg update && pkg upgrade
-> pkg install bash
-> pkg install libwebp
-> pkg install git -y
-> pkg install nodejs -y 
-> pkg install ffmpeg -y 
-> pkg install wget
-> pkg install imagemagick -y
-> git clone https://github.com/nexusNw/Gojo-Satoru
-> cd Gojo-Satoru
-> npm install
-```
-</details>
 
-<!-- Edit -->
-<b><details><summary>Edit settings.js</summary></b>
-```bash
-global.APIKeys = {
-	'https://zenzapis.xyz': 'YOURAPIKEY',
-}
-  
-global.owner = ["9181XXXXXX"]
-global.ownername = ["YourName"]
-```
-</details>
-
-
-<!-- 24hrs-->
-<b><details><summary>For 24 Hours Activation</summary></b>
-
-```bash
-npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
-```
+<p align="center">
+<img src="https://i.ibb.co/6tCrPD6/image-downloader-1654443961039.gif" alt="nz" width="370"/>
+</p>
 
 </details>
 
-----
+> [SUPPORT GROUP](https://chat.whatsapp.com/I1v5ZTJeFjZ9x5LzG3qPHU)
+
+<b><details><summary>𝗛𝗼𝘄 𝗧𝗼 𝗠𝗮𝗸𝗲?</summary>
+
+>මුලින්ම qr code එක scan කරගන්න🥲. multi devices beta වැඩ කරනෝ
+
+>ඊට පස්සෙ මේ git එක fork කරගන්න. හරි. දැන් ඔයා fork කරගත්ත git එකට යන්න😌.
+
+>දැන් වට්සැප් එකේ ඔයාගෙ ලොක් අංගයට session.json කියලා file එකක් ඇවිල්ලා ඇති. ඒක තියෙන්නෙ Whatsapp > media > whatsapp documents > session.json  මෙතන.
+
+>දැන් ඔයා අර fork කරපු git එකට ආයි ගිහින් ඒ session.json එක upload කරලා commit changes දෙන්න😁.
+
+>දැන් ආයි බැක් වෙලා Edit 'setting.js' With Your Choice ගිහින් ඒව මේව වෙනස් කරගන්න පුලුවං😒😒😒
+
+>යටට ගිහින් "Then Deploy The Bot From Here "👈මෙතනින් deploy කරන්න විතරයි තියෙන්නෙ😁
+
+</b>
+</details>
+
+<!-- Contact Owner -->
+<b><details><summary>Contact Owner 😜</summary></b>
+
+## ```Connect With Me```
+<p align="center">
+<a href="https://wa.me/380944814219"><img src="https://www.svgrepo.com/show/122874/whatsapp.svg" width="100"/>
+</p>
+
+</details>
+
+<p align="center">
+<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="700"/>
+</p>
+
+## 𝐌𝐑: ☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐
+
 
 
 <b><details><summary>Available Features</summary><br>
 	
 | Features |  Availability |
 | :------: |  :----------: |
-|   Convert     |       ✅     |
-|   Database     |       ✅     |
-|   Owner     |       ✅    |
-|   Islami     |       ✅     |
-|   Downloader     |       ✅     |
-|   Webzone     |       ✅[      |
-|   Searching     |       ✅      |
-|   Textpro     |       ✅      |
-|   Ephoto     |       ✅     |
-|   Anime Web     |       ✅      |
-|   Stalker     |       ✅      |
-|   Random Text     |       ✅     |
-|   Random Image     |       ✅     |
-|   Nekos Life     |       ✅      |
-|   More Nsfw     |       ✅      |
-|   Creator     |       ✅      |
+|   Convert     |       😎     |
+|   Database     |       😎     |
+|   Owner     |       😎    |
+|   Islami     |       😎     |
+|   Downloader     |       😎     |
+|   Webzone     |       😎       |
+|   Searching     |       😎      |
+|   Textpro     |       😎      |
+|   Ephoto     |       😎     |
+|   Anime Web     |       😎      |
+|   Stalker     |       😎      |
+|   Random Text     |       😎     |
+|   Random Image     |       😎     |
+|   Nekos Life     |       😎      |
+|   More Nsfw     |       😎      |
+|   Creator     |       😎      |
 
 </details>
 
+<div align="center">
+	
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@KumuthuPrabhash/Red-Dragon-Bot-Qr-Code?v=1)
 
-----
-
-<!-- Contact Owner -->
-<b><details><summary>Contact</summary></b>
-
-## ```Connect With Me```
-<p align="center">
-<a href="https://wa.me/918129624000"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
-</p>
-
-</details>
-
-
-</details><hr>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+</div>
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 * [`Alien-Alfa`](https://github.com/Alien-Alfa)
 * [`DGXeon`](https://github.com/DGXeon)
 * [`AflahXrd`](https://github.com/nexusNw)
-
-
-License: [MIT](https://github.com/Gojo-Satoru/LICENSE)
