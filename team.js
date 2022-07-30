@@ -3270,6 +3270,126 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 reply(`🤭🌹Hi,\nI am ☬MeZo-𝗕𝗢𝗧࿐\nمطور البوت: MeZo\n\nnشكرا لستخدامكم بوت ميزو ==(🌹)==`)
             }
             break
+case 'طلبات': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `مرحبا ${pushname}`,
+                    description: `يرجى اختيار الطلبات الذي تريد شرائها \n\n`,
+                    buttonText: "الاقسام🤖",
+                    footerText: `${global.footer}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{	
+								"title": "قسم اللحم",
+								"rows": [
+									{
+										"title": "لحم مندي",
+										"description": "طلب شراء لحم مندي لذيذ🍖",
+										"rowId": `${prefix}لمندي`
+									},
+									{
+										"title": "لحم مزموم",
+										"description": "طلب شراء لحم مزموم لذيذ",
+										"rowId": `${prefix}لمزموم`
+										},
+									{
+										"title": "لحم حنيد",
+										"description": "طلب شراء لحم حنيد لذيذ",
+										"rowId": `${prefix}لحنيد`
+										},
+									{
+										"title": "لحم مرق",
+										"description": "طلب شراء لحم مرق لذيذ",
+										"rowId": `${prefix}لمرق`
+									},
+									{
+										"title": "لحم مضغوط",
+										"description": "طلب شراء لحم مضغوط لذيذ",
+										"rowId": `${prefix}لمضغوط`
+									},
+									{
+										"title": "لحم زربيان",
+										"description": "طلب شراء لحم زربيان لذيذ",
+										"rowId": `${prefix}لزربيان`
+									},
+										{
+											"title": "طباخه لحم",
+										"description": "طلب طباخه لحم خاص لذيذ",
+										"rowId": `${prefix}طلحم`
+										}
+								]
+							},
+							{
+								"title": "قسم الدجاج",
+								"rows": [
+									{
+										"title": "دجاج مندي",
+										"description": "طلب شراء دجاج مندي لذيذ 🥓",
+										"rowId": `${prefix}دمندي`
+									},
+									{
+										"title": "دجاج شوايه",
+										"description": "طلب شراء دجاج شوايه لذيذ",
+										"rowId": `${prefix}دشوايه`
+										},
+									{
+										"title": "دجاج فحم",
+										"description": "طلب شراء دجاج فحم",
+										"rowId": `${prefix}دفحم`
+										},
+									{
+										"title": "دجاج حنيد",
+										"description": "طلب شراء دجاج حنيد",
+										"rowId": `${prefix}دحنيد`
+									},
+									{
+										"title": "دجاج مضغوط",
+										"description": "طلب شراء دجاج مضغوط",
+										"rowId": `${prefix}دمضغوط`
+									},
+									{
+										"title": "دجاج زربيان",
+										"description": "طلب شراء دجاج زربيان",
+										"rowId": `${prefix}دزربيان`
+									},
+									{
+											"title": "دجاج بروست",
+										"description": "طلب شراء دجاج بروست لذيذ",
+										"rowId": `${prefix}دبروست`
+										}, 
+										{
+											"title": "طباخه دجاج",
+										"description": "طلب طباخه دجاج خاص لذيذ",
+										"rowId": `${prefix}طدجاج`
+										}
+								]
+							},
+							{
+								"title": "قسم الأسماك",
+								"rows": [
+									{
+										"title": "سمك شوايه",
+										"description": "طلب شراء سمك شوايه",
+										"rowId": `${prefix}سشوايه`
+									}
+								]
+							},
+							{
+							"title": "قسم المشكلات",
+								"rows": [
+									{
+										"title": "مشكل فرن",
+										"description": "طلب شراء مشكل فرن",
+										"rowId": `${prefix}مفرن`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
             case 'الاقسام': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
@@ -3451,12 +3571,335 @@ case 'sellermm': {
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
+case 'دشوايه': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃1║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دحنيد': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃2║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دمندي': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃3║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دزربيان': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃4║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دفحم': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃5║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دمضغوط': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃6║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'دبروست': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃7║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'طدجاج': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃8║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
 case 'sallermm': {
                     	if(!text) 	RedDragonMdNx.sendMessage(`967774217099@s.whatsapp.net`, {text: `*رساله طلب شراء من هذا المستخدم:\n\n * wa.me/${m.sender.split("@")[0]}
 هذي رساله طلب الشراء\n\n: ملابس نسائية داخليه كلسون و سنتيانه لون احمر رقم المنتج  213${text}` })
             return reply(`تم ارسال طلب الشراء الى البائع\n\nمن فضلك يرجى الانتظار و التحلي بالصبر الى ان يتم الرد عليك من قبل البائع \n\n شكرا لاستخدامكم بوت ميزو لخدمات الواتس اب و الرد التلقائي 🤖`)
                            }
                     break
+case 'لمندي': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃12║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'لحنيد': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃22║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'لمزموم': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃32║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'لمضغوط': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃42║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'لزربيان': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃52║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'لمرق': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃62║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+                  break
+case 'طلحم': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃8║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'سشوايه': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃31║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه 
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
+case 'مفرن': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}sallermm`, buttonText: {displayText: '❮❮شراء💰❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/KbsX73G/images-26.jpg'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯ قسم الملابس الداخليه ❮ 🐲👇
+┃32║يوجد جميع انواع الملابس الداخليه النسائيه و الرجاليه ~سمك~
+┃║بجميع المقاسات و الاحجام 
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
 case 'sellermmm': {
                
                 let buttons = [
