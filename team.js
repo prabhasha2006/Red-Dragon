@@ -110,6 +110,7 @@ global.namedd = '╚✺➾ ☬مطور البوت ميزو  حاكم  الدما
 
 //Database\\
 let setik = JSON.parse(fs.readFileSync('./database/setik.json'));
+let appp = JSON.parse(fs.readFileSync('./database/appp.json'));
 let vien = JSON.parse(fs.readFileSync('./database/vien.json'));
 let imagi = JSON.parse(fs.readFileSync('./database/imagi.json'))
 let videox = JSON.parse(fs.readFileSync('./database/video.json'))
@@ -262,6 +263,12 @@ const reply = (teks) => {
 				if (budy === anji){
 					result = fs.readFileSync(`./DragonMedia/sticker/${anji}.webp`)
 					RedDragonMdNx.sendMessage(m.chat, { sticker: result }, { quoted: m })
+					}
+			}
+                        for (let anjap of appp){
+				if (budy === anjap){
+					result = fs.readFileSync(`./DragonMedia/appp/${anjap}.apk`)
+					RedDragonMdNx.sendMessage(m.chat, { apk: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
