@@ -160,6 +160,8 @@ async function startKUMUTHU() {
     store.bind(KUMUTHU.ev)
     
     // anticall auto block
+    if (global.callblock === "false")return
+    else{
     KUMUTHU.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
@@ -168,7 +170,7 @@ async function startKUMUTHU() {
     await sleep(8000)
     await KUMUTHU.updateBlockStatus(callerId, "block")
     }
-    })
+    })}
 
     KUMUTHU.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
