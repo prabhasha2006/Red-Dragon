@@ -48,6 +48,22 @@ LATEST VERSION 8.0 (2022-07-29 [Reactions added, Messages updated, add more opti
 
 </details>
 
+<b><details><summary>🪀Recommended WhatsApps🪀</summary>
+
+>If you using mod whatsapp!
+>DO NOT USE FOUD MODS.
+
+>ඔබ වට්සැප් මොඩ් භාවිතා කරනවා නම් Foud mod හෝ වෙනත් පරණ Base සහිත වට්සැප් මගින් ඔබේ ගිනුම තාවකාලිකව Ban විය හැකියි.
+
+Recommended WhatsApp👇
+>Normal WhatsApp [DOWNLOAD](https://play.google.com/store/apps/details?id=com.whatsapp)
+>YMWhatsApp Mod [DOWNLOAD](https://ymwhatsapp.com/ymwa/)
+
+</b>
+</details>
+
+##
+
 > [SUPPORT GROUP](https://chat.whatsapp.com/I1v5ZTJeFjZ9x5LzG3qPHU)
 
 <b><details><summary>𝗛𝗼𝘄 𝗧𝗼 𝗠𝗮𝗸𝗲?</summary>
