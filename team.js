@@ -3393,6 +3393,57 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
+case 'كواتس': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮شكرا ❯❯'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/XXfSpJF/count-Constant-Delay1.gif'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔══☯︎❯  كود فك تخمين ❮ 🐲👇
+ڪود فك. التخمين *⃣
+
+ضروري ايميل جـديـــد مـــوثق برقم
+يــنفـــك بثواني اي تخمين ينفك☺️☺️☺️☺️
+
+بريد الشركه.  
+ support@support.whatsapp.com
+
+بدون موضوع
+
+
+
+
+الــــرســــاله
+
+Wieħed mill-hackers qabad il-kodiċi tal-verifika mingħajr ma naf jien, li hija r-raġuni għan-numru li jwaqqaf Jekk jogħġbok neħħi r-raden min-numru tat-telefon tiegħi sabiex inkun nista nibgħat messaġġ jew telefonata biex nirċievi l-kodiċi u nirritorna fuq il-Whatsapp u nirringrazzjak+رقمك
+
+
+
+
+╔━━━━👑━━━━╗ 
+➧ رقم البوت ¦
+ https://wa.me/+84357979573              
+╚━━━━👑━━━━╝
+
+مـقـدم مـن بــوت مــيــزو الـثـغـرات2022
+
+ارفــع الـبــوت مـشـرف فـي قروبك وسـيـتم ارسـال كـل الـثـغرات فـي كـل القروبات بـشـكـل يـــومـي
+
+
+ تــٜـــــــــزويـــــــــرڪ  للمــــــــصــٜــــــــــدر  دليــٜـــــــــل ↠ فشــــــــــٜـلڪ ⚠
+ ارجــــــــو اعــــــــاده تــــــــوجيــــــــه لغيــــــــرك يستفيــــــــد♲♺
+ تنشـــــر اذڪــــــر المصــــــدر🚫
+ ♨️••┄┅═🤖═┅┄••♨️
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+            }
+            break
             case 'info': case 'about':{
                 reply(`🤭🌹Hi,\nI am ☬MeZo-𝗕𝗢𝗧࿐\nمطور البوت: MeZo\n\nnشكرا لستخدامكم بوت ميزو ==(🌹)==`)
             }
