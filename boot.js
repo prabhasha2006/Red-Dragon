@@ -160,17 +160,16 @@ async function startKUMUTHU() {
     store.bind(KUMUTHU.ev)
     
     // anticall auto block
-    if (global.callblock === "false")return
-    else{
+    if (global.callblock === "true"){
     KUMUTHU.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let xeonfek = await KUMUTHU.sendContact(callerId, global.owner)
-    KUMUTHU.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
+    KUMUTHU.sendMessage(callerId, { text: `⚠️RED-DRAGON Automatic Block System!\n⚠️Don't Call Bot!\n⚠️Please Ask Or Contact The Owner To Unblock You!`}, { quoted : xeonfek })
     await sleep(8000)
     await KUMUTHU.updateBlockStatus(callerId, "block")
     }
-    })}
+    })}else{}
 
     KUMUTHU.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
@@ -262,7 +261,7 @@ ${xtime} `
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
@@ -292,10 +291,10 @@ KUMUTHU.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `😒🌹 Bye👋 @${xeonName.split("@")[0]}
-😒🌹 Left From  ${metadata.subject}
+                    xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
+🤭🌹 Welcome To  ${metadata.subject}
                     
-😒🌹 ${xeonmembers} Members
+🤭🌹 ${xeonmembers} Members
                     
 ${xeondate}
 ${xeontime} `
@@ -303,7 +302,7 @@ ${xeontime} `
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: '👎BYE👎'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
