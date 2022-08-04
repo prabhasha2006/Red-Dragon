@@ -13,7 +13,7 @@ global.APIKeys = {
 
 // EDIT THIS VALUES \\
 
-global.alivemsg = `📤I am alive now😇
+global.alivemsg = `📤 I am alive now ❤️
 🤷‍♀️How can I help you?😉` //Costomize Alive Message (type your message in `` )
 
 
@@ -24,31 +24,31 @@ global.autoRecord = false //auto recording (true to on, false to off)
 global.available = true //auto available (true to on, false to off)
 
 //owner v card
-global.vcardowner = ['+380944814219'] //ur owner number
-global.ownername = "😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯" //ur owner name
-global.ytname = "" //ur yt chanel name
-global.socialm = "GitHub: prabhasha2006" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.vcardowner = ['+919776517392'] //ur owner number
+global.ownername = "😎SOUMYA(SOMU)❯❯" //ur owner name
+global.Insta I'd = "https://www.instagram.com/Itz_soumya_s14/" //ur  insta id name
+global.socialm = "GitHub:alpha1nexon" //ur github or 
+global.location = "India" //ur location
 
 //bot body 
-global.alivepic = `https://i.ibb.co/cyyCjN7/20220803-081426.png` // alive picture \\ use "https://ibb.co" to upload photos. < 1 MB
+global.alivepic = `https:// // alive picture \\ use "https://ibb.co" to upload photos. < 1 MB
                                                                  // How to get a valide image url? ( view in Red-Dragon Website )
 
 global.dragonchat = "false"  // chat bot  "true" / "false" (200 auto replies in this)
 
-global.callblock === "false" // call block "true" / "false" (CALL ගන්න අය block කිරීමට "true")
+global.callblock === "true" // call block "true" / "false" (CALL ගන්න අය block කිරීමට "true")
 
-global.owner = ['+380944814219']
-global.ownertag = '+380944814219' //your tag number
-global.premium = ['+380944814219'] //your premium numbers
-global.botname = '𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉 - 𝘉𝘖𝘛' //your bot name
-global.packname = "𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉" // sticker packname
+global.owner = ['+919776517392']
+global.ownertag = '+919776517392' //your tag number
+global.premium = ['+919776517392'] //your premium numbers
+global.botname = 'BLACK╺ 𝘿𝙍𝘼𝙂𝙊𝙉 - 𝘉𝘖𝘛' //your bot name
+global.packname = "TEAM-SG" // sticker packname
 global.author = "Bot Sticker" // sticker author
-global.dragonemoji = '🧩' // Menu emoji
+global.dragonemoji = '🇮🇳' // Menu emoji
 global.footer = '[ ◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ᴍᴅ ]' //In list menu
 
 global.button = '☰ GITHUB ☰' //Costomize A Button Name In Alive Message
-global.btnurl = 'https://github.com/prabhasha2006' //Change Your Button's URL
+global.btnurl = 'https://gitHub.com/alpha1nexon' //Change Your Button's URL
 
 //other
 global.sessionName = 'session'
