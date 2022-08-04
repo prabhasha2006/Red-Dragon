@@ -4171,7 +4171,7 @@ break
             case 'إستخدام': case 'استخدام': case 'الإستخدام': case 'الاستخدام': {
                
                 let buttons = [
-                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}, {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1},  {buttonId: `${prefix}ارقام`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
+                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}, {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1},  {buttonId: `${prefix}ارقام`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1},  {buttonId: `${prefix}رواتس`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1},  {buttonId: `${prefix}بوت`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/rMRtSFJ/IMG-20220805-WA0009.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
