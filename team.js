@@ -4313,8 +4313,8 @@ break
                 RedDragonMdNx.sendMessage(from, { text: `*හේ හේ, නැද්ද☹️*` }, { quoted: m })
             }
             break
-case 'انيك': {
-                RedDragonMdNx.sendMessage(from, { text: `*احذف الرسايل السب او سيتم ححظرك ☹️*` }, { quoted: m })
+case 'انيك':  case 'كسمك': case 'كسختك':  case 'يلعن': case 'زبي': case 'كس': case 'انكح': case 'زب': {
+                RedDragonMdNx.sendMessage(from, { text: `*احذف الرسايل السب او سيتم ححظرك و ازالتك ☹️*` }, { quoted: m })
             }
             break
             /////////////////////////////////////////////
