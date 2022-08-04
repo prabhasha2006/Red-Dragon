@@ -3300,8 +3300,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}اواتس`
 										},
 									{
-										"title": "ارقام وهميه",
-										"description": "طريقة صنع ارقام وهميه للواتساب و تلغرام",
+										"title": "ارقام",
+										"description": "",
 										"rowId": `${prefix}ارقام`
 									},
 									{
