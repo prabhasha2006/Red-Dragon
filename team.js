@@ -3302,7 +3302,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "ارقام وهميه",
 										"description": "طريقة صنع ارقام وهميه للواتساب و تلغرام",
-										"rowId": `${prefix}رواتس`
+										"rowId": `${prefix}ارقام`
 									},
 									{
 										"title": "ملف سرعه",
