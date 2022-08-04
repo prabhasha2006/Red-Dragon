@@ -1798,7 +1798,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「♥ شكرا لاستخدامكم بوت ميزو 🎉 」\n\n${text}`
+                      let txt = `「*اذاعه* رساله جماعيه  من المطور الى كل المجموعات 🤖」\n\n${text} \n\n☆شكرا لاستخدامكم  بوت  ميزو ☆`
                       RedDragonMdNx.send5ButImg(i, txt, RedDragonMdNx.user.name, global.thumb, btn)
                     }
                 reply(`تم ارسال الرساله الى ${anu.length} قروبات(s)`)
@@ -4130,7 +4130,7 @@ break
             case 'بوت': {
                
                 let buttons = [
-                    {buttonId: `${prefix}الاقسام`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
+                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/Tcbn4Nz/Da6-EOL0-Xc-AAl-OYt.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
