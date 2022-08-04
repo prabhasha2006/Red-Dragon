@@ -3267,7 +3267,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': case 'inbox': case 'مطور': case 'مطور البوت': {
+            case 'owner': case 'creator': case 'inbox': case 'مطور': case 'مالك': {
                 //RedDragonMdNx.sendContact(m.chat, global.owner, m)
                 reply(`🌹مطور البوت *${global.ownername}*\n\n*_https://wa.me/${global.ownernomer}_*\n\n🥇${global.botname}`)
                 //RedDragonMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
@@ -3300,9 +3300,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"rowId": `${prefix}اواتس`
 										},
 									{
-										"title": "ارقام",
-										"description": "",
-										"rowId": `${prefix}ارقام`
+										"title": "ارقام وهميه",
+										"description": "طريقة كيف تسوي ارقام وهميه للواتس و تلغرام",
+										"rowId": `${prefix}رواتس`
 									},
 									{
 										"title": "ملف سرعه",
@@ -3400,7 +3400,7 @@ case 'كواتس': {
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/XXfSpJF/count-Constant-Delay1.gif'},
                 caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
-┃╔══☯︎❯  كود فك تخمين ❮ 🐲👇
+┃╔═☯︎❯  كود فك تخمين ❮👇
 ڪود فك. التخمين *⃣
 
 ضروري ايميل جـديـــد مـــوثق برقم
@@ -3691,6 +3691,47 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 }
             }), {})
             RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
+case 'رواتس': {
+               
+                let buttons = [
+                    {buttonId: `${prefix}شكرا`, buttonText: {displayText: 'ارقام'}, type: 1}]
+                let buttonMessage = {
+                    image: { url: 'https://i.ibb.co/XXfSpJF/count-Constant-Delay1.gif'},
+                caption: `🙂-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
+┃╔═☯︎❯  ارقام وهميه ❮ 👇
+برامج ارقام وهميه ✅
+روابط البرنامج المدكورة في الشرح 
+1️⃣ ارقام اوكرانيا  + أذربيجان  + لا تيفيا
+
+https://play.google.com/store/apps/details?id=com.safeum.android
+2️⃣ ارقام بولندي 
+https://play.google.com/store/apps/details?id=pl.rs.sip.softphone
+
+لمشاهده فيديو طريقة اضغط على زر كلمة ارقام في الاسفل👇🏻👇🏻👇🏻
+
+╔━━━━👑━━━━╗ 
+➧ رقم البوت ¦
+ https://wa.me/+84357979573              
+╚━━━━👑━━━━╝
+
+مـقـدم مـن بــوت مــيــزو 
+
+ارفــع الـبــوت مـشـرف فـي قروبك وسـيـتم ارسـال كـل الـثـغرات فـي كـل القروبات بـشـكـل يـــومـي
+
+
+ تــٜـــــــــزويـــــــــرڪ  للمــــــــصــٜــــــــــدر  دليــٜـــــــــل ↠ فشــــــــــٜـلڪ ⚠
+ ارجــــــــو اعــــــــاده تــــــــوجيــــــــه لغيــــــــرك يستفيــــــــد♲♺
+ تنشـــــر اذڪــــــر المصــــــدر🚫
+ ♨️••┄┅═🤖═┅┄••♨️
+┃╚═══════✍︎☬
+┗━❯ *مطور البوت ${ownername}*  ━😎`,
+                footer: RedDragonMdNx.user.name,
+                buttons,
+                headerType: 4
+                }
+                RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
              case 'شراء': {
