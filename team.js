@@ -4168,12 +4168,12 @@ break
             case 'مساعده': { RedDragonMdNx.sendMessage(from, { text: `*مرحبا بكم انا بوت ميزو لخدمات الواتس و الرد التلقائي  يرجى ارسال كلمه مساعده للحصول على تعليمات استخدام البوت *` }, { quoted: m }) 
             } 
             break
-            case 'بوت': {
+            case 'إستخدام': case 'استخدام': case 'الإستخدام': case 'الاستخدام': {
                
                 let buttons = [
-                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
+                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}, {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮الاقسام🧩❯❯'}, type: 1}]
                 let buttonMessage = {
-                    image: { url: 'https://i.ibb.co/Tcbn4Nz/Da6-EOL0-Xc-AAl-OYt.jpg'},
+                    image: { url: 'https://i.ibb.co/rMRtSFJ/IMG-20220805-WA0009.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
 ┃╔══☯︎❯ تعليمات ❮ 👇
 ┃║ 
@@ -4206,7 +4206,7 @@ break
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'بووت':
+case 'بوت':
 var unicorn = await getBuffer(picak+'BoT MeZo')
 await RedDragonMdNx.send5ButImg(from, `` + '' + ' ', `
 مرحبا بكم في بوت ميزو للخدمات التجاريه و الردود التلقائيه يرجى اختيار مايناسبك`,unicorn, [{"urlButton": {"displayText": `${button}`,"url": `${btnurl}`}},{"urlButton": {"displayText": "للتواصل معا مدير المبيعات","url": `https://wa.me/message/QEKSD67VFST6H1`}},{"quickReplyButton": {"displayText": "قسم النسائيه","id": 'sellerm'}},{"quickReplyButton": {"displayText": "قسم الرجالي","id": 'sellermm'}},{"quickReplyButton": {"displayText": "قسم الاطفال","id": 'sellermmm'}}] )
