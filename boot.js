@@ -247,84 +247,56 @@ XeonLft = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeUR
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+	            const xdate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
-🤭🌹 Welcome To  ${metadata.subject}
+                 xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
 
+🤭🌹 Welcome To  ${metadata.subject}
 🤭🌹 ${xmembers} Members
 
-${xdate}
-${xtime} `
+Date  =  ${xdate}
+Time  =  ${xtime} `
       //if you copy the code value,
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
-]
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '🙏WELCOME🙏'}, type: 1}
+    ]
 let buttonMessage = {
-document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
+    image: { url: 'https://i.ibb.co/0h3Sv26/20220805-080104.jpg'},
 caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${btnurl}`,
-mediaUrl: `${btnurl}`
-}}
+footer: `${footer}`,
+buttons,
+headerType: 4
 }
-KUMUTHU.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+KUMUTHU.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+	                const xeondate = moment.tz('Asia/Kolkata').format('YYYY/MM/DD')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `🤭🌹 Hi👋 @${xeonName.split("@")[0]}
-🤭🌹 Welcome To  ${metadata.subject}
+                     xeonbody = `😒🌹 Bye👋 @${xeonName.split("@")[0]}
+
+😒🌹 Left From  ${metadata.subject}
+😒🌹 ${xeonmembers} Members
                     
-🤭🌹 ${xeonmembers} Members
-                    
-${xeondate}
-${xeontime} `
-      //if you copy the code value,
-   //dont forget to put my name(Xeon) as credit
-   //you fail to put, i sue you for sure!
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
-]
-let buttonMessage = {
-document: fs.readFileSync('./Android/AllData/theme/RD.docx'),
-mimetype: docs,
-jpegThumbnail:XeonLft,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Bye! my friend, take care.`,
-mediaType:2,
-thumbnail: XeonLft,
-sourceUrl: `${btnurl}`,
-mediaUrl: `${btnurl}`
-}}
-}
-KUMUTHU.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+Date =  ${xeondate}
+Time =  ${xeontime} `
+
+   let buttons = [
+    {buttonId: `owner`, buttonText: {displayText: '👎BYE👎'}, type: 1}
+    ]
+    let buttonMessage = {
+        image: { url: 'https://i.ibb.co/H4h3mh4/20220805-080200.jpg'},
+    caption: xeonbody,
+    footer: `${footer}`,
+    buttons,
+    headerType: 4
+    }
+KUMUTHU.sendMessage(anu.id, buttonMessage)
                 }
             }
         } catch (err) {
