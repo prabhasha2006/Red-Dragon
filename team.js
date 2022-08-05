@@ -4237,7 +4237,7 @@ case 'بووت': { let buttons = [ {buttonId: `${prefix}تعليم`, buttonText:
 فيك تسويه للاعلانات تجاريه 
 وتستفيذ
 البوت مربوط بموقع يرد تلقائي 24 ساعه بردود تلقائيه و صوت فتاه 💃🏿💃🏿💃🏿
-┃║ ┃╚═══════✍︎☬┗━❯ *مطور البوت ${ownername}* ━😎`, footer: RedDragonMdNx.user.name, buttons, headerType: 6 } RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m }) } 
+┃║ ┃╚═══════✍︎☬┗━❯ *مطور البوت ${ownername}* ━😎`, footer: RedDragonMdNx.user.name, buttons, headerType: 4 } RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m }) } 
 break
             case 'عملك': { RedDragonMdNx.sendMessage(from, { text: `*محاسب و مبرمج محترف*` }, { quoted: m }) 
             } 
