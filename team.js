@@ -1701,7 +1701,7 @@ break
             }
             }
             break
-            case 'antilink': case 'منع كل الروابط': case 'لا روابط': {
+            case 'antilink': case 'منع كل الروابط': case 'لاروابط': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1870,7 +1870,7 @@ break
                  RedDragonMdNx.sendTextWithMentions(m.chat, teks, m)
              }
              break
-                case 'listgroup': case 'grouplist': case 'جميع القروبات': case 'كل القروبات': case 'القروبات': {
+                case 'listgroup': case 'grouplist': case 'القروبات': {
                  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
                  let teks = `⬣ *قائمة ااقروبات*\n\nnعنوان القروب : ${anu.length} قروب\n\n`
                  for (let i of anu) {
