@@ -10,7 +10,7 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+𝙍𝙀𝘿╺+𝘿𝙍𝘼𝙂𝙊𝙉+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
-LATEST VERSION (2022-08-06 [ANTI BAD WORD, owner can change botname and owner name])
+LATEST VERSION (2022-08-06 [Anti link, Anti bad words, Owner can change botname and owner name])
 
 > [🔄Please Follow Me🤭](https://github.com/prabhasha2006)
 
@@ -48,9 +48,16 @@ LATEST VERSION (2022-08-06 [ANTI BAD WORD, owner can change botname and owner na
 
 </details>
 
-<b><details><summary>🔄How to Update🔄</summary>
-	
-> [IN THE OFFICIAL WEBSITE](https://sites.google.com/view/red-dragon-bot/home)
+<b><details><summary>🔄How to Update Bot🔄</summary>
+
+> [VIDEO](https://drive.google.com/file/d/1798s8erVW31EcmK3Opq-QuV7GG4byyoH/view)
+
+</b>
+</details>
+
+<b><details><summary>🔄How to Upload Images🔄</summary>
+
+> [VIDEO](https://drive.google.com/file/d/16J5278xK9-5oJUsGPygviVC9U6exw1AZ/view)
 
 </b>
 </details>
