@@ -39,9 +39,10 @@ global.location = "India, Mizoram, Aizawl" // location
 global.alivepic = `https://i.ibb.co/cyyCjN7/20220803-081426.png` // alive picture \\ use "https://ibb.com" to upload photos. < 1 MB
 
 global.dragonchat = "false"  // chat bot  "true" / "false" (200 auto replies in this)
-global.callblock = "false" // call block "true" / "false" (CALL ගන්න අය block කිරීමට "true")
+global.callblock = "false" // call block "true" / "false" ("true"  to block callers)
 global.antibad = "false" // To remove bad word senders
 global.antilink = "false" // To remove group link sharing peoples
+global.upsongvoice = "true" // bot can upload song as voice note (it use your data and storage bacause auto download) you can put "false" (anyone can't get songs as voice note / your data is not wasted)
 
 global.owner = ['+380944814219']
 global.ownertag = '+380944814219' //your tag number
