@@ -55,7 +55,7 @@ LATEST VERSION (2022-08-06 [Anti link, Anti bad words, Owner can change botname 
 </b>
 </details>
 
-<b><details><summary>🔄How to Upload Images🔄</summary>
+<b><details><summary>📤How to Upload Images To Alive Msg📤</summary>
 
 > [VIDEO](https://drive.google.com/file/d/16J5278xK9-5oJUsGPygviVC9U6exw1AZ/view)
 
