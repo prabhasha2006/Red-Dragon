@@ -10,7 +10,7 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+𝙍𝙀𝘿╺+𝘿𝙍𝘼𝙂𝙊𝙉+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
-LATEST VERSION (2022-08-06 [Anti link, Anti bad words, Owner can change botname and owner name])
+LATEST VERSION (2022-08-06) ([Anti link,  Anti bad words], [Owner can change bot name and owner name], [image, wallpaper error], [Text Maker caption can customize], [Many texts "Red Dragon Bot" are changed to your bot name]), (only admins can use group info editing commands), (Songs upload as voice note on/off  [to protect your data and storage]) [Fixed and Added]
 
 > [🔄Please Follow Me🤭](https://github.com/prabhasha2006)
 
