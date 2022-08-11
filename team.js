@@ -4328,7 +4328,7 @@ break
 case 'بوت': {
                
                 let buttons = [
-                    {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}شكرا`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}ارقام`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
+                    {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/rMRtSFJ/IMG-20220805-WA0009.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -4379,6 +4379,9 @@ break
             } 
             break
             case 'شكرا': { RedDragonMdNx.sendMessage(from, { text: `*نرحب بكم مره اخرى 🤗*` }, { quoted: m }) 
+            } 
+            break
+            case 'تحديث': { RedDragonMdNx.sendMessage(from, { text: `*يرجى الانتظار سيتم اضافه هذه الميزه و الشروحات قريبا🤖*` }, { quoted: m }) 
             } 
             break
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
