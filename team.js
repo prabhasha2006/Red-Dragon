@@ -3825,6 +3825,8 @@ case 'رواتس': {
 https://play.google.com/store/apps/details?id=com.safeum.android
 2️⃣ ارقام بولندي 
 https://play.google.com/store/apps/details?id=pl.rs.sip.softphone
+ارقام  امريكيه  و كنديه 3️⃣
+https://kingmodapk.com/textnow-1/?download
 
 لمشاهده فيديو طريقة اضغط على زر كلمة ارقام في الاسفل👇🏻👇🏻👇🏻
 
