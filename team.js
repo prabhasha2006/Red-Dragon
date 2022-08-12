@@ -4378,6 +4378,13 @@ break
             case 'عملك': { RedDragonMdNx.sendMessage(from, { text: `*محاسب و مبرمج محترف*` }, { quoted: m }) 
             } 
             break
+           case 'المالك': { RedDragonMdNx.sendMessage(from, { text: `🌹مطور البوت *😎~عـۦ͒͢ۦـزاެم￤⁷⁷𖤐*
+
+https://api.whatsapp.com/send?phone=+201028002568&text=*☠️الامــــيـر👑~عـۦ͒͢ۦـزاެم￤⁷⁷𖤐*
+
+🥇☬بوت ~عـۦ͒͢ۦـزاެم￤⁷⁷𖤐` }, { quoted: m }) 
+            } 
+            break
             case 'شكرا': { RedDragonMdNx.sendMessage(from, { text: `*نرحب بكم مره اخرى 🤗*` }, { quoted: m }) 
             } 
             break
