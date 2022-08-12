@@ -268,7 +268,7 @@ const reply = (teks) => {
                         for (let anjap of appp){
 				if (budy === anjap){
 					result = fs.readFileSync(`./DragonMedia/appp/${anjap}.apk`)
-					RedDragonMdNx.sendMessage(m.chat, { application: result }, { quoted: m })
+					RedDragonMdNx.sendMessage(m.chat, { app: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
@@ -300,7 +300,7 @@ const reply = (teks) => {
 		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-                const isQuotedisApk = type === 'extendedTextMessage' && content.includes('apkMessage')
+                const isQuotedApp = type === 'extendedTextMessage' && content.includes('appMessage')
         
         //Respon Cmd with media\\
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
