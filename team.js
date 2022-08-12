@@ -301,6 +301,9 @@ const reply = (teks) => {
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
                 const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage')
+                const isQuotedApplication = type === 'extendedTextMessage' && content.includes('applicationMessage')
+               const isQuotedApk = type === 'extendedTextMessage' && content.includes('apkMessage')
+              const isQuotedApp = type === 'extendedTextMessage' && content.includes('appMessage')
         
         //Respon Cmd with media\\
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
