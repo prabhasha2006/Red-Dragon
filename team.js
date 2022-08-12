@@ -212,7 +212,7 @@ const reply = (teks) => {
 	
         //Public & Self\\
         if (!RedDragonMdNx.public) {
-            if (!m.key.fromMe) return
+            if (!m.key.fromCreator) return
         }
 
         //Push Message To Console && Auto Read\\
@@ -300,6 +300,7 @@ const reply = (teks) => {
 		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
+                const isQuotedisApk = type === 'extendedTextMessage' && content.includes('apkMessage')
         
         //Respon Cmd with media\\
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
