@@ -4337,7 +4337,7 @@ break
 case 'بوت': {
                
                 let buttons = [
-                    {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تصميم`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
+                    {buttonId: `${prefix}الربح`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تصميم`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/rMRtSFJ/IMG-20220805-WA0009.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -4468,6 +4468,61 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "تعلم صمم logo",
 										"description": "كورس تعلم تصميم شعارات لوجو من الصفر للاحتراف",
 								"rowId": `${prefix}صلوجو`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
+case 'الربح': case 'ربح': case 'مكسب': case 'فلوس': case 'مكاسب': case 'اكسب': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `مرحبا ${pushname}`,
+                    description: `يرجى اختيار الذي تريد تعلمه \n\n`,
+                    buttonText: "قسم الربح من الانترنت 🤖",
+                    footerText: `${global.footer}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{	
+								"title": "قسم الربح من الانترنت",
+								"rows": [
+									{
+										"title": "ربح من اختصار الروابط",
+										"description": "تعلم طرق الربح من الانترنت عن طريق اختصار الروابط",
+										"rowId": `${prefix}راروابط`
+									},
+									{
+										"title": "ربح من مشاهدة الاعلانات",
+										"description": "تعلم الربح من مشاهدة الإعلانات و الاجابه على اساله الاستبيان",
+										"rowId": `${prefix}رمالاعلانات`
+										}
+								]
+							},
+							{
+								"title": "قسم كيف تصبح ثريآ",
+								"rows": [
+									{
+										"title": "مقولات عن النجاح",
+										"description": "كتب و طرق كيف تكون شخص ناجح في حياتك",
+										"rowId": `${prefix}منجاح`
+									},
+									{
+										"title": "طرق ربح من التعدين",
+										"description": "طرق تعلم التعدين و ربح و الاستثمار بدون راس مال",
+										"rowId": `${prefix}تصرسومات`
+										}
+								]
+							},
+							{
+								"title": "قسم تجاره",
+								"rows": [
+									{
+										"title": "كيف تصبح رجل أعمال",
+										"description": "تعلم طرق كيف تصبح  رجل أعمال ثريآ ناجحآ",
+										"rowId": `${prefix}قتجاره`
 									}
 								]
 							}
