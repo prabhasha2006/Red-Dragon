@@ -4337,7 +4337,7 @@ break
 case 'بوت': {
                
                 let buttons = [
-                    {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
+                    {buttonId: `${prefix}تحديث`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تصميم`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
                 let buttonMessage = {
                     image: { url: 'https://i.ibb.co/rMRtSFJ/IMG-20220805-WA0009.jpg'},
                 caption: `-☬ بكم في بوت ميزو 🤖࿐\n\nمرحبا, ${pushname}\n\n┏━❯ *${botname}* ❮━😎\n┃
@@ -4402,6 +4402,82 @@ https://api.whatsapp.com/send?phone=+967774217099&text=*☠️☆مـيـ✯͜͡
 
 🥇☬✰مـطـور اٟلـبـوت🤖☆مـيـ✯͜͡ـزو𝙼𝙴𝚉𝙾𖤍☆￤⁷⁷𖤐` }, { quoted: m })
             }
+break
+case 'تصميم': case 'تصاميم': case 'صمم': case 'مصمم': {
+let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                listMessage :{
+                    title: `مرحبا ${pushname}`,
+                    description: `يرجى اختيار الذي تريد تعلمه \n\n`,
+                    buttonText: "الاقسام التصاميم 🤖",
+                    footerText: `${global.footer}`,
+                    listType: "SINGLE_SELECT",
+                    sections: [{	
+								"title": "قسم الفلترات",
+								"rows": [
+									{
+										"title": "فلترات انستا",
+										"description": "افضل فلترات للانستغرام",
+										"rowId": `${prefix}فانستغرام`
+									},
+									{
+										"title": "فلتر خرافي",
+										"description": "افضل فلترات خرافية",
+										"rowId": `${prefix}فخرافي`
+										},
+									{
+										"title": "فلتر جديد 2023",
+										"description": "فلترات جديده 2023",
+										"rowId": `${prefix}فجديده`
+										}
+								]
+							},
+							{
+								"title": "قسم تصميم صور",
+								"rows": [
+									{
+										"title": "تصميم صور",
+										"description": "طرق تعلم تصميم صور خرافيه",
+										"rowId": `${prefix}تصور`
+									},
+									{
+										"title": "تصميم صور كرتونية",
+										"description": "طرق تعلم تصميم صور كرتونية بحترافيه",
+										"rowId": `${prefix}تصكرتونيه`
+										},
+									{
+										"title": "تصميم صور رسومات",
+										"description": "طرق تعلم تصميم و رسم صور",
+										"rowId": `${prefix}تصرسومات`
+										}
+								]
+							},
+							{
+								"title": "قسم تصميم فيديوهات",
+								"rows": [
+									{
+										"title": "تصاميم فديوهات",
+										"description": "طرق تصاميم فيديوهات  كرتونيه و فيديوهات خرافيه ",
+										"rowId": `${prefix}تفيديو`
+									}
+								]
+							},
+							{
+							"title": "قسم تصميم شعارات ",
+								"rows": [
+									{
+										"title": "تعلم صمم logo",
+										"description": "كورس تعلم تصميم شعارات لوجو من الصفر للاحتراف",
+								"rowId": `${prefix}صلوجو`
+									}
+								]
+							}
+						],
+          listType: 1
+                }
+            }), {})
+            RedDragonMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+            }
+            break
             case 'شكرا': { RedDragonMdNx.sendMessage(from, { text: `*نرحب بكم مره اخرى 🤗*` }, { quoted: m }) 
             } 
             break
