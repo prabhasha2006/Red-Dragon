@@ -268,7 +268,7 @@ const reply = (teks) => {
                         for (let anjap of appp){
 				if (budy === anjap){
 					result = fs.readFileSync(`./DragonMedia/appp/${anjap}.apk`)
-					RedDragonMdNx.sendMessage(m.chat, { data: result }, { quoted: m })
+					RedDragonMdNx.sendMessage(m.chat, { application: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
@@ -299,14 +299,8 @@ const reply = (teks) => {
 		const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
-		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-                const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage')
+		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')            
                 const isQuotedApplication = type === 'extendedTextMessage' && content.includes('applicationMessage')
-               const isQuotedApk = type === 'extendedTextMessage' && content.includes('apkMessage')
-              const isQuotedApp = type === 'extendedTextMessage' && content.includes('appMessage')
-const isQuotedFile = type === 'extendedTextMessage' && content.includes('fileMessage')
-const isQuotedMedia = type === 'extendedTextMessage' && content.includes('mediaMessage')
-const isQuotedData = type === 'extendedTextMessage' && content.includes('dataMessage')
         
         //Respon Cmd with media\\
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
@@ -3274,7 +3268,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': case 'inbox': case 'مطور': case 'مالك': {
+            case 'owner': case 'creator': case 'inbox': case 'المالك': {
                 //RedDragonMdNx.sendContact(m.chat, global.owner, m)
                 reply(`🌹مطور البوت *${global.ownername}*\n\n*_https://wa.me/${global.ownernomer}_*\n\n🥇${global.botname}`)
                 //RedDragonMdNx.sendMessage(from, { text: `My Owner Is *${global.ownername}*\n*_wa.me/${global.ownernomer}_*` }, { quoted: m })
@@ -4392,6 +4386,14 @@ https://api.whatsapp.com/send?phone=+201028002568&text=*☠️الامــــي
 🥇☬بوت ~عـۦ͒͢ۦـزاެم￤⁷⁷𖤐` }, { quoted: m }) 
             } 
             break
+break
+            case 'المطور': case 'المالك': case 'مطور': {
+                RedDragonMdNx.sendMessage(from, { text: `🌹✰مـطـور اٟلـبـوت✰🤖 *😎~☆مـيـ✯͜͡ـزو𝙼𝙴𝚉𝙾𖤍☆￤⁷⁷𖤐*
+
+https://api.whatsapp.com/send?phone=+967774217099&text=*☠️☆مـيـ✯͜͡ـزو𝙼𝙴𝚉𝙾𖤍☆
+
+🥇☬✰مـطـور اٟلـبـوت🤖☆مـيـ✯͜͡ـزو𝙼𝙴𝚉𝙾𖤍☆￤⁷⁷𖤐` }, { quoted: m })
+            }
             case 'شكرا': { RedDragonMdNx.sendMessage(from, { text: `*نرحب بكم مره اخرى 🤗*` }, { quoted: m }) 
             } 
             break
