@@ -3287,7 +3287,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `مرحبا ${pushname}`,
                     description: `يرجى اختيار الذي تريد تعلمه \n\n`,
-                    buttonText: "الاقسام🤖",
+                    buttonText: "قسم تعلم الاختراق🤖",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{	
@@ -4408,7 +4408,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 listMessage :{
                     title: `مرحبا ${pushname}`,
                     description: `يرجى اختيار الذي تريد تعلمه \n\n`,
-                    buttonText: "الاقسام التصاميم 🤖",
+                    buttonText: "قسم التصاميم 🤖",
                     footerText: `${global.footer}`,
                     listType: "SINGLE_SELECT",
                     sections: [{	
