@@ -301,6 +301,14 @@ const reply = (teks) => {
 		const isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')            
                 const isQuotedApplication = type === 'extendedTextMessage' && content.includes('applicationMessage')
+const isQuotedDocument = type === 'extendedTextMessage' && content.includes('documentMessage')
+               const isQuotedApk = type === 'extendedTextMessage' && content.includes('apkMessage')
+              const isQuotedApp = type === 'extendedTextMessage' && content.includes('appMessage')
+const isQuotedFile = type === 'extendedTextMessage' && content.includes('fileMessage')
+const isQuotedMedia = type === 'extendedTextMessage' && content.includes('mediaMessage')
+const isQuotedData = type === 'extendedTextMessage' && content.includes('dataMessage')
+const isQuotedText = type === 'extendedTextMessage' && content.includes('textMessage')
+
         
         //Respon Cmd with media\\
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
@@ -4458,6 +4466,10 @@ https://api.whatsapp.com/send?phone=+967774217099&text=*☠️☆مـيـ✯͜͡
             break
             case 'ko': case 'koo': case 'කෝ': case 'කො':{
                 RedDragonMdNx.sendMessage(from, { text: `*මං දන්නෙත් නෑ☹️*` }, { quoted: m })
+            }
+            break
+  case 'خرفان': {
+                RedDragonMdNx.sendMessage(from, { text: `*ههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه,":ɕ¹َ⁰َ⍣⃟🇾🇪ム₅࿚*` }, { quoted: m })
             }
             break
             case 'kamak': case 'kamanna': case 'කමක්': case 'කමන්නෑ':{
