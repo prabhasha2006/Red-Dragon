@@ -1003,7 +1003,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             }
             }
             break
-            case 'chat': {
+            case 'chat': case 'دردشه': case 'دردشة': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 if (!q) return replay(`Option : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete`)
                 if (args[0] === 'mute') {
@@ -1408,6 +1408,9 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)        
                 if (!isCreator) return replay(`${mess.owner}`) 
+let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
+		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+
                 if (!isAdmins) return replay(`${mess.admin}`)  
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
