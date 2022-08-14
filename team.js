@@ -1404,8 +1404,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 	break
 	case 'promote': case 'ادمن': case 'اشراف': {
 		if (!m.isGroup) return replay(`${mess.group}`)
-                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
+                if (!isBotAdmins) return replay(`${mess.botAdmin}`)        
                 if (!isCreator) return replay(`${mess.owner}`) 
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
