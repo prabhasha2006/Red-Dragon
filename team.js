@@ -1389,6 +1389,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 	case 'kick': case 'ازاله': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nRemoved'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -1397,6 +1398,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 	case 'add': case 'اضف': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nAdded'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -1406,6 +1408,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)        
                 if (!isCreator) return replay(`${mess.owner}`) 
+                if (!isAdmins) return replay(`${mess.admin}`)  
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
@@ -1413,8 +1416,8 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 	case 'demote': case 'سحب اشراف': case 'سحب': case 'سحب ادمن': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
                 if (!isCreator) return replay(`${mess.owner}`)
+                if (!isAdmins) return replay(`${mess.admin}`)               
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
@@ -1446,6 +1449,7 @@ case 'reportss': {
 	    case 'setname': case 'setgcname': case 'setsubject': case 'تغير اسم المجموعة': case 'تغير اسم القروب': case 'اسم القروب': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) replay(`${mess.admin}`)
                 if (!text) replay(`Where Is The Text?`)
                 await RedDragonMdNx.groupUpdateSubject(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
@@ -1454,6 +1458,7 @@ case 'reportss': {
           case 'setdesc': case 'setdesk': case 'تغير وصف المجموعة': case 'تغير وصف القروب': case 'وصف القروب': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) replay(`${mess.admin}`)
                 if (!text) replay(`اكتب الامر ثم اكتب اسم المجموعة?`)
                 await RedDragonMdNx.groupUpdateDescription(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
@@ -1471,6 +1476,7 @@ case 'reportss': {
                 break
            case 'setgrouppp': case 'setgruppp': case 'setgcpp': case 'ايقونه': case 'خلفيه المجموعة': {
                 if (!m.isGroup) return replay(`${mess.group}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (!quoted) return replay(`إرسال الصورة / و الرد على الصورة مع ارسال امر تغير الخلفيه ${prefix + command}`)
                 if (!/image/.test(mime)) return replay(`إرسال الصورة / و الرد على الصورة مع ارسال امر تغير الخلفيه ${prefix + command}`)
@@ -1483,6 +1489,7 @@ case 'reportss': {
             case 'tagall': case 'الجميع': case 'الكل': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `╚»·٠•●♥❮❮ جميع الأعضاء ❯❯♥●•٠·«╝ 
  
