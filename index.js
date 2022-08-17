@@ -450,6 +450,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
            }
        let type = '', mimetype = mime, pathFile = filename
        if (options.asDocument) type = 'document'
+if (options.asApp) type = 'app'
        if (options.asSticker || /webp/.test(mime)) {
         let { writeExif } = require('./lib/exif')
         let media = { mimetype: mime, data }
@@ -462,6 +463,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
        else if (/video/.test(mime)) type = 'video'
        else if (/audio/.test(mime)) type = 'audio'
        else type = 'document'
+else type = 'app'
        await RedDragonMdNx.sendMessage(jid, { [type]: { url: pathFile }, caption, mimetype, fileName, ...options }, { quoted, ...options })
        return fs.promises.unlink(pathFile)
        }
