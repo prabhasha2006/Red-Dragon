@@ -1407,8 +1407,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': case 'كي
 	case 'promote': case 'ادمن': case 'اشراف': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)        
-                if (!isCreator) return replay(`${mess.owner}`) 
-              // if (!isAdmins) return replay(`${mess.admin}`)
+                if (!isCreator) return replay(`${mess.owner}`)        
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net/nPromoted'
 		await RedDragonMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
@@ -4560,6 +4559,19 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             break
             case 'تحديث': { RedDragonMdNx.sendMessage(from, { text: `*يرجى الانتظار سيتم اضافه هذه الميزه و الشروحات قريبا🤖*` }, { quoted: m }) 
             } 
+            break
+case 'يفداك': {
+                RedDragonMdNx.sendMessage(from, { text: `**♡يفَــ❃ـدِاڱ❁ ڱـــ★ـونــﮱ❀*
+*♡ولُوَنَــ😻ﮱ❁ وَرَمٌـ✾ـوَشِ❀*
+*♡؏ـيــــۥــۥـَٰــ﴿﴾ــۥــــۥـونيـہ♩❀*
+*♡وكـِــِـِـِـِـِـِـِـِـِل ونـِـِـِ♥ـِـِاسي❀*
+*♡ٱلـي يحــــِْـــــٓ͢⁽💔₎ﹻــــــبوني❀*
+*♡يـًـًـــً★ـًـــًـًاقٍُُِِِـِْْـٍُِِـ❣ِـِِْـلَـِ♥ـــْبًيِّ❀*
+ *♡•﴿ُِوآنـ.ـί•สмـآءُِ اگثـۥــۥـر•❀*
+*😻يـــﯠهہ ٳٲلـﻣسـتخـــــدم❥*
+*مـﺣـــۥـ☺ــۥـَٰــرج خــۥـَٰـــيرات❥*
+*ٳﻗـ☜ـࢪب ﺻـً😍ـًﻟيٳآ شــآحبك❥**` }, { quoted: m })
+            }
             break
             case 'ba': case 'බැ': case 'බෑ': case 'බැහැ': case 'احبكك': {
                 RedDragonMdNx.sendMessage(from, { text: `*كم نسبه الحب لي 🤭❤*` }, { quoted: m })
