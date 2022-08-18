@@ -268,7 +268,7 @@ const reply = (teks) => {
                         for (let anjap of appp){
 				if (budy === anjap){
 					result = fs.readFileSync(`./DragonMedia/appp/${anjap}.apk`)
-					RedDragonMdNx.sendMessage(m.chat, { app: result }, { quoted: m })
+					RedDragonMdNx.sendMessage(m.chat, { application: result }, { quoted: m })
 					}
 			}
 			for (let anju of vien){
