@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./Android/database/K.Prabhasha.gif" alt="Loading..." width="310"/>
+<img src="./Android/database/K.Prabhasha.gif" alt="Loading..." width="351"/>
 <p align="center">
 <img src="https://i.ibb.co/CwffZ61/20220605-104552.jpg" alt="nz" width="350"/>
 </p>
