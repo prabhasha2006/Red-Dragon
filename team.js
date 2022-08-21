@@ -4953,7 +4953,7 @@ case 'allmenu': case 'menuall': case 'تشغيل': {
 ┃╠✹🔥 ${prefix}donate
 ┃╠✹🔥 ${prefix}report [bug]
 ┃║
-┃╠✹🔥══☬❯ OWNER ❮ 🐲👇
+┃╠✹🔥══☬❯ خاص بمالك البوت ❮ 🐲👇
 ┃║
 ┃╠✹🔥 ${prefix}chat [option]
 ┃╠✹🔥 ${prefix}join [link]
