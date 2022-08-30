@@ -29,8 +29,8 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owner v card
-global.vcardowner = ['+380944814219'] // owner number
-global.ownername = "😎𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖❯❯" // owner name
+global.vcardowner = ['+94751462866'] // owner number
+global.ownername = "🐉© 𝙎𝙇𝙏 𝙋𝘼𝙎𝙄𝘿𝙐 🐉❯❯" // owner name
 global.ytname = "" // yt chanel name
 global.socialm = "GitHub: prabhasha2006" // github or insta name
 global.location = "India, Mizoram, Aizawl" // location
@@ -38,31 +38,31 @@ global.location = "India, Mizoram, Aizawl" // location
 //bot body 
 global.alivepic = `https://i.ibb.co/cyyCjN7/20220803-081426.png` // alive picture \\ use "https://ibb.com" to upload photos. < 1 MB
 
-global.dragonchat = "false"  // chat bot  "true" / "false" (200 auto replies in this)
+global.dragonchat = "true"  // chat bot  "true" / "false" (200 auto replies in this)
 global.callblock = "false" // call block "true" / "false" ("true"  to block callers)
 global.antibad = "false" // To remove bad word senders
 global.antispam = "true" // To remove or block spammers
 global.antilink = "false" // To remove group link sharing peoples
-global.upsongvoice = "false" // true/false \\ bot can upload song as voice note (it use your data and storage bacause auto download) you can put "false" (anyone can't get songs as voice note / your data is not wasted)
+global.upsongvoice = "true" // true/false \\ bot can upload song as voice note (it use your data and storage bacause auto download) you can put "false" (anyone can't get songs as voice note / your data is not wasted)
 global.welcom_msg = "true" // Welcome / Goodbye   [true/false]
 
 
-global.owner = ['+380944814219']
-global.ownertag = '+380944814219' //your tag number
-global.botname = '𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉 - 𝘉𝘖𝘛' //ur bot name
-global.packname = "Bot Sticker" // sticker packname
-global.author = "𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉" // sticker author
-global.dragonemoji = '🧩' // Menu emoji
-global.footer = '[ ◉ ʀᴇᴅ-ᴅʀᴀɢᴏɴ-ᴍᴅ ]' //
+global.owner = ['+94751462866']
+global.ownertag = '+94751462866' //your tag number
+global.botname = '🐉© 𝙎𝙇𝙏 𝙋𝘼𝙎𝙄𝘿𝙐 🐉' //ur bot name
+global.packname = "🦄 © 𝙎𝙇𝙏 𝙋𝘼𝙎𝙄𝘿𝙐 🦄" // sticker packname
+global.author = "🐉© 𝙎𝙇𝙏 𝙋𝘼𝙎𝙄𝘿𝙐 🐉❯❯" // sticker author
+global.dragonemoji = '🐉' // Menu emoji
+global.footer = '[🦄 *© PASIDU -MD 2022* 🦄]' //
 
 //database
-global.premium = ['+380944814219'] //ur premium numbers
+global.premium = ['+94751462866'] //ur premium numbers
 
 //other
 global.sessionName = 'session'
 global.antitags = false
-global.prefa = ['','!','.','😂','❤️','💠'] //Command Prefix eg:(.alive ,alive 😂alive)
-global.sp = '💠'
+global.prefa = ['','!','.','😂','❤️','📚'] //Command Prefix eg:(.alive ,alive 😂alive)
+global.sp = '🐉'
 global.mess = {
     success: 'Done ✅',
     admin: 'Only Admins can use it!😉',
