@@ -270,6 +270,7 @@ footer: `${footer}`,
 buttons,
 headerType: 4
 }
+if(global.welcom_msg === "false")return
 KUMUTHU.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
                 	const xeonbuffer = await getBuffer(ppuser)
@@ -296,6 +297,7 @@ Time =  ${xeontime} `
     buttons,
     headerType: 4
     }
+    if(global.welcom_msg === "false")return
 KUMUTHU.sendMessage(anu.id, buttonMessage)
                 }
             }
