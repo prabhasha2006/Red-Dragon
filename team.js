@@ -3461,7 +3461,7 @@ Wieħed mill-hackers qabad il-kodiċi tal-verifika mingħajr ma naf jien, li hij
 
 ╔━━━━👑━━━━╗ 
 ➧ رقم البوت ¦
- https://wa.me/+201555434304              
+ https://wa.me/+967774217099              
 ╚━━━━👑━━━━╝
 
 مـقـدم مـن بــوت مــيــزو الـثـغـرات2022
@@ -3509,7 +3509,7 @@ case 'كفاباحي': {
 
 ╔━━━━👑━━━━╗ 
 ➧ رقم البوت ¦
- https://wa.me/+201555434304              
+ https://wa.me/+967774217099              
 ╚━━━━👑━━━━╝
 
 مـقـدم مـن بــوت مــيــزو الـثـغـرات2022
@@ -3556,7 +3556,7 @@ Hi WhatsApp My phone number has been blocked by an image exploit loophole in ord
 
 ╔━━━━👑━━━━╗ 
 ➧ رقم البوت ¦
- https://wa.me/+201555434304              
+ https://wa.me/+967774217099              
 ╚━━━━👑━━━━╝
 
 مـقـدم مـن بــوت مــيــزو الـثـغـرات2022
@@ -3848,7 +3848,7 @@ https://kingmodapk.com/textnow-1/?download
 
 ╔━━━━👑━━━━╗ 
 ➧ رقم البوت ¦
- https://wa.me/+84357979573              
+ https://wa.me/+967774217099              
 ╚━━━━👑━━━━╝
 
 مـقـدم مـن بــوت مــيــزو 
@@ -4341,7 +4341,7 @@ break
                 RedDragonMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'بوت': {
+case 'بوت': case '*☠️☆بوت🤖ميزو𖤍☆':{
                
                 let buttons = [
                     {buttonId: `${prefix}الربح`, buttonText: {displayText: '❮❮💰الربح من الانترنت💰❯❯'}, type: 1}, {buttonId: `${prefix}تصميم`, buttonText: {displayText: '❮❮📽تصاميم📽❯❯'}, type: 1}, {buttonId: `${prefix}تعليم`, buttonText: {displayText: '❮❮☠اختراق☠❯❯'}, type: 1}]
@@ -4924,7 +4924,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/prabhasha2006/Red-Dragon\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : https://github.com/pra\n Dont Forget To Give Star\n\nYouTube : ${btnurl}\nDont Forget To Watch Tutorial`)
+            }
+            break
+case 'مازن': case 'تقوى': {
+                reply(`*مازن يحب تقوى*`)
             }
             break
 
