@@ -14,7 +14,7 @@ const speed = require('performance-now')
 const { performance } = require('perf_hooks')
 const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
-const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
+const { smsg, formatp, ٠, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 const nexusnw = require('xfarr-api')
 
 //rpg function\\
@@ -203,11 +203,11 @@ module.exports = RedDragonMdNx = async (RedDragonMdNx, m, chatUpdate, store) => 
 	
 	//group target \\
 const reply = (teks) => {
-            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
+            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬*☠️☆مازن🤤يحب💋تقوى𖤍☆*࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
+            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬*☠️☆مازن🤤يحب💋تقوى𖤍☆*࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
