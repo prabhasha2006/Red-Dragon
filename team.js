@@ -203,11 +203,11 @@ module.exports = RedDragonMdNx = async (RedDragonMdNx, m, chatUpdate, store) => 
 	
 	//group target \\
 const reply = (teks) => {
-            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬*☠️☆مازن🤤يحب💋تقوى𖤍☆*࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
+            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬*☠️☆مازن🤤يحب💋تقوى𖤍☆*࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
+            RedDragonMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ☬RED༒DRAGON࿐`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./DragonMedia/image/dragon.jpg`),"sourceUrl": "https://i.ibb.co/DY1K5x1/20220605-104505.jpg"}}}, { quoted: m})
         }
 	
         //Public & Self\\
