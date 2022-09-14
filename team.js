@@ -4928,7 +4928,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
 case 'مازن': case 'تقوى': {
-                reply(`*مازن يحب تقوى*`)
+                reply(`*مازن يحب تقوى🤤💋*`)
             }
             break
 
