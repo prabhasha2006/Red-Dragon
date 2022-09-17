@@ -77,7 +77,7 @@ Recommended WhatsApp👇
 
 <b><details><summary>𝗛𝗼𝘄 𝗧𝗼 𝗠𝗮𝗸𝗲?</summary>
 
->මුලින්ම qr code එක scan කරගන්න🥲. multi devices beta වැඩ කරනෝ
+>මුලින්ම qr code එක scan කරගන්න🥲. multi devices beta من يعمل
 
 >ඊට පස්සෙ මේ git එක fork කරගන්න. හරි. දැන් ඔයා fork කරගත්ත git එකට යන්න😌.
 
