@@ -62,7 +62,7 @@ LATEST VERSION (2022-08-20) ([Whatsapp can't see messages]) [Fixed ]
 >If you using mod whatsapp!
 >DO NOT USE FOUD MODS.
 
->ඔබ වට්සැප් මොඩ් භාවිතා කරනවා නම් Foud mod හෝ වෙනත් පරණ Base සහිත වට්සැප් මගින් ඔබේ ගිනුම තාවකාලිකව Ban විය හැකියි.
+>إذا كنت تستخدم تطبيق WhatsApp mod ، فقد يتم حظر حسابك مؤقتًا بواسطة Foud mod أو WhatsApp آخر ذي قاعدة قديمة..
 
 Recommended WhatsApp👇
 >Normal WhatsApp [DOWNLOAD](https://play.google.com/store/apps/details?id=com.whatsapp)
@@ -87,7 +87,7 @@ Recommended WhatsApp👇
 
 >දැන් ආයි බැක් වෙලා Edit 'setting.js' With Your Choice ගිහින් ඒව මේව වෙනස් කරගන්න පුලුවං😒😒😒
 
->යටට ගිහින් "Then Deploy The Bot From Here "👈මෙතනින් deploy කරන්න විතරයි තියෙන්නෙ😁
+>اذهب تحت "Then Deploy The Bot From Here "👈عليك فقط الانتشار من هنا😁
 
 </b>
 </details>
@@ -97,7 +97,7 @@ Recommended WhatsApp👇
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/380944814219"><img src="https://www.svgrepo.com/show/122874/whatsapp.svg" width="100"/>
+<a href="https://wa.me/9660573662637"><img src="https://www.svgrepo.com/show/122874/whatsapp.svg" width="100"/>
 </p>
 
 </details>
