@@ -10,13 +10,11 @@
 
 LATEST VERSION (2022-08-20) ([Whatsapp can't see messages]) [Fixed ]
 
-> [🔄Please Follow Me🤭](https://github.com/prabhasha2006)
+> [🔄Please Follow Me🤭](https://github.com/xcodejet)
 
-<img src="./Android/database/K.Prabhasha-1.gif" alt="Loading..." width="310"/>
+<img src="https://github.com/xcodejet/xcodejet/blob/main/xcodejet-media/xcodejet_gif.gif">" alt="Loading..." width="310"/>
 
-> Image Designed By  ==(Dineth Indusara)== RED DRAGON TEAM
-
-> Created By ==(Kumuthu Prabhasha)== RED DRAGON TEAM
+# Powered By: XCODEJET
 
 
 <p align="center">
