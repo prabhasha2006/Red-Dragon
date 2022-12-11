@@ -4,7 +4,7 @@
 <img src="https://i.ibb.co/82zgjSR/20220926-155611.png" alt="nz" width="350"/>
 </p>
 
-## 𝙍𝙀𝘿╺ 𝘿𝙍𝘼𝙂𝙊𝙉 -𝗕𝗢𝗧࿐   Version 12.0
+## بوت حسين البيضاني࿐   Version 12.0
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+𝙍𝙀𝘿╺+𝘿𝙍𝘼𝙂𝙊𝙉+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+𝚁𝙴𝙳+𝙳𝚁𝙰𝙶𝙾𝙽+𝚃𝙴𝙰𝙼;ℂ𝕣𝕖𝕒𝕥𝕖𝕕+𝕓𝕪:+𝙆.𝙋𝙧𝙖𝙗𝙝𝙖𝙨𝙝𝙖;𝐌𝐑:+☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐;💕ඉතිං+කොහොමද🙃;😁මොකද+කරන්නෙ🌹)](https://git.io/typing-svg)
 
@@ -60,7 +60,7 @@ LATEST VERSION (2022-08-20) ([Whatsapp can't see messages]) [Fixed ]
 >If you using mod whatsapp!
 >DO NOT USE FOUD MODS.
 
->ඔබ වට්සැප් මොඩ් භාවිතා කරනවා නම් Foud mod හෝ වෙනත් පරණ Base සහිත වට්සැප් මගින් ඔබේ ගිනුම තාවකාලිකව Ban විය හැකියි.
+>إذا كنت تستخدم تطبيق WhatsApp mod ، فقد يتم حظر حسابك مؤقتًا بواسطة Foud mod أو WhatsApp آخر ذي قاعدة قديمة..
 
 Recommended WhatsApp👇
 >Normal WhatsApp [DOWNLOAD](https://play.google.com/store/apps/details?id=com.whatsapp)
@@ -75,7 +75,7 @@ Recommended WhatsApp👇
 
 <b><details><summary>𝗛𝗼𝘄 𝗧𝗼 𝗠𝗮𝗸𝗲?</summary>
 
->මුලින්ම qr code එක scan කරගන්න🥲. multi devices beta වැඩ කරනෝ
+>මුලින්ම qr code එක scan කරගන්න🥲. multi devices beta من يعمل
 
 >ඊට පස්සෙ මේ git එක fork කරගන්න. හරි. දැන් ඔයා fork කරගත්ත git එකට යන්න😌.
 
@@ -85,7 +85,7 @@ Recommended WhatsApp👇
 
 >දැන් ආයි බැක් වෙලා Edit 'setting.js' With Your Choice ගිහින් ඒව මේව වෙනස් කරගන්න පුලුවං😒😒😒
 
->යටට ගිහින් "Then Deploy The Bot From Here "👈මෙතනින් deploy කරන්න විතරයි තියෙන්නෙ😁
+>اذهب تحت "Then Deploy The Bot From Here "👈عليك فقط الانتشار من هنا😁
 
 </b>
 </details>
@@ -95,7 +95,7 @@ Recommended WhatsApp👇
 
 ## ```Connect With Me```
 <p align="center">
-<a href="https://wa.me/380944814219"><img src="https://www.svgrepo.com/show/122874/whatsapp.svg" width="100"/>
+<a href="https://wa.me/+9660578662637"><img src="https://www.svgrepo.com/show/122874/whatsapp.svg" width="100"/>
 </p>
 
 </details>
@@ -104,7 +104,7 @@ Recommended WhatsApp👇
 <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="nz" width="700"/>
 </p>
 
-## 𝐌𝐑: ☬𝔻𝔸ℝ𝕂༒ℕ𝕀𝕋ℝ𝕆࿐
+## 𝐌𝐑: ☬بوت حسين البيضاني࿐
 
 
 
